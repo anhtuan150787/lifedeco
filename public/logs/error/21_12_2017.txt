@@ -1,0 +1,1 @@
+2017-12-21T17:16:42+07:00 ERR (3): error-router-no-match	127.0.0.1	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36	http://zend2/public/admin/	GET	http://zend2/public/img/favicon.ico

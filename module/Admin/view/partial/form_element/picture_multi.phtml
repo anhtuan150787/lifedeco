@@ -1,0 +1,80 @@
+<div class="item form-group">
+    <?php echo $this->formLabel($formElement); ?>
+    <div class="col-md-10 col-sm-10 col-xs-12">
+        <div class="fileupload" data-provides="fileupload">
+
+            <div class="gallery">
+                <?php if ($record['productPictures'] && !empty($record['productPictures'])) {?>
+                        <?php foreach($record['productPictures'] as $v) {?>
+                        <img class="img-thumbnail post-img picture-multi" onclick="deletePictureMulti(<?php echo $v['product_picture_id'];?>, this)" src="<?php echo $this->serverUrl();?>/thumbs/timthumb.php?src=<?php echo $this->basePath('public/pictures/products/' . $v['product_picture_name']);?>">
+                        <?php }?>
+                <?php }?>
+            </div>
+
+            <div class="col-md-12">
+                <span class="btn btn-file">
+                    <span class="btn-fileupload">Chọn hình</span>
+                    <?php echo $this->formElement($formElement); ?>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var no_image = '<?php echo $this->basePath('admin/images/no-image.gif'); ?>';
+    var storedFiles = [];
+
+    // Multiple images preview in browser
+    var imagesPreview = function(input, placeToInsertImagePreview) {
+
+        var files = input.target.files;
+        var filesArr = Array.prototype.slice.call(files);
+
+        filesArr.forEach(function(f) {
+
+            if(!f.type.match("image.*")) {
+                return;
+            }
+            storedFiles.push(f);
+
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $($.parseHTML('<img>')).attr({'src': e.target.result, 'class':'img-thumbnail post-img picture-multi', 'data-file' : f.name}).appendTo(placeToInsertImagePreview);
+
+                $('.picture-multi').click(function(){
+                        $(this).remove();
+
+                        var file = $(this).data("file");
+                        for(var ii=0;ii<storedFiles.length;ii++) {
+                            if(storedFiles[ii].name === file) {
+                                storedFiles.splice(ii,1);
+                                break;
+                            }
+                        }
+
+                        $('#gallery-photo-add').val(storedFiles);
+                    });
+            }
+            reader.readAsDataURL(f);
+        });
+    };
+
+    $('#gallery-photo-add').on('change', function(e) {
+        imagesPreview(e, 'div.gallery');
+    });
+
+    function deletePictureMulti(id, _this) {
+        $.ajax({
+            url: '<?php echo $this->url('admin/default', array('controller' => $module, 'action' => 'delete-picture-multi'));?>',
+            type: 'post',
+            data: {id: id},
+            success: function (response) {
+                data = jQuery.parseJSON(response);
+                if (data.return == 1) {
+                    _this.remove();
+                }
+            }
+        });
+    }
+</script>

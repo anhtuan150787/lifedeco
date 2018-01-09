@@ -1,0 +1,12 @@
+<div class="col-sm-8" style="border-right: 1px solid #DDD">
+    <?php echo $this->formViewElement()->input2($form->get('product_name'));?>
+    <?php echo $this->formViewElement()->textarea($form->get('product_body')); ?>
+    <?php echo $this->formViewElement()->picture_multi($form->get('product_picture_multi'), $module, $record, 'pictures/products/', 'product_id');?>
+</div>
+
+<div class="col-sm-4">
+    <?php echo $this->formViewElement()->picture($form->get('product_picture'), $module, $record, 'pictures/products/', 'product_id');?>
+    <?php echo $this->formViewElement()->checkbox($form->get('product_category_id'));?>
+<!--    --><?php //echo $this->formViewElement()->input($form->get('product_price'));?>
+    <?php echo $this->formViewElement()->input($form->get('product_status'));?>
+</div>

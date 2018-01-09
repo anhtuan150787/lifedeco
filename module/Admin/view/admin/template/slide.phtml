@@ -1,0 +1,116 @@
+<?php echo $this->partial('admin/partial/form_title', ['moduleName' => $moduleName]); ?>
+
+<?php
+$strItemPictureSlide = '<tr>
+                        <td colspan="2">
+                            <div class="fileupload" data-provides="fileupload">
+                                <div class="slideupload-new">
+                                    <img style="cursor: pointer"
+                                         class="picture_upload_view slide-picture" title="Click để xóa" onclick="deleteURL(this)"
+                                         src="' . $this->basePath('admin/images/no-image.gif') . '"/>
+                                </div>
+                                <span class="btn btn-file">
+                                    <span class="btn-fileupload">Chọn hình</span>
+                                    <input type="file" class="form-control" name="slide[]" onchange="readURL(this);" />
+                                </span>
+                            </div>
+                        </td>
+                    </tr>';
+?>
+
+<div class="x_panel">
+    <div class="x_title">
+        <h2>
+            <a href="<?php echo $this->url('admin/default', ['controller' => 'group-template', 'action' => 'index']); ?>">
+                <button type="button" class="btn btn-default">Quay lại Danh sách giao diện</button>
+            </a>
+        </h2>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="x_content">
+
+
+        <?php echo $this->message([
+            'msgError' => $msgError,
+            'msgInfo' => $msgInfo,
+            'msgInfoLine' => $msgInfoLine,
+            'msgErrorLine' => $msgErrorLine,
+        ]); ?>
+
+        <div class="table-responsive">
+            <form
+                action="<?php echo $this->url('admin/default', ['controller' => $module, 'action' => 'slide'], ['query' => ['group_template_id' => $_GET['group_template_id']]]); ?>"
+                class="form-horizontal form-label-left" novalidate="novalidate" method="post" enctype="multipart/form-data">
+                <table class="table table-striped jambo_table bulk_action">
+                    <thead>
+                    <tr class="headings">
+                        <th colspan="2"><?php echo $actionName;?></th>
+                    </tr>
+                    </thead>
+
+                    <tbody id="table_data_slide">
+
+                    <?php foreach ($data['records'] as $v) {?>
+                        <tr>
+                            <td>
+                                <div class="fileupload" data-provides="fileupload">
+                                    <div class="slideupload-new">
+                                        <?php if ($v['template_picture'] != '') { ?>
+                                            <img class="picture_upload_view slide-picture" id="picture"
+                                                 style="cursor: pointer"
+                                                 src="<?php echo $this->basePath('pictures/templates/' . $v['template_picture']); ?>"/>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <a  href="javascript:void(0)" onclick="showConfirm('deleteItem', this)" data-href="<?php echo $this->url('admin/default', array('controller' => $module, 'action' => 'slide'), ['query' => ['group_template_id' => $_GET['group_template_id'], 'id' => $v['template_id']]]); ?>" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Xóa </a>
+                            </td>
+                        </tr>
+                    <?php } ?>
+
+                    <?php echo $strItemPictureSlide;?>
+
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            <input style="width: 100px" type="button" onclick="addPicture();" class="btn btn-primary" value="Thêm">
+                            <input style="width: 100px" type="submit" class="btn btn-success" value="Cập nhật">
+                        </td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    var no_image = '<?php echo $this->basePath('admin/images/no-image.gif'); ?>';
+
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $(input).parent().prev().find('.picture_upload_view')
+                    .attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function deleteURL(_this) {
+        $(_this).parent().next().find('input[type="file"]').val('');
+        $(_this).attr('src', no_image);
+    }
+
+    function addPicture() {
+        $('#table_data_slide').append('<?php echo preg_replace("/\r\n|\r|\n/",'',$strItemPictureSlide);?>');
+    }
+
+</script>

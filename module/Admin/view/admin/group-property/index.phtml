@@ -1,0 +1,22 @@
+<?php
+$columnName = [
+    'Nhóm thuộc tính',
+    'Cài đặt thuộc tính',
+    'Trạng thái',
+];
+
+foreach ($data['records'] as $record) {
+
+    $columnData[$record['group_property_id']] = [
+        '<a href="' . $this->url('admin/default', array('controller' => $module, 'action' => 'edit'), array('query' => array('id' => $record['group_property_id']))) . '"><strong>' . $this->escapeHtml($record['group_property_name']) . '</strong>' . '</a>',
+        '<a href="' . $this->url('admin/default', array('controller' => $module, 'action' => 'property'), array('query' => array('group_property_id' => $record['group_property_id']))) . '"><button type="button" class="btn btn-default btn-xs"><span class="fa fa-pie-chart" aria-hidden="true"></span> Cài đặt thuộc tính
+</button></a>',
+        $data['status'][$record['group_property_status']],
+    ];
+}
+?>
+
+<table class="table table-striped jambo_table bulk_action">
+    <?php echo $this->partial('admin/partial/table_column_name', ['columnName' => $columnName]); ?>
+    <?php echo $this->partial('admin/partial/table_column_data', ['columnData' => $columnData, 'module' => $module]); ?>
+</table>

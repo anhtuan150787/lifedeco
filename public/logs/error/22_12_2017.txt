@@ -1,0 +1,66 @@
+2017-12-22T10:18:30+07:00 ERR (3): error-router-no-match	127.0.0.1	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36	http://zend2/admin/group-property/index	GET	http://zend2/img/favicon.ico
+2017-12-22T10:35:41+07:00 ERR (3): error-exception	127.0.0.1	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36	http://zend2/admin/property/index	GET	http://zend2/admin/property-detail/index?property_id=1	Zend\Mvc\Controller\ControllerManager::createFromInvokable: failed retrieving "admincontrollerpropertydetail(alias: Admin\Controller\PropertyDetail)" via invokable class "Admin\Controller\PropertyDetailController"; class does not exist
+#0 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\ServiceManager\ServiceManager.php(642): Zend\ServiceManager\AbstractPluginManager->createFromInvokable('admincontroller...', 'Admin\Controlle...')
+#1 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\ServiceManager\ServiceManager.php(598): Zend\ServiceManager\ServiceManager->doCreate('Admin\Controlle...', 'admincontroller...')
+#2 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\ServiceManager\ServiceManager.php(530): Zend\ServiceManager\ServiceManager->create(Array)
+#3 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\ServiceManager\AbstractPluginManager.php(116): Zend\ServiceManager\ServiceManager->get('Admin\Controlle...', false)
+#4 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\Mvc\Controller\ControllerManager.php(137): Zend\ServiceManager\AbstractPluginManager->get('Admin\Controlle...', Array, false)
+#5 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\Mvc\DispatchListener.php(76): Zend\Mvc\Controller\ControllerManager->get('Admin\Controlle...')
+#6 [internal function]: Zend\Mvc\DispatchListener->onDispatch(Object(Zend\Mvc\MvcEvent))
+#7 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#8 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#9 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\Mvc\Application.php(314): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#10 D:\www\zend2\public\index.php(17): Zend\Mvc\Application->run()
+#11 {main}
+2017-12-22T14:28:53+07:00 ERR (3): error-router-no-match	127.0.0.1	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36	http://zend2/admin/message/index?type=deny	GET	http://zend2/img/favicon.ico
+2017-12-22T14:55:24+07:00 ERR (3): error-exception	127.0.0.1	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36	http://zend2/admin/property-detail/index?property_id=1	POST	http://zend2/admin/property-detail/add	Service "response" has been requested to plugin manager of type "Zend\Mvc\Controller\PluginManager", but couldn't be retrieved.
+A previous exception of type "Zend\ServiceManager\Exception\ServiceNotFoundException" has been raised in the process.
+By the way, a service with the name "response" has been found in the parent service locator "Zend\ServiceManager\ServiceManager": did you forget to use $parentLocator = $serviceLocator->getServiceLocator() in your factory code?
+#0 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\ServiceManager\AbstractPluginManager.php(312): Zend\ServiceManager\Exception\ServiceLocatorUsageException::fromInvalidPluginManagerRequestedServiceName(Object(Zend\Mvc\Controller\PluginManager), Object(Zend\ServiceManager\ServiceManager), 'response', Object(Zend\ServiceManager\Exception\ServiceNotFoundException))
+#1 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\ServiceManager\AbstractPluginManager.php(118): Zend\ServiceManager\AbstractPluginManager->tryThrowingServiceLocatorUsageException('response', false, Object(Zend\ServiceManager\Exception\ServiceNotFoundException))
+#2 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\Mvc\Controller\PluginManager.php(84): Zend\ServiceManager\AbstractPluginManager->get('response', NULL, true)
+#3 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\Mvc\Controller\AbstractController.php(292): Zend\Mvc\Controller\PluginManager->get('response', NULL)
+#4 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\Mvc\Controller\AbstractController.php(307): Zend\Mvc\Controller\AbstractController->plugin('response')
+#5 D:\www\zend2\module\Admin\src\Admin\Controller\PropertyDetailController.php(61): Zend\Mvc\Controller\AbstractController->__call('response', Array)
+#6 D:\www\zend2\module\Admin\src\Admin\Controller\PropertyDetailController.php(61): Admin\Controller\PropertyDetailController->response()
+#7 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\Mvc\Controller\AbstractActionController.php(82): Admin\Controller\PropertyDetailController->addAction()
+#8 D:\www\zend2\module\Admin\src\Admin\Controller\MasterController.php(88): Zend\Mvc\Controller\AbstractActionController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#9 [internal function]: Admin\Controller\MasterController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#10 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#11 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#12 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\Mvc\Controller\AbstractController.php(118): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#13 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\Mvc\DispatchListener.php(93): Zend\Mvc\Controller\AbstractController->dispatch(Object(Zend\Http\PhpEnvironment\Request), Object(Zend\Http\PhpEnvironment\Response))
+#14 [internal function]: Zend\Mvc\DispatchListener->onDispatch(Object(Zend\Mvc\MvcEvent))
+#15 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#16 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#17 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\Mvc\Application.php(314): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#18 D:\www\zend2\public\index.php(17): Zend\Mvc\Application->run()
+#19 {main}
+2017-12-22T15:36:57+07:00 ERR (3): error-exception	127.0.0.1	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36	http://zend2/admin/property-detail/index?id=1&property_id=1	POST	http://zend2/admin/property-detail/edit	Zend\View\Renderer\PhpRenderer::render: Unable to render template "admin/property-detail/edit"; resolver could not resolve to a file
+#0 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\View\View.php(205): Zend\View\Renderer\PhpRenderer->render(Object(Zend\View\Model\ViewModel))
+#1 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\View\View.php(233): Zend\View\View->render(Object(Zend\View\Model\ViewModel))
+#2 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\View\View.php(198): Zend\View\View->renderChildren(Object(Zend\View\Model\ViewModel))
+#3 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\Mvc\View\Http\DefaultRenderingStrategy.php(103): Zend\View\View->render(Object(Zend\View\Model\ViewModel))
+#4 [internal function]: Zend\Mvc\View\Http\DefaultRenderingStrategy->render(Object(Zend\Mvc\MvcEvent))
+#5 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#6 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('render', Object(Zend\Mvc\MvcEvent), Array)
+#7 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\Mvc\Application.php(353): Zend\EventManager\EventManager->trigger('render', Object(Zend\Mvc\MvcEvent))
+#8 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\Mvc\Application.php(328): Zend\Mvc\Application->completeRequest(Object(Zend\Mvc\MvcEvent))
+#9 D:\www\zend2\public\index.php(17): Zend\Mvc\Application->run()
+#10 {main}
+2017-12-22T16:19:19+07:00 ERR (3): error-exception	127.0.0.1	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36	http://zend2/admin/property-detail/index?id=1&property_id=1	GET	http://zend2/admin/property-detail/index?property_id=1	Statement could not be executed (42000 - 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND group_menu_status = 1
+                    AND menu_parent = 0 ORDER BY menu' at line 3)
+#0 D:\www\zend2\module\Admin\src\Admin\Model\GroupMenuModel.php(41): Zend\Db\Adapter\Driver\Pdo\Statement->execute()
+#1 D:\www\zend2\module\Admin\src\Admin\Model\GroupMenuModel.php(23): Admin\Model\GroupMenuModel->getGroupMenuList(NULL, 0, -1, Array)
+#2 D:\www\zend2\module\Admin\src\Admin\Controller\MasterController.php(79): Admin\Model\GroupMenuModel->getGroupMenu(NULL)
+#3 [internal function]: Admin\Controller\MasterController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#4 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#5 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#6 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\Mvc\Controller\AbstractController.php(118): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#7 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\Mvc\DispatchListener.php(93): Zend\Mvc\Controller\AbstractController->dispatch(Object(Zend\Http\PhpEnvironment\Request), Object(Zend\Http\PhpEnvironment\Response))
+#8 [internal function]: Zend\Mvc\DispatchListener->onDispatch(Object(Zend\Mvc\MvcEvent))
+#9 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#10 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#11 D:\www\zend2\vendor\zendframework\zendframework\library\Zend\Mvc\Application.php(314): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#12 D:\www\zend2\public\index.php(17): Zend\Mvc\Application->run()
+#13 {main}

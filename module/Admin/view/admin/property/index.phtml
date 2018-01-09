@@ -1,0 +1,24 @@
+<?php
+$columnName = [
+    'Thuộc tính',
+    'Loại',
+    'Chi tiết',
+    'Trạng thái',
+];
+
+foreach ($data['records'] as $record) {
+
+    $columnData[$record['property_id']] = [
+        '<a href="' . $this->url('admin/default', array('controller' => $module, 'action' => 'edit'), array('query' => array('id' => $record['property_id']))) . '"><strong>' . $this->escapeHtml($record['property_name']) . '</strong>' . '</a>',
+        $data['type'][$record['property_type']],
+        '<a href="' . $this->url('admin/default', array('controller' => 'property-detail', 'action' => 'index'), array('query' => array('property_id' => $record['property_id']))) . '"><button type="button" class="btn btn-default btn-xs"><span class="fa fa-joomla" aria-hidden="true"></span> Chi tiết
+</button></a>',
+        $data['status'][$record['property_status']],
+    ];
+}
+?>
+
+<table class="table table-striped jambo_table bulk_action">
+    <?php echo $this->partial('admin/partial/table_column_name', ['columnName' => $columnName]); ?>
+    <?php echo $this->partial('admin/partial/table_column_data', ['columnData' => $columnData, 'module' => $module]); ?>
+</table>

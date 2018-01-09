@@ -1,0 +1,47 @@
+<div class="animate form login_form">
+    <section class="login_content">
+
+        <h1>Mật khẩu mới</h1>
+
+        <?php echo $this->message([
+            'msgError'      => $msgError,
+            'msgInfo'       => $msgInfo,
+            'msgInfoLine'   => $msgInfoLine,
+            'msgErrorLine'  => $msgErrorLine,
+        ]);?>
+
+        <?php if ($msgErrorLine == '' && $msgInfoLine == ''){?>
+        <?php
+        $form->setAttribute('novalidate', '');
+        $form->prepare();
+        echo $this->form()->openTag($form);
+        ?>
+        <div class="item form-group">
+            <?php echo $this->formElement($form->get('users_password')); ?>
+        </div>
+
+        <div class="item form-group">
+            <?php echo $this->formElement($form->get('users_password_confirm')); ?>
+        </div>
+
+        <div class="item form-group captcha">
+            <?php echo $this->formRow($form->get('Captcha'));?>
+        </div>
+
+        <div>
+            <?php echo $this->formSubmit($form->get('users_submit')); ?>
+            <?php echo $this->formHidden($form->get('csrf')); ?>
+        </div>
+
+        <div class="clearfix"></div>
+        <?php echo $this->form()->closeTag(); ?>
+        <?php } else {?>
+        <div>
+            <a class="reset_pass" href="<?php echo $this->url('admin/default', array('controller' => 'login', 'action' => 'index'));?>">Đăng nhập</a>
+        </div>
+        <?php }?>
+    </section>
+</div>
+
+
+

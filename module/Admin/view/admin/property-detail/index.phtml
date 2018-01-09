@@ -1,0 +1,127 @@
+<?php echo $this->partial('admin/partial/form_title', ['moduleName' => $moduleName]); ?>
+
+<div class="x_panel">
+    <div class="x_title">
+        <h2>
+            <a href="<?php echo $this->url('admin/default', ['controller' => 'property', 'action' => 'index']); ?>">
+                <button type="button" class="btn btn-default">Quay lại Danh sách Thuộc tính</button>
+            </a>
+            <a href="<?php echo $this->url('admin/default', ['controller' => 'property', 'action' => 'edit'], ['query' => ['id' => $data['property']['property_id']]]); ?>">
+                <button type="button" class="btn btn-info">Cập nhật <?php echo $data['property']['property_name']; ?></button>
+            </a>
+        </h2>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="x_content">
+
+        <?php echo $this->message([
+            'msgError' => $msgError,
+            'msgInfo' => $msgInfo,
+            'msgInfoLine' => $msgInfoLine,
+            'msgErrorLine' => $msgErrorLine,
+        ]); ?>
+
+        <?php if ($data['id'] == null) {
+            $action = 'add';
+        } else {
+            $action = 'edit';
+        }
+        ?>
+
+        <div class="table-responsive">
+            <form
+                action="<?php echo $this->url('admin/default', ['controller' => $module, 'action' => $action]); ?>"
+                class="form-horizontal form-label-left" novalidate="novalidate" method="post">
+                <table class="table table-striped jambo_table bulk_action">
+                    <thead>
+                    <tr class="headings">
+                        <th>Name</th>
+                        <th>Value</th>
+                        <th>Default</th>
+                        <th>Chức năng</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+
+                    <?php if ($data['id'] != null) { ?>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td class="text-left">
+                                <a href="<?php echo $this->url('admin/default', ['controller' => $module, 'action' => 'index'], ['query' => ['property_id' => $_GET['property_id']]]); ?>">
+                                    <button type="button" class="btn btn-primary">Thêm mới</button>
+                                </a>
+                            </td>
+                        </tr>
+                    <?php } ?>
+
+                    <?php if ($data['id'] == null) { ?>
+                        <tr class="even pointer">
+                            <td class="col-md-4 item form-group">
+                                <input type="text" class="form-control" required="required" name="property_detail_name"/></td>
+                            <td class="col-md-5 item form-group">
+                                <input type="text" class="form-control" required="required" name="property_detail_value"/></td>
+                            <td class="col-md-1 item form-group">
+                                <input type="checkbox" name="property_detail_default" value="1"/></td>
+                            <td class="col-md-2 text-left">
+                                <input type="hidden" name="property_id" id="property_id"
+                                       value="<?php echo $_GET['property_id']; ?>"/>
+                                <button type="submit" class="btn btn-success">Thêm</button>
+                            </td>
+                        </tr>
+                    <?php } ?>
+
+                    <?php foreach ($data['propertyDetail'] as $record) { ?>
+
+                        <?php if ($data['id'] == $record['property_detail_id']) { ?>
+                            <tr class="even pointer">
+                                <td class="col-md-4 item form-group">
+                                    <input type="text" class="form-control" name="property_detail_name" value="<?php echo $data['record']['property_detail_name']; ?>" required="required"/>
+                                </td>
+                                <td class="col-md-5 item form-group">
+                                    <input type="text" class="form-control" name="property_detail_value" id="navigation_name" value="<?php echo $data['record']['property_detail_value']; ?>"required="required"/></td>
+                                <td class="col-md-1 item form-group">
+                                    <input type="checkbox" <?php echo ($data['record']['property_detail_default'] == 1) ? 'checked="checked"' : '' ;?> name="property_detail_default" value="1"/></td>
+                                <td class="col-md-2 text-left">
+                                    <input type="hidden" name="property_id" id="property_id"
+                                           value="<?php echo $data['record']['property_id']; ?>"/>
+                                    <input type="hidden" name="id" value="<?php echo $data['record']['property_detail_id']; ?>"/>
+                                    <button type="submit" class="btn btn-success">Cập nhật</button>
+                                    <a data-toggle="tooltip" data-original-title="Xóa" data-placement="top"
+                                       href="javascript:void(0)" onclick="showConfirm('deleteItem', this)"
+                                       data-href="<?php echo $this->url('admin/default', array('controller' => $module, 'action' => 'delete'), array('query' => array('id' => $data['record']['property_detail_id'], 'property_id' => $data['record']['property_id']))); ?>">
+                                        <button type="button" class="btn btn-default">Xóa</button>
+                                    </a>
+                                </td>
+                            </tr>
+
+                        <?php } else { ?>
+
+                            <tr>
+                                <td class="col-md-4"><?php echo $record['property_detail_name']; ?></td>
+                                <td class="col-md-5"><?php echo $record['property_detail_value'] ?></td>
+                                <td class="col-md-1"><?php echo ($record['property_detail_default'] == 1) ? '<i class="fa fa-circle"></i>' : '<i class="fa fa-circle-o"></i>' ;?></td>
+                                <td class="col-md-2">
+                                    <a data-toggle="tooltip" data-original-title="Cập nhật" data-placement="top"
+                                       href="<?php echo $this->url('admin/default', array('controller' => $module, 'action' => 'index'), array('query' => array('id' => $record['property_detail_id'], 'property_id' => $record['property_id']))); ?>">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a data-toggle="tooltip" data-original-title="Xóa" data-placement="top"
+                                       href="javascript:void(0)" onclick="showConfirm('deleteItem', this)"
+                                       data-href="<?php echo $this->url('admin/default', array('controller' => $module, 'action' => 'delete'), array('query' => array('id' => $record['property_detail_id'], 'property_id' => $record['property_id']))); ?>">
+                                        <i class="fa fa-remove"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        <?php } ?>
+
+                    <?php } ?>
+
+                    </tbody>
+                </table>
+            </form>
+        </div>
+
+    </div>
+</div>

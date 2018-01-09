@@ -1,0 +1,5 @@
+<?php
+echo $this->formViewElement()->input($form->get('template_name'));
+echo $this->formViewElement()->picture($form->get('template_picture'), $module, $record, 'pictures/templates/', 'template_id');
+echo $this->formViewElement()->input($form->get('template_status'));
+?>

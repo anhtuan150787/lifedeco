@@ -1,0 +1,43 @@
+<?php echo $this->partial('admin/partial/form_title', ['moduleName' => $moduleName]); ?>
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+
+            <?php echo $this->partial('admin/partial/form_action_title', ['actionName' => $actionName]); ?>
+
+            <div class="x_content">
+
+                <?php echo $this->message([
+                    'msgError' => $msgError,
+                    'msgInfo' => $msgInfo,
+                    'msgInfoLine' => $msgInfoLine,
+                    'msgErrorLine' => $msgErrorLine,
+                ]); ?>
+
+                <br/>
+
+                <form method="POST" name="post" action="" class="form-horizontal form-label-left" id="frm">
+                    <?php
+                    echo $this->formViewElement()->text('Họ tên', $this->escapeHtml($data['record']['contact_fullname']));
+                    echo $this->formViewElement()->text('Email', $this->escapeHtml($data['record']['contact_email']));
+                    echo $this->formViewElement()->text('Điện thoại', $this->escapeHtml($data['record']['contact_phone']));
+                    echo $this->formViewElement()->text('Ngày', $data['record']['contact_date']);
+                    echo $this->formViewElement()->text('Nội dung', $this->escapeHtml($data['record']['contact_content']));
+                    ?>
+                    <div class="ln_solid clear"></div>
+                    <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                            <input type="button"
+                                   onclick="location.href='<?php echo $this->url('admin/default', ['controller' => $module, 'action' => 'index']); ?>'"
+                                   name="back" id="back" class="btn btn-default" value="Quay về">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

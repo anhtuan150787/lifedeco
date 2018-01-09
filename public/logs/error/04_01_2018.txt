@@ -1,0 +1,23 @@
+2018-01-04T13:38:16+07:00 ERR (3): error-exception	127.0.0.1	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36	http://lifedeco/admin/contact/index	GET	http://lifedeco/admin/contact/delete?id=10	Service "response" has been requested to plugin manager of type "Zend\Mvc\Controller\PluginManager", but couldn't be retrieved.
+A previous exception of type "Zend\ServiceManager\Exception\ServiceNotFoundException" has been raised in the process.
+By the way, a service with the name "response" has been found in the parent service locator "Zend\ServiceManager\ServiceManager": did you forget to use $parentLocator = $serviceLocator->getServiceLocator() in your factory code?
+#0 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\ServiceManager\AbstractPluginManager.php(312): Zend\ServiceManager\Exception\ServiceLocatorUsageException::fromInvalidPluginManagerRequestedServiceName(Object(Zend\Mvc\Controller\PluginManager), Object(Zend\ServiceManager\ServiceManager), 'response', Object(Zend\ServiceManager\Exception\ServiceNotFoundException))
+#1 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\ServiceManager\AbstractPluginManager.php(118): Zend\ServiceManager\AbstractPluginManager->tryThrowingServiceLocatorUsageException('response', false, Object(Zend\ServiceManager\Exception\ServiceNotFoundException))
+#2 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\Mvc\Controller\PluginManager.php(84): Zend\ServiceManager\AbstractPluginManager->get('response', NULL, true)
+#3 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\Mvc\Controller\AbstractController.php(292): Zend\Mvc\Controller\PluginManager->get('response', NULL)
+#4 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\Mvc\Controller\AbstractController.php(307): Zend\Mvc\Controller\AbstractController->plugin('response')
+#5 D:\www\lifedeco\module\Admin\src\Admin\Controller\ContactController.php(84): Zend\Mvc\Controller\AbstractController->__call('response', Array)
+#6 D:\www\lifedeco\module\Admin\src\Admin\Controller\ContactController.php(84): Admin\Controller\ContactController->response()
+#7 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\Mvc\Controller\AbstractActionController.php(82): Admin\Controller\ContactController->deleteAction()
+#8 D:\www\lifedeco\module\Admin\src\Admin\Controller\MasterController.php(88): Zend\Mvc\Controller\AbstractActionController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#9 [internal function]: Admin\Controller\MasterController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#10 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#11 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#12 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\Mvc\Controller\AbstractController.php(118): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#13 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\Mvc\DispatchListener.php(93): Zend\Mvc\Controller\AbstractController->dispatch(Object(Zend\Http\PhpEnvironment\Request), Object(Zend\Http\PhpEnvironment\Response))
+#14 [internal function]: Zend\Mvc\DispatchListener->onDispatch(Object(Zend\Mvc\MvcEvent))
+#15 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#16 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#17 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\Mvc\Application.php(314): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#18 D:\www\lifedeco\public\index.php(17): Zend\Mvc\Application->run()
+#19 {main}

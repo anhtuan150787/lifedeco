@@ -1,0 +1,29 @@
+<?php
+$columnName = [
+    'Tên',
+    'Email',
+    'NGày',
+
+];
+
+foreach ($data['records'] as $record) {
+
+    $columnData[$record['contact_id']] = [
+        '<a href="' . $this->url('admin/default', array('controller' => $module, 'action' => 'edit'), array('query' => array('id' => $record['contact_id']))) . '"><strong>' . $this->escapeHtml($record['contact_fullname']) . '</strong>' . '</a>',
+        $this->escapeHtml($record['contact_email']),
+        $this->date()->dateTimeFormat($record['contact_date']),
+    ];
+}
+?>
+
+<table class="table table-striped jambo_table bulk_action">
+    <?php echo $this->partial('admin/partial/table_column_name', ['columnName' => $columnName]); ?>
+    <?php echo $this->partial('admin/partial/table_column_data', ['columnData' => $columnData, 'module' => $module]); ?>
+</table>
+
+<script>
+    $(function(){
+        $(".x_title").find('ul > li:eq(2)').hide();
+        $('.btn-edit').html('<i class="fa fa-pencil"></i> Chi tiết ');
+    });
+</script>

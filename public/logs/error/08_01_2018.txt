@@ -1,0 +1,16 @@
+2018-01-08T15:49:28+07:00 ERR (3): error-exception	127.0.0.1	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36		GET	http://lifedeco/public/admin/	Statement could not be executed (42000 - 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND group_menu_status = 1
+                    AND menu_parent = 0 ORDER BY menu' at line 3)
+#0 D:\www\lifedeco\module\Admin\src\Admin\Model\GroupMenuModel.php(41): Zend\Db\Adapter\Driver\Pdo\Statement->execute()
+#1 D:\www\lifedeco\module\Admin\src\Admin\Model\GroupMenuModel.php(23): Admin\Model\GroupMenuModel->getGroupMenuList(NULL, 0, -1, Array)
+#2 D:\www\lifedeco\module\Admin\src\Admin\Controller\MasterController.php(79): Admin\Model\GroupMenuModel->getGroupMenu(NULL)
+#3 [internal function]: Admin\Controller\MasterController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#4 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#5 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#6 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\Mvc\Controller\AbstractController.php(118): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#7 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\Mvc\DispatchListener.php(93): Zend\Mvc\Controller\AbstractController->dispatch(Object(Zend\Http\PhpEnvironment\Request), Object(Zend\Http\PhpEnvironment\Response))
+#8 [internal function]: Zend\Mvc\DispatchListener->onDispatch(Object(Zend\Mvc\MvcEvent))
+#9 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#10 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#11 D:\www\lifedeco\vendor\zendframework\zendframework\library\Zend\Mvc\Application.php(314): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#12 D:\www\lifedeco\public\index.php(17): Zend\Mvc\Application->run()
+#13 {main}
