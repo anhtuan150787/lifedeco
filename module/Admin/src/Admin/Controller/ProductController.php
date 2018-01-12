@@ -134,15 +134,6 @@ class ProductController extends MasterController
 
         $this->setFormSelectOptions($id);
 
-        $productCategoryDetailModel = $this->getServiceLocator()->get('ModelGateway')->getModel('ProductCategoryDetailModel');
-        $productCategoryDetail = $productCategoryDetailModel->fetchWhere('product_id = ' . $id);
-        $optionsProductCategoryDetail = [];
-        foreach ($productCategoryDetail as $k => $v) {
-            $optionsProductCategoryDetail = array_merge($optionsProductCategoryDetail, [$v['product_category_id']]);
-        }
-        $this->form->get('product_category_id')->setValue($optionsProductCategoryDetail);
-
-
         $productPictureModel = $this->getServiceLocator()->get('ModelGateway')->getModel('ProductPictureModel');
         $productPictures = $productPictureModel->fetchWhere('product_id = ' . $id);
         $record['productPictures'] = $productPictures;
@@ -184,24 +175,9 @@ class ProductController extends MasterController
 //        $dataSave['product_price']     = str_replace('.', '', $paramPosts['product_price']);
         $dataSave['product_body']      = $paramPosts['product_body'];
         $dataSave['product_status']    = $paramPosts['product_status'];
+        $dataSave['product_category_id']     = $paramPosts['product_category_id'];
 
         $idLastInsert = $this->model->savePrimary($dataSave, $id);
-
-        /*
-         * Insert category product
-         */
-        $productCategoryDetailModel = $this->getServiceLocator()->get('ModelGateway')->getModel('ProductCategoryDetailModel');
-
-        if (!empty($paramPosts['product_category_id'])) {
-
-            if ($id != null) {
-                $productCategoryDetailModel->deleteWhere(['product_id' => $id]);
-            }
-
-            foreach ($paramPosts['product_category_id'] as $v) {
-                $productCategoryDetailModel->savePrimary(['product_id' => $idLastInsert, 'product_category_id' => $v]);
-            }
-        }
 
         /*
         * Insert picture slide product
@@ -258,6 +234,7 @@ class ProductController extends MasterController
         $productCategoryModel = $this->getServiceLocator()->get('ModelGateway')->getModel('ProductCategoryModel');
         $productCategories = $productCategoryModel->getProductCategories();
 
+        $optionsProductCategory = ['' => '--- Chọn Danh mục ---'];
         foreach ($productCategories as $k => $v) {
             $optionsProductCategory[$v['product_category_id']] = str_repeat('__', $v['product_category_level']) . ' ' . $v['product_category_name'];
         }

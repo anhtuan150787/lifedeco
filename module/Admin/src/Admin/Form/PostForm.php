@@ -61,9 +61,9 @@ class PostForm extends Form
 
         $this->add([
             'name' => 'post_category_id',
-            'type' => 'Zend\Form\Element\MultiCheckbox',
+            'type' => 'Zend\Form\Element\Select',
             'attributes' => [
-                //'class' => 'form-control',
+                'class' => 'form-control',
             ],
             'options' => [
                 'label' => 'Danh mục',

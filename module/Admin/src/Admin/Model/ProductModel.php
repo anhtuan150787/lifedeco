@@ -32,13 +32,12 @@ class ProductModel extends MasterModel implements InputFilterAwareInterface
         /*
          * Select
          */
-        $select = 'SELECT ' . $this->tableView . '.product_id, product_name, product_picture, product_view, product_date_updated, product_users_updated, product_status, users_fullname,
-                  (SELECT GROUP_CONCAT(product_category_name) FROM product_category_detail LEFT JOIN product_category ON product_category.product_category_id=product_category_detail.product_category_id WHERE product_id = ' . $this->tableView . '.product_id) AS product_category_names';
+        $select = 'SELECT ' . $this->tableView . '.product_id, product_name, product_picture, product_view, product_date_updated, product_users_updated, product_status, users_fullname, product_category.product_category_name as product_category_name';
 
         /*
          * From
          */
-        $from = ' FROM ' . $this->tableView;
+        $from = ' FROM ' . $this->tableView . ' LEFT JOIN product_category ON product_category.product_category_id=' . $this->tableView . '.product_category_id ';
 
         /*
          * Where
@@ -50,10 +49,7 @@ class ProductModel extends MasterModel implements InputFilterAwareInterface
         }
 
         if (isset($search['product_category_search'])) {
-
-            $from .= ' LEFT JOIN product_category_detail ON product_category_detail.product_id=' . $this->tableView . '.product_id';
-
-            $where .= ' AND product_category_detail.product_category_id=' . $search['product_category_search'];
+            $where .= ' AND product_category.product_category_id=' . $search['product_category_search'];
         }
 
         /*

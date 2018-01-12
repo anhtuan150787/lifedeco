@@ -92,6 +92,26 @@ class ProductCategoryModel extends MasterModel implements InputFilterAwareInterf
                 ],
             ]);
 
+            $inputFilter->add([
+                'name' => 'product_category_picture',
+                'required' => false,
+                'allow_empty' => true,
+                'validators' => [
+                    [
+                        'name' => 'Zend\Validator\File\Size',
+                        'options' => [
+                            'max' => '1MB'
+                        ],
+                    ],
+                    [
+                        'name' => 'Zend\Validator\File\Extension',
+                        'options' => [
+                            'extension' => 'png,jpg,gif,jpeg',
+                        ],
+                    ],
+                ],
+            ]);
+
             $this->inputFilter = $inputFilter;
         }
 

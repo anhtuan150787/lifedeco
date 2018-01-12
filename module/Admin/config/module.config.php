@@ -59,6 +59,13 @@ return array(
         ),
     ),
 
+    'view_helpers' => [
+        'invokables' => [
+            'message' => '\Admin\View\Helper\Message',
+            'formViewElement' => '\Admin\View\Helper\FormElement',
+        ],
+    ],
+
     'view_manager' => array(
         'template_map' => array(
             'layout/admin' => __DIR__ . '/../view/layout/layout.phtml',

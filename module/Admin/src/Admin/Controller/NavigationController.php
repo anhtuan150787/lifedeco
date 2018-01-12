@@ -26,6 +26,8 @@ class NavigationController extends MasterController
             2 => 'Bài viết',
             3 => 'Danh mục bài viết',
             4 => 'Liên kết ngoài',
+            5 => 'Danh mục dự án',
+            6 => 'Dự án',
         ];
     }
 
@@ -52,7 +54,15 @@ class NavigationController extends MasterController
         $page = $postModel->fetchWhere(' post_type = 2 ');
 
         //Post
-        $post = $postModel->fetchWhere(' post_type = 1', 5);
+        $post = $postModel->fetchWhere(' post_type = 1');
+
+        //Product category
+        $productCategoryModel = $this->getServiceLocator()->get('ModelGateway')->getModel('ProductCategoryModel');
+        $productCategory = $productCategoryModel->getProductCategories();
+
+        //Product
+        $productModel = $this->getServiceLocator()->get('ModelGateway')->getModel('ProductModel');
+        $product = $productModel->fetchAll();
 
         if ($id != null) {
             $record = $this->model->fetchPrimary($id);
@@ -67,6 +77,9 @@ class NavigationController extends MasterController
         $this->data['navigationTypes']  = $this->navigationTypes;
         $this->data['id']               = $id;
         $this->data['groupNavigation']  = $groupNavigation;
+        $this->data['productCategory']  = $productCategory;
+        $this->data['product']          = $product;
+        $this->data['status']           = $this->status;
 
         $this->viewName = 'admin/' . $this->module . '/index.phtml';
         $this->viewTemplate = 'partial/view_simple.phtml';
@@ -104,17 +117,52 @@ class NavigationController extends MasterController
 
     public function save($id = null)
     {
+        $url = $this->getServiceLocator()->get('viewhelpermanager')->get('url');
+        $functions = new \Application\View\Helper\Functions();
         $paramPosts = $this->params()->fromPost();
 
         $dataSave = [];
         $dataSave['navigation_name']        = $paramPosts['navigation_name'];
         $dataSave['navigation_url_id']      = $paramPosts['navigation_url_id'];
-        $dataSave['navigation_url_name']    = $paramPosts['navigation_url_name'];
+
+        $routeName = '';
+        switch($paramPosts['navigation_type']) {
+            case 1:
+               $routeName = 'home-page';
+                break;
+
+            case 2:
+                $routeName = 'home-news-detail';
+                break;
+
+            case 3:
+                $routeName = 'home-news-category';
+                break;
+
+            case 5:
+                $routeName = 'home-product-category';
+                break;
+
+            case 6:
+                $routeName = 'home-product-detail';
+                break;
+
+            default;
+                break;
+        }
+
+        if ($routeName != '') {
+            $navigationName = $url($routeName, array('name' => $functions->formatTitle($paramPosts['navigation_url_name']), 'id' => $paramPosts['navigation_url_id']));
+        } else {
+            $navigationName = $paramPosts['navigation_url_name'];
+        }
+
+        $dataSave['navigation_url_name']    = $navigationName;
         $dataSave['navigation_position']    = $paramPosts['navigation_position'];
         $dataSave['navigation_parent']      = $paramPosts['navigation_parent'];
         $dataSave['navigation_type']        = $paramPosts['navigation_type'];
         $dataSave['group_navigation_id']    = $paramPosts['group_navigation_id'];
-        $dataSave['navigation_status']      = 1;
+        $dataSave['navigation_status']      = $paramPosts['navigation_status'];;
 
         $this->model->savePrimary($dataSave, $id);
     }

@@ -32,13 +32,12 @@ class PostModel extends MasterModel implements InputFilterAwareInterface
         /*
          * Select
          */
-        $select = 'SELECT ' . $this->tableView . '.post_id, post_title, post_picture, post_type, post_view, post_date_updated, post_users_updated, post_status, users_fullname,
-                  (SELECT GROUP_CONCAT(post_category_name) FROM post_category_detail LEFT JOIN post_category ON post_category.post_category_id=post_category_detail.post_category_id WHERE post_id = ' . $this->tableView . '.post_id) AS post_category_names';
+        $select = 'SELECT ' . $this->tableView . '.post_id, post_title, post_picture, post_type, post_view, post_date_updated, post_users_updated, post_status, users_fullname, post_category.post_category_name as post_category_name';
 
         /*
          * From
          */
-        $from = ' FROM ' . $this->tableView;
+        $from = ' FROM ' . $this->tableView . ' LEFT JOIN post_category ON post_category.post_category_id=' . $this->tableView . '.post_category_id';
 
         /*
          * Where
@@ -61,10 +60,7 @@ class PostModel extends MasterModel implements InputFilterAwareInterface
         }
 
         if (isset($search['post_category_search'])) {
-
-            $from .= ' LEFT JOIN post_category_detail ON post_category_detail.post_id=' . $this->tableView . '.post_id';
-
-            $where .= ' AND post_category_detail.post_category_id=' . $search['post_category_search'];
+            $where .= ' AND post_category.post_category_id=' . $search['post_category_search'];
         }
 
         /*

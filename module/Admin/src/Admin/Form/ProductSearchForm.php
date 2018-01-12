@@ -17,7 +17,7 @@ class ProductSearchForm extends Form
                 'class' => 'form-control',
             ],
             'options' => [
-                'label' => 'Tên sản phẩm',
+                'label' => 'Tên dự án',
             ],
         ]);
 

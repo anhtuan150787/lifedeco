@@ -179,24 +179,11 @@ class PostController extends MasterController
         $dataSave['post_quote']     = $paramPosts['post_quote'];
         $dataSave['post_body']      = $paramPosts['post_body'];
         $dataSave['post_status']    = $paramPosts['post_status'];
+        $dataSave['post_category_id']    = $paramPosts['post_category_id'];
         $dataSave['post_type']      = 1;
         $dataSave['post_tag']       = $paramPosts['post_tag'];
 
         $idLastInsert = $this->model->savePrimary($dataSave, $id);
-
-        $postCategoryDetailModel = $this->getServiceLocator()->get('ModelGateway')->getModel('PostCategoryDetailModel');
-
-        if (!empty($paramPosts['post_category_id'])) {
-
-            if ($id != null) {
-                $postCategoryDetailModel->deleteWhere(['post_id' => $id]);
-            }
-
-            foreach ($paramPosts['post_category_id'] as $v) {
-                $postCategoryDetailModel->savePrimary(['post_id' => $idLastInsert, 'post_category_id' => $v]);
-            }
-        }
-
     }
 
     public function deleteAction()
@@ -228,6 +215,7 @@ class PostController extends MasterController
         $postCategoryModel = $this->getServiceLocator()->get('ModelGateway')->getModel('PostCategoryModel');
         $postCategories = $postCategoryModel->getPostCategories();
 
+        $optionsPostCategory = ['' => '--- Chọn Danh mục ---'];
         foreach ($postCategories as $k => $v) {
             $optionsPostCategory[$v['post_category_id']] = str_repeat('__', $v['post_category_level']) . ' ' . $v['post_category_name'];
         }

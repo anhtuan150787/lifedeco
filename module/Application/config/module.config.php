@@ -80,10 +80,9 @@ return array(
 
     'view_helpers' => [
         'invokables' => [
-            'message' => '\Admin\View\Helper\Message',
-            'formViewElement' => '\Admin\View\Helper\FormElement',
-            'date' => '\Admin\View\Helper\Date',
-            'currency' => '\Admin\View\Helper\Currency',
+            'date' => '\Application\View\Helper\Date',
+            'currency' => '\Application\View\Helper\Currency',
+            'function' => '\Application\View\Helper\Functions',
         ],
     ],
 

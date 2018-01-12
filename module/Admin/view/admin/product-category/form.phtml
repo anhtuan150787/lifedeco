@@ -2,5 +2,6 @@
 echo $this->formViewElement()->input($form->get('product_category_name'));
 echo $this->formViewElement()->input($form->get('product_category_parent'));
 //echo $this->formViewElement()->input($form->get('group_property_id'));
+echo $this->formViewElement()->picture($form->get('product_category_picture'), $module, $record, 'pictures/product_categories/', 'product_category_id');
 echo $this->formViewElement()->input($form->get('product_category_status'));
 ?>

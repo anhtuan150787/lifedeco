@@ -51,6 +51,19 @@ class ProductCategoryForm extends Form
 //        ]);
 
         $this->add([
+            'name' => 'product_category_picture',
+            'type' => 'file',
+            'attributes' => [
+                'class' => 'form-control',
+                'onchange' => 'readURL(this);',
+            ],
+            'options' => [
+                'label' => 'Hình',
+                'label_attributes' => ['class' => 'control-label col-md-3 col-sm-3 col-xs-12'],
+            ],
+        ]);
+
+        $this->add([
             'name' => 'product_category_status',
             'type' => 'Zend\Form\Element\Select',
             'attributes' => [

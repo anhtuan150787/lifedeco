@@ -10,6 +10,7 @@
 namespace Services;
 
 use Admin\Model\ModelGateway;
+use Frontend\Model\ModelGateway as FrontendModelGateway;
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
 
@@ -44,7 +45,10 @@ class Module
             'factories' => array(
                 'ModelGateway' => function($sm) {
                     return new ModelGateway($sm);
-                }
+                },
+                'FrontendModelGateway' => function($sm) {
+                    return new FrontendModelGateway($sm);
+                },
             ),
         );
     }

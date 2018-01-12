@@ -21,6 +21,16 @@ class MasterController extends AbstractActionController
          */
         $this->layout('layout/frontend');
 
+
+        $navigationModel = $e->getApplication()->getServiceManager()->get('FrontendModelGateway')->getModel('NavigationModel');
+        $navigations = $navigationModel->getNavigations(5);
+
+        /*
+        * View layout
+        */
+        $viewModel = $e->getApplication()->getMvcEvent()->getViewModel();
+        $viewModel->navigations = $navigations;
+
         return parent::onDispatch($e);
     }
 

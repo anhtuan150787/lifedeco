@@ -50,9 +50,9 @@ class ProductForm extends Form
 
         $this->add([
             'name' => 'product_category_id',
-            'type' => 'Zend\Form\Element\MultiCheckbox',
+            'type' => 'Zend\Form\Element\Select',
             'attributes' => [
-                'class' => 'product-category-id',
+                'class' => 'form-control',
             ],
             'options' => [
                 'label' => 'Danh mục',

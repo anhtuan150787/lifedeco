@@ -21,6 +21,8 @@ class ProductCategoryController extends MasterController
         $this->modelName    = 'ProductCategoryModel';
         $this->formName     = '\Admin\Form\ProductCategoryForm';
         $this->status       = ['1' => 'Kích hoạt', '0' => 'Tạm dừng'];
+        $this->uploadPath   = 'public/pictures/product_categories';
+        $this->imgPrefix    = 'product_category_';
     }
 
     public function indexAction()
@@ -95,6 +97,9 @@ class ProductCategoryController extends MasterController
         $this->form->get('frmSubmit')->setAttributes(array('value' => $this->actionName));
         $this->form->setData($record);
 
+        $this->data['id'] = $id;
+        $this->data['record'] = $record;
+
         $this->viewName = 'admin/' . $this->module . '/form.phtml';
         $this->viewTemplate = 'partial/form_normal.phtml';
 
@@ -106,6 +111,12 @@ class ProductCategoryController extends MasterController
         $paramPosts = $this->params()->fromPost();
 
         $dataSave = [];
+
+        $pictureUploadName = $this->uploadImage($this->params()->fromFiles('product_category_picture'), 'product_category_picture', $id);
+        if ($pictureUploadName != '') {
+            $dataSave['product_category_picture'] = $pictureUploadName;
+        }
+
         $dataSave['product_category_name']      = $paramPosts['product_category_name'];
         $dataSave['product_category_parent']    = $paramPosts['product_category_parent'];
         $dataSave['product_category_status']    = $paramPosts['product_category_status'];
@@ -134,6 +145,8 @@ class ProductCategoryController extends MasterController
 
         if (is_array($id)) {
             foreach($id as $k => $v) {
+                $record = $this->model->fetchPrimary($v);
+                unlink($this->uploadPath . '/' . $record['product_category_picture']);
                 $this->model->deletePrimary($v);
             }
         }

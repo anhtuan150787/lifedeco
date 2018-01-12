@@ -1,11 +1,17 @@
 <?php
 $columnName = [
+    'Hình',
     'Danh mục',
     'Trạng thái',
 ];
 
 foreach ($data['records'] as $record) {
+    $picture = ($record['product_category_picture'] == '')
+        ? '<img class="img-rounded post-img" src="' . $this->basePath('admin/images/no-picture-person.png') . '" />'
+        : '<img class="img-rounded post-img" src="' . $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/product_categories/' . $record['product_category_picture']) .'&w=25px&h=25px">';
+
     $columnData[$record['product_category_id']] = [
+        $picture,
         '<a href="' . $this->url('admin/default', array('controller' => $module, 'action' => 'edit'), array('query' => array('id' => $record['product_category_id']))) . '">' . str_repeat('__', $record['product_category_level']) . ' <strong>' . $record['product_category_name'] . '</strong>' . '</a>',
         $data['status'][$record['product_category_status']],
     ];

@@ -16,8 +16,18 @@ class IndexController extends MasterController
 {
     public function indexAction()
     {
+        $view = new ViewModel();
 
-        return new ViewModel();
+        $productCategoryModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('ProductCategoryModel');
+        $productCategories = $productCategoryModel->fetchWhere('product_category_status = 1 AND product_category_picture !=""', 5);
+
+        $productModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('ProductModel');
+        $products = $productModel->fetchWhere('product_status = 1', 3);
+
+        $view->productCategories = $productCategories;
+        $view->products = $products;
+
+        return $view;
     }
 
 }

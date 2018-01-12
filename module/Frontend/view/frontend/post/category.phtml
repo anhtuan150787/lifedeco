@@ -1,0 +1,70 @@
+<!-- subheader -->
+<section id="subheader" data-speed="8" data-type="background" style="background-position: 50% -25px; background: url('<?php echo $this->basePath('public/frontend/images/subheader-2.jpg');?>')">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1><?php echo $this->escapeHtml($postCategory['post_category_name']);?></h1>
+                <?php echo $crum;?>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- subheader close -->
+
+<div id="content" class="no-top">
+
+    <?php $t = 1;
+    foreach ($posts as $v) { ?>
+        <?php if (($t % 2) == 0) { ?>
+            <!-- section service begin -->
+            <section id="section-service-1" class="side-bg no-padding">
+                <div class="image-container col-md-5 pull-left" data-delay="0">
+                    <div class="background-image" style="background: url('<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/posts/' . $v['post_picture']) . '&w=800&h=800';?>')"></div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="inner-padding">
+                            <div class="col-md-6 col-md-offset-6 wow fadeInRight" data-wow-delay=".5s">
+                                <h3 class="id-color"><?php echo $this->escapeHtml($v['post_title']);?></h3>
+                                <?php echo $v['post_quote'];?>
+                                <div class="spacer-single"></div>
+                                <a href="<?php echo $this->url('home-news-detail', array('name' => $this->function()->formatTitle($v['post_title']), 'id' => $v['post_id']));?>" class="btn-line">Xem tiếp</a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section service close -->
+
+        <?php } else { ?>
+
+            <!-- section service begin -->
+            <section id="section-service-2" class="side-bg no-padding">
+                <div class="image-container col-md-5 col-md-offset-7 pull-right" data-delay="0">
+                    <div class="background-image" style="background: url('<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/posts/' . $v['post_picture']) . '&w=800&h=800';?>')"></div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="inner-padding">
+                            <div class="col-md-6 wow fadeInLeft" data-wow-delay=".5s">
+                                <h3 class="id-color"><?php echo $this->escapeHtml($v['post_title']);?></h3>
+                                <?php echo $v['post_quote'];?>
+                                <div class="spacer-single"></div>
+                                <a href="<?php echo $this->url('home-news-detail', array('name' => $this->function()->formatTitle($v['post_title']), 'id' => $v['post_id']));?>" class="btn-line">Xem tiếp</a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <?php } ?>
+        <!-- section service close -->
+        <?php $t++;
+    } ?>
+
+    <?php echo $this->paginationControl($posts, 'sliding', 'frontend/partial/paginator', array('url' => $this->url('home-news-category', array('name' => $name, 'id' => $id)))); ?>
+
+</div>
