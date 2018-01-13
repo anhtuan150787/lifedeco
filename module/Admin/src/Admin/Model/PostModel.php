@@ -69,7 +69,7 @@ class PostModel extends MasterModel implements InputFilterAwareInterface
         $start = ($page - 1) * $pageItemPerCount;
         $end = $pageItemPerCount;
         $limit = ' LIMIT ' . $start . ',' . $end;
-        $orderBy = ' ORDER BY ' . $this->tableView . '.post_date_updated DESC, ' . $this->tableView . '.post_id DESC';
+        $orderBy = ' ORDER BY ' . $this->tableView . '.post_id DESC';
 
         $sql = $select . $from . $where . $orderBy . $limit;
 

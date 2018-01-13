@@ -57,9 +57,10 @@ class PostController extends MasterController
         $url = $this->getServiceLocator()->get('viewhelpermanager')->get('url');
         $functions = new \Application\View\Helper\Functions();
         $postCategoryModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('PostCategoryModel');
-        $pageModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('PageModel');
-        $post = $pageModel->fetchPrimary($id);
+        $postModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('PostModel');
+        $post = $postModel->fetchPrimary($id);
         $postCategory = $postCategoryModel->fetchPrimary($post['post_category_id']);
+        $postOther = $postModel->fetchWhere('post_status = 1 AND post_type = 1 AND post_id <>' . $post['post_id']);
         $escaper = new \Zend\Escaper\Escaper('utf-8');
 
         $crum = '<ul class="crumb">
@@ -74,6 +75,7 @@ class PostController extends MasterController
             'post' => $post,
             'crum' => $crum,
             'postCategory' => $postCategory,
+            'postOther' => $postOther,
         ]);
 
         return $view;

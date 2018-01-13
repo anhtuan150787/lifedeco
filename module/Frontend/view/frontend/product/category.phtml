@@ -21,7 +21,7 @@
         <!-- gallery item -->
         <div class="col-md-4 col-sm-6 col-xs-12 item mb30 residential" style="position: absolute; left: 0px; top: 0px;">
             <div class="picframe" style="height: 240px;">
-                <a class="simple-ajax-popup-align-top" href="<?php echo $this->url('home-product-category', array('name' => $this->function()->formatTitle($v['product_name']), 'id' => $v['product_id']));?>">
+                <a href="<?php echo $this->url('home-product-detail', array('name' => $this->function()->formatTitle($v['product_name']), 'id' => $v['product_id']));?>">
                                 <span class="overlay" style="opacity: 0; width: 360px; height: 240px;">
                                     <span class="pf_text" style="margin-top: 87px;">
                                         <span class="project-name"><?php echo $this->escapeHtml($v['product_name']);?></span>

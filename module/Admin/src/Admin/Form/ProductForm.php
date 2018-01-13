@@ -69,7 +69,7 @@ class ProductForm extends Form
                 'onchange' => 'readURL(this);',
             ],
             'options' => [
-                'label' => 'Hình đại diện',
+                'label' => 'Hình đại diện (700x466 pixel)',
                 'label_attributes' => ['class' => 'control-label col-md-3 col-sm-3 col-xs-12'],
             ],
         ]);
@@ -83,7 +83,7 @@ class ProductForm extends Form
                 'multiple' => 'multiple',
             ],
             'options' => [
-                'label' => 'Hình slide',
+                'label' => 'Hình slide (980x380 pixel)',
                 'label_attributes' => ['class' => 'control-label col-md-32 col-sm-2 col-xs-12'],
             ],
         ]);

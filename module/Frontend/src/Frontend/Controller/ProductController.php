@@ -47,4 +47,39 @@ class ProductController extends MasterController
         return $view;
     }
 
+    public function detailAction() {
+        $view = new ViewModel();
+
+        $data   = $this->params()->fromRoute();
+        $productId = $data['id'];
+
+        $url = $this->getServiceLocator()->get('viewhelpermanager')->get('url');
+        $functions = new \Application\View\Helper\Functions();
+        $escaper = new \Zend\Escaper\Escaper('utf-8');
+
+        $productModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('ProductModel');
+        $productPictureModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('ProductPictureModel');
+        $productCategoryModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('ProductCategoryModel');
+
+        $product = $productModel->fetchPrimary($productId);
+        $productPictures = $productPictureModel->fetchWhere('product_id = ' . $product['product_id']);
+        $productCategory = $productCategoryModel->fetchPrimary($product['product_category_id']);
+
+        $crum = '<ul class="crumb">
+                    <li><a href="/">Trang chủ</a></li>
+                    <li class="sep">/</li>
+                    <li><a href="' . $url('home-product-category', array('name' => $functions->formatTitle($productCategory['product_category_name']), 'id' => $productCategory['product_category_id'])) . '">' . $escaper->escapeHtml($productCategory['product_category_name']) . '</a></li>
+                    <li class="sep">/</li>
+                    <li>' . $escaper->escapeHtml($product['product_name']) . '</li>
+                </ul>';
+
+        $view->setVariables([
+            'product' => $product,
+            'productPictures' => $productPictures,
+            'crum' => $crum,
+        ]);
+
+        return $view;
+    }
+
 }
