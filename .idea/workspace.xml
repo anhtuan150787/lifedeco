@@ -2,109 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3666d958-4ab7-4a77-bed1-98fd96f238a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/ContactController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Frontend/view/frontend/product/detail.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Frontend/view/frontend/contact/index.phtml" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\product-4b\product-169d8fdeaa4df98ebf29c96488bd3328.dat" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\product-b5\product-b5aedb72ec7d73b9d0a3fb5a258baa23.dat" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\product-b8\product-202bd2f98989a6564d95a438da4ecfc0.dat" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\product-db\product-22572c7dfccf07d52fbc5a096f3603b0.dat" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\product_picture-3c\product_picture-f3b89db76380b6058899ef8cbd442309.dat" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\product_picture-41\product_picture-15023d597c32e13ccb091bbc7f9cd588.dat" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\product_picture-41\product_picture-e78c98d558b5772f29503d1b027f95de.dat" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\product_picture-f9\product_picture-8d2a06485d9c6de1acf50c743dc7888f.dat" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_00fb7e18d81530b329f116efa8e40248.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_020f3291f098853283fd70b25828c854.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_02356481050ff806979d882c1b5a0925.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_0562c2172bf39ddaf8f74697cda2464a.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_06245bb3e7c549943ad2c1f0455c26e2.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_06b25000f90a60d306ccc0149bc601d3.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_1025c2f0c3a14abe46555f512de746c7.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_110425e95bf39f4fadaba955e191d2e1.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_13c65b5ce952fff00e5fab790fc2f39f.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_161e2c82e0fff154bf358f97fdbab442.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_19361c47800079e0d9eabbbc69db65b0.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_1e2b529306b0444bbd505d3525f2178b.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_1f4719a97f7edd8a250bb90ae95905ec.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_234db0003ffe6d72b989926ffbbe2396.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_2bd1c843e5030594dafd8142c8ae3e54.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_2f9fe0f99b655602efbc7b6e815ef456.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_460976a51b6415d3fbe9120bcbaa7f88.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_477845815a70f4977714006df70a46c5.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_4ee4db83713af1d6a7e1ace8aecd25df.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_52e43f5701bf1fbc913e942c457c3cf2.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_53f823bae63b519642e1f9d6782022a9.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_54f8e7e496ec3cb94fcf0fcc04dd03af.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_57b524945c401059d32bb4922aab46a3.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_59d271ceb10b3adc7f5c6ba403c41c00.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_5a703d67ec3866b723de1e549fc118df.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_5a76aa1470660ff52ced549ddc861e71.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_5eccccdc6dbfbb164b621a9beb6bb2d4.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_5f0b33cda39ba97da791c7b1f58376d6.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_627c8c631b244bd983b3205b3590d2af.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_65ce5e9cdf4ddd6a99f294c7462ccf3c.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_6a7dc15c6b2e3cae0cde1c92cd0b07d9.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_6ba24ec1251356b4f64421f3c29f8b12.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_6f240149d5891d991777d8c2c2431bbc.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_70f28fac153a84e000130e0d7be0c7f2.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_77d206333120d2d61f140922cb5f6339.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_7cdd2c3d1f7780d35e66245ebca8406d.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_871e65b08ef6c8f64dc6eff4cce095e2.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_8876822fbf917682065babc35447baa9.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_8a21dcf4a8cec582b536f5ba702e8909.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_8b286a05a41cb449fb9e4e0a648b666a.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_8c3c8cd2c71ee6b2f3fbe259a8f5b038.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_8cf7316a8ae8d070ed5c7f08f0ce0906.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_9067c35afc36b35e9845491e8e37426b.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_91536cd77a6a78f02e449e484d98d934.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_96c33d5acd2f1c774ae0f42c15901250.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_9e1704d6df8cfb1eea663e5ddee1a43b.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_a1d799c77481ffa72fe1a5e8a3c51de6.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_a1eb082a5e961bc32461352d05e27ece.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_a372145fcab7eb7802fdbe0f32cbeffc.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_a58bb75fb7d36adf85458c1b5dbcc2b7.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_a5b6b5a61f6394448fac53a2c5c2c8d5.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_a6bb743e0e2743dbba486bbb3df9302f.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_a93d2cf5cf202ec95ccff48108feebd2.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_ab84dffdbe259af2fb2809c0c6e1d749.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_ae3de5aaf3fffee8a8ccb1d1a690c4c8.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_af503e16b79f5abcf982a85b72570dc4.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_b601369f1464d93dbd5d9280c7b62c95.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_be61fddad92d81bc53ebd4ca91424ff4.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_c15e4bf0ffbc0c3b8358efedb448a58a.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_c44404f8c44eba4c9d806aabb0ae248b.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_c663ad9a5d3104ab11e90b21f4af4898.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_c817fc9f9e783b191d45aebeee00dd50.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_cda631273341899d0355759b2afa2687.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_d283da15cb41e2cc64f149397d4a3e4c.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_d2d374cb41a62cfb9be4c0344448c934.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_d4759acac2b7159403a6b36ab82d6eda.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_db15cce1deb731f2973ed4bdc1606099.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_dbda2c0cb572fc6d22c254a0cd31e51c.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_df85d99de6971961b439b8ba5117cfe0.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_e2cf4b1143dd61c4c4801ef88eaa9c6a.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_e6238fbbd6a020b7501dfa6cb77c1afa.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_e975ea503231ef6a3cb842f560dcb7d9.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_f274ffd954215886025580260c3cfd44.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_f47bc357156b995b49cd4a4b94e5c654.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_f8ba83e92bc58147ec64a09743a98845.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_f8fec612e19084ab56edcac37d10450f.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_fa56d23aa8b0493cf53be529493ca0f0.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_fd916a719fa02ae1db1aa9af2d9e4fe0.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_fe0fe71a2a1691d5565d099cde685d87.timthumb.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Frontend/src/Frontend/Form/Contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Frontend/src/Frontend/Model/ContactModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Frontend/view/frontend/product/all.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/email-template/contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/email-template/customer_email_template.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Frontend/view/frontend/contact/success.phtml" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\post-01\post-946459c0715b858c815bdca4bb358100.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\post-04\post-a277bd8f29b62f5d5774be67c8a3f608.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\post-09\post-94665b14beeeeb50eee305487ed5c071.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\post-10\post-ae119e4231495b0079ed5a5d651a3a1e.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\post-1a\post-340366dd82d900f38ad0a96c7fa23198.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\post-1e\post-b89c783e5a49db1c1b5b6c658987b9db.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\post-31\post-046a6d69013b8539305a373b2ff3fb8b.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\post-4f\post-67db72f0b7d9a8ccf1806c69829dd2aa.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\post-5d\post-966b33b038e8fd3681112b2fd460cb90.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\post-82\post-8677b82ea66b1bce8ed9bbe62f7ead5a.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\post-b0\post-c0a476e865d1400247605870aab0dba0.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\post-bf\post-da67888b1cfd554e54f7eac6114bc762.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\post-fe\post-d2e00277430aeffd2cb362aa786f3089.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\product-29\product-46a3ecdbc1e95ab24519bfd3c5e66c0b.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\product-41\product-6e6aaed441f55f90ee9382d553756019.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\product-6e\product-84e6ca21f0f0ab05d3cd159a3fcde5fb.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\product-cd\product-e2410d20833fc458759b6ada85492a0a.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\product-f3\product-3c711c85bd8efa1c5bf9748869d896ed.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\data\cache\product_picture-cd\product_picture-27b3d61643b599fea4d0467702ddc24a.dat" afterPath="" />
+      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\myproject2.sql" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/logs/error/14_01_2018.txt" afterPath="$PROJECT_DIR$/public/logs/error/14_01_2018.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/ContactController.php" afterPath="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/ContactController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/IndexController.php" afterPath="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/IndexController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/MasterController.php" afterPath="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/MasterController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Admin/src/Admin/Controller/PageController.php" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Controller/PageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Admin/src/Admin/Form/PageForm.php" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Form/PageForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Admin/src/Admin/Controller/PostController.php" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Controller/PostController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/PostController.php" afterPath="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/PostController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Admin/src/Admin/Form/PostForm.php" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Form/PostForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Admin/src/Admin/Model/PostModel.php" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Model/PostModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/ProductController.php" afterPath="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/ProductController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Admin/src/Admin/Form/ProductForm.php" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Form/ProductForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Admin/src/Admin/Model/ProductModel.php" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Model/ProductModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Frontend/view/frontend/product/category.phtml" afterPath="$PROJECT_DIR$/module/Frontend/view/frontend/product/category.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Frontend/view/frontend/post/detail.phtml" afterPath="$PROJECT_DIR$/module/Frontend/view/frontend/post/detail.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Frontend/view/frontend/post/category.phtml" afterPath="$PROJECT_DIR$/module/Frontend/view/frontend/post/category.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Frontend/view/frontend/product/detail.phtml" afterPath="$PROJECT_DIR$/module/Frontend/view/frontend/product/detail.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/cache/navigation-8c/navigation-bb11ef7d9b68dfe0b9f7d2b6eabc1a52.dat" afterPath="$PROJECT_DIR$/data/cache/navigation-8c/navigation-bb11ef7d9b68dfe0b9f7d2b6eabc1a52.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/cache/product-f3/product-3c711c85bd8efa1c5bf9748869d896ed.dat" afterPath="$PROJECT_DIR$/data/cache/product-f3/product-3c711c85bd8efa1c5bf9748869d896ed.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/cache/product-cd/product-e2410d20833fc458759b6ada85492a0a.dat" afterPath="$PROJECT_DIR$/data/cache/product-cd/product-e2410d20833fc458759b6ada85492a0a.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/cache/product_picture-cd/product_picture-27b3d61643b599fea4d0467702ddc24a.dat" afterPath="$PROJECT_DIR$/data/cache/product_picture-cd/product_picture-27b3d61643b599fea4d0467702ddc24a.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Admin/view/admin/page/form.phtml" afterPath="$PROJECT_DIR$/module/Admin/view/admin/page/form.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Frontend/view/layout/frontend.phtml" afterPath="$PROJECT_DIR$/module/Frontend/view/layout/frontend.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Admin/view/admin/navigation/index.phtml" afterPath="$PROJECT_DIR$/module/Admin/view/admin/navigation/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Admin/view/admin/page/index.phtml" afterPath="$PROJECT_DIR$/module/Admin/view/admin/page/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Admin/view/admin/post/index.phtml" afterPath="$PROJECT_DIR$/module/Admin/view/admin/post/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Admin/view/admin/product/index.phtml" afterPath="$PROJECT_DIR$/module/Admin/view/admin/product/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Frontend/view/frontend/contact/index.phtml" afterPath="$PROJECT_DIR$/module/Frontend/view/frontend/contact/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Frontend/view/frontend/index/index.phtml" afterPath="$PROJECT_DIR$/module/Frontend/view/frontend/index/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/frontend/css/style.css" afterPath="$PROJECT_DIR$/public/frontend/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_193d7ad5d1a065a278084c67077ecb00.timthumb.txt" afterPath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_193d7ad5d1a065a278084c67077ecb00.timthumb.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_270d2cf7f205928c4778695de54e0ace.timthumb.txt" afterPath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_270d2cf7f205928c4778695de54e0ace.timthumb.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_50c615966ad5dae68e845b65346e72ab.timthumb.txt" afterPath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_50c615966ad5dae68e845b65346e72ab.timthumb.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_7db1f6914507b8321962f46178ac8841.timthumb.txt" afterPath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_7db1f6914507b8321962f46178ac8841.timthumb.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_92dc15842a1e435214b7bfc15a04e5c0.timthumb.txt" afterPath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_92dc15842a1e435214b7bfc15a04e5c0.timthumb.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_9788f8e6daf8f60101873a1ce074051d.timthumb.txt" afterPath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_9788f8e6daf8f60101873a1ce074051d.timthumb.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_a7c7ed2cdd1eac3179242a565e95c80e.timthumb.txt" afterPath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_a7c7ed2cdd1eac3179242a565e95c80e.timthumb.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_caeb8bc0ef38fa99f63d38be788c350f.timthumb.txt" afterPath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_caeb8bc0ef38fa99f63d38be788c350f.timthumb.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_db868d846cfe823f2333d706c4a3bacc.timthumb.txt" afterPath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_db868d846cfe823f2333d706c4a3bacc.timthumb.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_dd7a69da4853ff4ee39d4eb012e85f49.timthumb.txt" afterPath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_dd7a69da4853ff4ee39d4eb012e85f49.timthumb.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_e53cc32525c4bcaa175c01638ef3604c.timthumb.txt" afterPath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_e53cc32525c4bcaa175c01638ef3604c.timthumb.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_f9a7ada12a679f72d1b5cec042032360.timthumb.txt" afterPath="$PROJECT_DIR$/public/thumbs/cache-image-thumbs/timthumb_int_f9a7ada12a679f72d1b5cec042032360.timthumb.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lifedeco.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -125,115 +83,7 @@
     <favorites_list name="lifedeco" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="PostController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/PostController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.6923075">
-              <caret line="62" column="78" selection-start-line="62" selection-start-column="78" selection-end-line="62" selection-end-column="78" />
-              <folding>
-                <marker date="1515862297487" expanded="true" signature="1189:1404" placeholder="..." />
-                <marker date="1515862297487" expanded="true" signature="2557:3065" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/PageController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.961538">
-              <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/post/category.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/post/detail.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.961538">
-              <caret line="32" column="179" selection-start-line="32" selection-start-column="179" selection-end-line="32" selection-end-column="179" />
-              <folding>
-                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/ContactController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/contact/index.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.846153">
-              <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
-              <folding>
-                <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="module.config.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module/Frontend/config/module.config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.20643">
-              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/IndexController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Model/PostModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Model/PageModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -241,13 +91,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/frontend/css/style.css" />
         <option value="$PROJECT_DIR$/module/Frontend/src/Frontend/Model/PageModel.php" />
         <option value="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/PageController.php" />
         <option value="$PROJECT_DIR$/module/Frontend/view/frontend/page/index.phtml" />
         <option value="$PROJECT_DIR$/module/Frontend/view/frontend/post/detail.php" />
-        <option value="$PROJECT_DIR$/module/Frontend/view/frontend/post/category.phtml" />
-        <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/module/Admin/view/admin/post/index.phtml" />
         <option value="$PROJECT_DIR$/module/Admin/src/Admin/Controller/PostController.php" />
         <option value="$PROJECT_DIR$/module/Admin/view/admin/post/form.phtml" />
@@ -259,16 +106,27 @@
         <option value="$PROJECT_DIR$/module/Admin/view/admin/product/detail.phtml" />
         <option value="$PROJECT_DIR$/module/Frontend/view/frontend/product/category.phtml" />
         <option value="$PROJECT_DIR$/module/Frontend/src/Frontend/Model/ProductPictureModel.php" />
-        <option value="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/ProductController.php" />
         <option value="$PROJECT_DIR$/module/Admin/src/Admin/Model/ProductModel.php" />
         <option value="$PROJECT_DIR$/module/Admin/src/Admin/Model/PostModel.php" />
-        <option value="$PROJECT_DIR$/module/Frontend/view/frontend/product/detail.phtml" />
         <option value="$PROJECT_DIR$/module/Admin/src/Admin/Form/ProductForm.php" />
         <option value="$PROJECT_DIR$/module/Admin/src/Admin/Form/PostForm.php" />
-        <option value="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/PostController.php" />
-        <option value="$PROJECT_DIR$/module/Frontend/view/frontend/post/detail.phtml" />
+        <option value="$PROJECT_DIR$/module/Frontend/src/Frontend/Form/Contact.php" />
+        <option value="$PROJECT_DIR$/module/Services/src/Services/Service/SendMail.php" />
         <option value="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/ContactController.php" />
+        <option value="$PROJECT_DIR$/module/Frontend/src/Frontend/Model/ContactModel.php" />
+        <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/module/Frontend/view/frontend/contact/index.phtml" />
+        <option value="$PROJECT_DIR$/module/Frontend/view/frontend/contact/success.phtml" />
+        <option value="$PROJECT_DIR$/public/frontend/css/style.css" />
+        <option value="$PROJECT_DIR$/module/Frontend/view/layout/frontend.phtml" />
+        <option value="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/MasterController.php" />
+        <option value="$PROJECT_DIR$/module/Frontend/view/frontend/index/index.phtml" />
+        <option value="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/PostController.php" />
+        <option value="$PROJECT_DIR$/module/Frontend/view/frontend/product/all.phtml" />
+        <option value="$PROJECT_DIR$/module/Frontend/view/frontend/product/detail.phtml" />
+        <option value="$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/ProductController.php" />
+        <option value="$PROJECT_DIR$/module/Frontend/view/frontend/post/category.phtml" />
+        <option value="$PROJECT_DIR$/module/Frontend/view/frontend/post/detail.phtml" />
       </list>
     </option>
   </component>
@@ -315,7 +173,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -440,6 +297,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lifedeco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lifedeco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lifedeco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lifedeco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -629,6 +534,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lifedeco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lifedeco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="contact" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -719,6 +654,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lifedeco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lifedeco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -759,7 +724,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
+              <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -777,115 +742,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lifedeco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lifedeco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lifedeco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lifedeco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="product" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lifedeco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lifedeco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="post" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lifedeco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lifedeco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
+              <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -893,7 +750,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
+              <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -907,23 +764,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
+              <option name="myItemId" value="email-template" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -937,23 +782,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Form" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -964,44 +793,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lifedeco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lifedeco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lifedeco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1009,8 +800,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lifedeco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lifedeco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autoload" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1018,10 +828,13 @@
     <property name="FullScreen" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gachbetong" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Xampp\htdocs\lifedeco\module\Frontend\src\Frontend\Model" />
+      <recent name="E:\Xampp\htdocs\lifedeco\data" />
+      <recent name="E:\Xampp\htdocs\lifedeco\module\Frontend\src\Frontend\Form" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Xampp\htdocs\lifedeco\module\Frontend\view\frontend\product" />
@@ -1072,7 +885,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2306003" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3235725" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1108,105 +921,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module/Admin/view/admin/product/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Admin/view/admin/post/search_form.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="101" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="101" />
-          <folding>
-            <marker date="1515859422596" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1515859422596" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Model/ProductModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="5" selection-start-line="23" selection-start-column="2" selection-end-line="41" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Model/PostModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="42" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
-          <folding>
-            <marker date="1515862297487" expanded="true" signature="1189:1404" placeholder="..." />
-            <marker date="1515862297487" expanded="true" signature="2557:3065" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/post/detail.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Controller/NavigationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="120" column="62" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Admin/view/admin/product/search_form.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Admin/view/admin/product/form.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/CaptchaController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/MasterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1221,7 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.2909093">
           <caret line="272" column="19" selection-start-line="272" selection-start-column="14" selection-end-line="272" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1239,22 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/frontend/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.0">
-          <caret line="5487" column="28" selection-start-line="5487" selection-start-column="28" selection-end-line="5487" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Model/MasterModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49169436">
-          <caret line="56" column="5" selection-start-line="44" selection-start-column="2" selection-end-line="56" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Model/PageModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.461538">
@@ -1266,13 +967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30121815">
           <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30769232">
-          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1308,7 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1316,7 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="5" selection-start-line="23" selection-start-column="2" selection-end-line="41" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1324,7 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1332,7 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="120" column="62" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1340,7 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14382403">
           <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1348,15 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4822335">
           <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/view/layout/frontend.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.2692308">
-          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1364,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.2692308">
           <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1372,7 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.153846">
           <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1380,37 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.576923">
           <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/product/detail.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.884615">
-          <caret line="468" column="6" selection-start-line="468" selection-start-column="6" selection-end-line="468" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/product/category.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077">
-          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1418,7 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.153846">
           <caret line="71" column="56" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1426,104 +1072,215 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7817259">
           <caret line="82" column="47" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Model/PageModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37394246">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/email-template/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Controller/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="100" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Controller/ForgetController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="85" column="42" selection-start-line="82" selection-start-column="23" selection-end-line="85" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Services/src/Services/Service/SendMail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="60" selection-start-line="21" selection-start-column="8" selection-end-line="22" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Form/Contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="106" column="40" selection-start-line="106" selection-start-column="40" selection-end-line="106" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77408636">
+          <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/index/user.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Model/ContactModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24473976">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/contact/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.192307">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.90576494">
+          <caret line="5510" column="20" selection-start-line="5510" selection-start-column="20" selection-end-line="5510" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/product/category.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.038462">
+          <caret line="23" column="167" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/contact/success.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Model/MasterModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.192308">
+          <caret line="74" column="72" selection-start-line="74" selection-start-column="72" selection-end-line="74" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/MasterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-41.846153">
+          <caret line="64" column="41" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/product/all.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32225913">
+          <caret line="179" column="33" selection-start-line="179" selection-start-column="33" selection-end-line="179" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/index/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7552602">
+          <caret line="186" column="45" selection-start-line="186" selection-start-column="45" selection-end-line="186" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Model/PostModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09413067">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/view/layout/frontend.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.48726466">
+          <caret line="123" column="44" selection-start-line="123" selection-start-column="44" selection-end-line="123" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/product/detail.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="379" column="16" selection-start-line="379" selection-start-column="16" selection-end-line="379" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/ProductController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="77" column="50" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="50" selection-start-line="78" selection-start-column="50" selection-end-line="78" selection-end-column="50" />
           <folding>
-            <marker date="1515859422596" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1515859422596" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1516199011918" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1516199011918" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Model/PageModel.php">
+    <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/post/category.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Model/PostModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6923075">
-          <caret line="62" column="78" selection-start-line="62" selection-start-column="78" selection-end-line="62" selection-end-column="78" />
-          <folding>
-            <marker date="1515862297487" expanded="true" signature="1189:1404" placeholder="..." />
-            <marker date="1515862297487" expanded="true" signature="2557:3065" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/PageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.961538">
-          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.23011844">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/post/detail.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.961538">
-          <caret line="32" column="179" selection-start-line="32" selection-start-column="179" selection-end-line="32" selection-end-column="179" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/ContactController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/post/category.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/contact/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.846153">
-          <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Frontend/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.20643">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.31641287">
+          <caret line="23" column="107" selection-start-line="23" selection-start-column="107" selection-end-line="23" selection-end-column="107" />
           <folding />
         </state>
       </provider>

@@ -114,7 +114,7 @@
                     <?php foreach ($data['navigation'] as $record) { ?>
 
                         <?php if ($data['id'] == $record['navigation_id']) { ?>
-                            <tr class="even pointer">
+                            <tr class="even pointer" id="item_<?php echo $record['navigation_id'];?>">
                                 <td class="col-md-1 item form-group"><input type="text" class="form-control"
                                                                             name="navigation_position"
                                                                             value="<?php echo $data['record']['navigation_position']; ?>"
@@ -176,7 +176,7 @@
 
                         <?php } else { ?>
 
-                            <tr>
+                            <tr id="item_<?php echo $record['navigation_id'];?>">
                                 <td class="col-md-1"><?php echo $record['navigation_position']; ?></td>
                                 <td class="col-md-4"
                                     colspan="2"><?php echo str_repeat('__', $record['navigation_level']) . ' ' . $this->escapeHtml($record['navigation_name']); ?></td>
@@ -185,7 +185,7 @@
                                 <td class="col-md-1"><?php echo $this->data['status'][$record['navigation_status']]; ?></td>
                                 <td class="col-md-1">
                                     <a data-toggle="tooltip" data-original-title="Cập nhật" data-placement="top"
-                                       href="<?php echo $this->url('admin/default', array('controller' => $module, 'action' => 'index'), array('query' => array('id' => $record['navigation_id'], 'group_navigation_id' => $_GET['group_navigation_id']))); ?>">
+                                       href="<?php echo $this->url('admin/default', array('controller' => $module, 'action' => 'index'), array('query' => array('id' => $record['navigation_id'], 'group_navigation_id' => $_GET['group_navigation_id']))); ?>#item_<?php echo $record['navigation_id'];?>">
                                         <i class="fa fa-edit"></i>
                                     </a>
                                     <a data-toggle="tooltip" data-original-title="Xóa" data-placement="top"
@@ -231,13 +231,14 @@
 
 
     function optionsChange(type) {
-        options = '';
 
         $('#navigation_url_name').hide().removeAttr('required');
         $('#navigation_url_id').show().attr('required', 'required');
+        var options;
 
         switch (type) {
             case "1":
+                options = '';
                 $.each(page, function (k, v) {
                     if (linkSelect == v.post_id) {
                         selectOption = 'selected="selected"';
@@ -249,6 +250,7 @@
                 break;
 
             case "2":
+                options = '';
                 $.each(post, function (k, v) {
                     if (linkSelect == v.post_id) {
                         selectOption = 'selected="selected"';
@@ -260,35 +262,49 @@
                 break;
 
             case "3":
-                $.each(postCategory, function (k, v) {
-                    if (linkSelect == v.post_category_id) {
-                        selectOption = 'selected="selected"';
-                    } else {
-                        selectOption = '';
-                    }
-                    options += '<option ' + selectOption + ' value="' + v.post_category_id + '">' + "__".repeat(v.post_category_level) + " " + v.post_category_name + '</option>';
-                });
+                options = '';
+//                $.each(postCategory, function (k, v) {
+//                    if (linkSelect == v.post_category_id) {
+//                        selectOption = 'selected="selected"';
+//                    } else {
+//                        selectOption = '';
+//                    }
+//                    options += '<option ' + selectOption + ' value="' + v.post_category_id + '">' + "__".repeat(v.post_category_level) + " " + v.post_category_name + '</option>';
+//                });
+
+            <?php foreach($data['postCategory'] as $v) {?>
+                if (linkSelect == <?php echo $v['post_category_id'];?>) {
+                    selectOption = 'selected="selected"';
+                } else {
+                    selectOption = '';
+                }
+                options += '<option ' + selectOption + ' value="<?php echo $v['post_category_id'];?>"><?php echo str_repeat('__', $v['post_category_level']) .  $v['post_category_name'];?></option>';
+            <?php }?>
+
                 break;
 
             case "4" :
-                options += '';
+                options = '';
                 $('#navigation_url_name').show().attr('type', 'text').attr('required', 'required');
                 ;
                 $('#navigation_url_id').hide();
                 break;
 
             case "5":
-                $.each(productCategory, function (k, v) {
-                    if (linkSelect == v.product_category_id) {
+                options = '';
+
+                <?php foreach($data['productCategory'] as $v) {?>
+                    if (linkSelect == <?php echo $v['product_category_id'];?>) {
                         selectOption = 'selected="selected"';
                     } else {
                         selectOption = '';
                     }
-                    options += '<option ' + selectOption + ' value="' + v.product_category_id + '">' + "__".repeat(v.product_category_level) + " " +  v.product_category_name + '</option>';
-                });
+                    options += '<option ' + selectOption + ' value="<?php echo $v['product_category_id'];?>"><?php echo str_repeat('__', $v['product_category_level']) .  $v['product_category_name'];?></option>';
+                <?php }?>
                 break;
 
             case "6":
+                options = '';
                 $.each(product, function (k, v) {
                     if (linkSelect == v.product_id) {
                         selectOption = 'selected="selected"';

@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-<!--                <h1>--><?php //echo $this->escapeHtml($postCategory['post_category_name']);?><!--</h1>-->
+<h1 class="visible-xs"><?php echo $this->escapeHtml($postCategory['post_category_name']);?></h1>
                 <?php echo $crum;?>
             </div>
         </div>
@@ -12,16 +12,30 @@
 <!-- subheader close -->
 
 
+
+
 <!-- content begin -->
 <div id="content" class="no-top no-bottom">
     <section id="section-about-us-2" class="side-bg no-padding">
-        <div class="image-container col-md-5 pull-left" data-delay="0"></div>
-
+      
         <div class="container">
             <div class="row">
                 <div class="inner-padding">
                     <div class="col-md-8 wow fadeInRight" data-wow-delay=".5s">
                         <h2 style="margin-top: 0"><?php echo $this->escapeHtml($post['post_title']);?></h2>
+						
+						<div id="fb-root"></div>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=145168662811769';
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+
+						<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false" style="margin-bottom: 20px;"></div>
+
+
                         <?php echo $post['post_body'];?>
                     </div>
                     <div id="sidebar" class="col-md-4">

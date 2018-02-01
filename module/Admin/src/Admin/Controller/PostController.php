@@ -181,7 +181,6 @@ class PostController extends MasterController
         $dataSave['post_status']    = $paramPosts['post_status'];
         $dataSave['post_category_id']    = $paramPosts['post_category_id'];
         $dataSave['post_type']      = 1;
-        $dataSave['post_tag']       = $paramPosts['post_tag'];
 
         $idLastInsert = $this->model->savePrimary($dataSave, $id);
     }

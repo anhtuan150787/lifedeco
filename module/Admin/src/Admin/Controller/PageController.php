@@ -159,7 +159,6 @@ class PageController extends MasterController
         $dataSave['post_body']      = $paramPosts['post_body'];
         $dataSave['post_status']    = $paramPosts['post_status'];
         $dataSave['post_type']      = 2;
-        $dataSave['post_tag']       = $paramPosts['post_tag'];
 
         $this->model->savePrimary($dataSave, $id);
     }

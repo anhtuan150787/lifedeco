@@ -25,11 +25,15 @@ class MasterController extends AbstractActionController
         $navigationModel = $e->getApplication()->getServiceManager()->get('FrontendModelGateway')->getModel('NavigationModel');
         $navigations = $navigationModel->getNavigations(5);
 
+        $postModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('PostModel');
+        $posts = $postModel->fetchWhere(' post_type = 1 ', 5);
+
         /*
         * View layout
         */
         $viewModel = $e->getApplication()->getMvcEvent()->getViewModel();
         $viewModel->navigations = $navigations;
+        $viewModel->posts = $posts;
 
         return parent::onDispatch($e);
     }

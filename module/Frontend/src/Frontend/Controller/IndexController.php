@@ -19,7 +19,7 @@ class IndexController extends MasterController
         $view = new ViewModel();
 
         $productCategoryModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('ProductCategoryModel');
-        $productCategories = $productCategoryModel->fetchWhere('product_category_status = 1 AND product_category_picture !=""', 5);
+        $productCategories = $productCategoryModel->fetchWhere('product_category_status = 1 AND product_category_picture !=""', 6);
 
         $productModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('ProductModel');
         $products = $productModel->fetchWhere('product_status = 1', 3);

@@ -3937,6 +3937,10 @@ border-bottom:solid 1px #333;
 border-bottom:solid 1px #ddd;
 }
 
+#contact_form .widget {
+	border-bottom: none;
+}
+
 .widget h4 {
 text-transform:uppercase;
 padding-bottom: 20px;
@@ -4316,7 +4320,7 @@ padding-top: 0 !important;
 }
 
 .inner-padding{
-	padding:90px 0 90px 0;
+	padding:50px 0 90px 0;
 }
 
 .no-padding,section.no-padding{
@@ -5486,4 +5490,23 @@ display:table;
 
 .pagination > li > a, .pagination > li > span {
 	border: none !important;
+}
+
+
+ul.error-message {
+	padding-left: 0;
+	margin-left: 0;
+}
+
+ul.error-message li {
+	list-style-type: none;
+	color: red;
+}
+
+#contact_form ul.error-message {
+	margin-top: -10px;
+}
+
+h2 {
+	font-size: 29px;
 }

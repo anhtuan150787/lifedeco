@@ -26,7 +26,7 @@ class PostController extends MasterController
         $escaper = new \Zend\Escaper\Escaper('utf-8');
 
         $page = $this->params()->fromQuery('page', 1);
-        $posts = $postModel->fetchPage($page, 10, 'post_category_id = ' . $postCategoryId);
+        $posts = $postModel->fetchPage($page, 5, 'post_category_id = ' . $postCategoryId);
 
         $postCategory = $postCategoryModel->fetchPrimary($postCategoryId);
 

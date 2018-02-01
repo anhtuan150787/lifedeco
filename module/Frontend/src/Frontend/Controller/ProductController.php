@@ -26,7 +26,7 @@ class ProductController extends MasterController
         $escaper = new \Zend\Escaper\Escaper('utf-8');
 
         $page = $this->params()->fromQuery('page', 1);
-        $products = $productModel->fetchPage($page, 10, 'product_category_id = ' . $productCategoryId);
+        $products = $productModel->fetchPage($page, 9, 'product_category_id = ' . $productCategoryId);
 
         $productCategory = $productCategoryModel->fetchPrimary($productCategoryId);
 
@@ -76,8 +76,15 @@ class ProductController extends MasterController
         $view->setVariables([
             'product' => $product,
             'productPictures' => $productPictures,
+            'productCategory' => $productCategory,
             'crum' => $crum,
         ]);
+
+        return $view;
+    }
+
+    public function allAction() {
+        $view = new ViewModel();
 
         return $view;
     }

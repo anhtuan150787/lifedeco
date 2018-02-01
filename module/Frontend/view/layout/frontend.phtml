@@ -62,8 +62,8 @@
                 <div class="col-md-12">
                     <!-- logo begin -->
                     <div id="logo">
-                        <a href="http://www.themenesia.com/themeforest/archi-light/index.html">
-                            <img class="logo" src="<?php echo $this->basePath('frontend/images/');?>logo-3.png" alt="">
+                        <a href="<?php echo $this->url('home');?>">
+                            <img class="logo" src="<?php echo $this->basePath('frontend/images/');?>logo_lifedeco.png" alt="">
                         </a>
                     </div>
                     <!-- logo close -->
@@ -115,19 +115,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="<?php echo $this->basePath('frontend/images/');?>logo.png" class="logo-small" alt=""><br>
-                        We are team based on Brookylin. Our expertise on Interior Design. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        <img src="<?php echo $this->basePath('frontend/images/');?>logo_lifedeco.png" class="logo-small" alt=""><br>
+                        Công ty chúng tôi được thành lập bởi nhóm kiến trúc sư trẻ năng động và đầy nhiệt huyết, mang trong mình khát vọng đam mê sáng tạo, những người có nhiều năm kinh nghiệm, mong muốn làm đẹp không gian sống cho mọi người. Chúng tôi luôn mong muốn mang đến sự hài lòng nhất đến với Khách Hàng.
                     </div>
 
                     <div class="col-md-4">
                         <div class="widget widget_recent_post">
-                            <h3>Latest News</h3>
+                            <h3>Bài viết mới</h3>
                             <ul>
-                                <li><a href="http://www.themenesia.com/themeforest/archi-light/index-masonry-med-3-cols.html#">5 Things That Take a Room from Good to Great</a></li>
-                                <li><a href="http://www.themenesia.com/themeforest/archi-light/index-masonry-med-3-cols.html#">Functional and Stylish Wall-to-Wall Shelves</a></li>
-                                <li><a href="http://www.themenesia.com/themeforest/archi-light/index-masonry-med-3-cols.html#">9 Unique and Unusual Ways to Display Your TV</a></li>
-                                <li><a href="http://www.themenesia.com/themeforest/archi-light/index-masonry-med-3-cols.html#">The 5 Secrets to Pulling Off Simple, Minimal Design</a></li>
-                                <li><a href="http://www.themenesia.com/themeforest/archi-light/index-masonry-med-3-cols.html#">How to Make a Huge Impact With Multiples</a></li>
+                                <?php foreach($posts as $v) {?>
+                                <li><a href="<?php echo $this->url('home-news-detail', array('name' => $this->function()->formatTitle($v['post_title']), 'id' => $v['post_id']));?>"><?php echo $this->escapeHtml($v['post_title']);?></a></li>
+                                <?php }?>
                             </ul>
                         </div>
                     </div>
@@ -136,11 +134,11 @@
                         <h3>Contact Us</h3>
                         <div class="widget widget-address">
                             <address>
-                                <span>100 Mainstreet Center, Sydney</span>
-                                <span><strong>Phone:</strong>(208) 333 9296</span>
-                                <span><strong>Fax:</strong>(208) 333 9298</span>
-                                <span><strong>Email:</strong><a href="mailto:contact@archi-interior.com">contact@archi-interior.com</a></span>
-                                <span><strong>Web:</strong><a href="http://www.themenesia.com/themeforest/archi-light/index-masonry-med-3-cols.html#">http://archi-interior.com</a></span>
+                                <span>562 Nguyễn Chí Thanh, Phường 07, Quận 11, Tp. HCM</span>
+                                <span><strong>Phone:</strong>(+84) 22 534 543</span>
+                                <span><strong>Fax:</strong>(+84) 22 534 543</span>
+                                <span><strong>Email:</strong><a href="mailto:info@lifedeco.vn">info@lifedeco.vn</a></span>
+                                <span><strong>Web:</strong><a href="http://lifedeco.vn">lifedeco.vn</a></span>
                             </address>
                         </div>
                     </div>
@@ -151,7 +149,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            © Copyright 2017 - Archi Interior Design Template by <span class="id-color">Designesia</span>
+                            © Copyright 2017
                         </div>
                         <div class="col-md-6 text-right">
                             <div class="social-icons">
@@ -166,7 +164,7 @@
                     </div>
                 </div>
             </div>
-            <a href="http://www.themenesia.com/themeforest/archi-light/index-masonry-med-3-cols.html#" id="back-to-top"></a>
+            <a href="<?php echo $this->url('home');?>#" id="back-to-top"></a>
         </footer>
         <!-- footer close -->
     </div>

@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1><?php echo $this->escapeHtml($postCategory['post_category_name']);?></h1>
+                <h1>Liên hệ</h1>
                 <?php echo $crum;?>
             </div>
         </div>
@@ -12,63 +12,75 @@
 <!-- subheader close -->
 
 <!-- content begin -->
-<div id="content" class="no-top">
+<div id="content" class="no-top no-bottom">
     <section class="no-top" aria-label="map-container">
-        <div id="map"></div>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.713913126703!2d106.64594241414973!3d10.756517762503695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e8c35141277%3A0xf8485a9103a0c943!2zNTYyIE5ndXnhu4VuIENow60gVGhhbmgsIHBoxrDhu51uZyAxNiwgUXXhuq1uIDExLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1492437499160" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
     </section>
 
-    <div class="container">
+    <div class="container" id="contact_form">
         <div class="row">
 
             <div class="col-md-8">
-                <h3>Send Us Message</h3>
-                <form name="contactForm" id='contact_form' method="post" action='email.php'>
+                <h3>Thông tin liên hệ</h3>
+                <?php
+                $form->setAttributes(['action' => $this->url('home-lien-he') . '#contact_form', 'class' => 'contact-form', 'id' => '']);
+                $form->prepare();
+                echo $this->form()->openTag($form);
+                ?>
                     <div class="row">
                         <div class="col-md-4">
                             <div id='name_error' class='error'>Please enter your name.</div>
                             <div>
-                                <input type='text' name='name' id='name' class="form-control" placeholder="Your Name">
+                                <?php echo $this->formElement($form->get('contact_fullname')); ?>
+                                <?php echo $this->formElementErrors($form->get('contact_fullname'), array('class' => 'error-message')); ?>
                             </div>
 
                             <div id='email_error' class='error'>Please enter your valid E-mail ID.</div>
                             <div>
-                                <input type='text' name='email' id='email' class="form-control" placeholder="Your Email">
+                                <?php echo $this->formElement($form->get('contact_email')); ?>
+                                <?php echo $this->formElementErrors($form->get('contact_email'), array('class' => 'error-message')); ?>
                             </div>
 
                             <div id='phone_error' class='error'>Please enter your phone number.</div>
                             <div>
-                                <input type='text' name='phone' id='phone' class="form-control" placeholder="Your Phone">
+                                <?php echo $this->formElement($form->get('contact_phone')); ?>
+                                <?php echo $this->formElementErrors($form->get('contact_phone'), array('class' => 'error-message')); ?>
                             </div>
                         </div>
                         <div class="col-md-8">
                             <div id='message_error' class='error'>Please enter your message.</div>
                             <div>
-                                <textarea name='message' id='message' class="form-control" placeholder="Your Message"></textarea>
+                                <?php echo $this->formElement($form->get('contact_content')); ?>
+                                <?php echo $this->formElementErrors($form->get('contact_content'), array('class' => 'error-message')); ?>
                             </div>
                         </div>
 
                         <div class="col-md-12">
                             <p id='submit'>
-                                <input type='submit' id='send_message' value='Submit Form' class="btn btn-line">
+                                <?php echo $this->formSubmit($form->get('submit')); ?>
+                                <?php echo $this->formHidden($form->get('csrf')); ?>
                             </p>
                             <div id='mail_success' class='success'>Your message has been sent successfully.</div>
                             <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
                         </div>
                     </div>
-                </form>
+
+
+                <?php echo $this->form()->closeTag(); ?>
             </div>
 
             <div id="sidebar" class="col-md-4">
 
                 <div class="widget widget_text">
-                    <h3>Contact Info</h3>
+                    <h3>Thông tin</h3>
                     <address>
-                        <span>100 Mainstreet Center, Sydney</span>
-                        <span><strong>Phone:</strong>(208) 333 9296</span>
-                        <span><strong>Fax:</strong>(208) 333 9298</span>
-                        <span><strong>Email:</strong><a href="mailto:contact@example.com">contact@example.com</a></span>
-                        <span><strong>Web:</strong><a href="#test">http://example.com</a></span>
-                        <span><strong>Open</strong>Sunday - Friday 08:00 - 18:00</span>
+                        <span>562 Nguyễn Chí Thanh, Phường 07, Quận 11, Tp. HCM</span>
+                        <span><strong>Phone:</strong>(+84) 22 534 543</span>
+                        <span><strong>Fax:</strong>(+84) 22 534 543</span>
+                        <span><strong>Email:</strong><a href="mailto:info@lifedeco.vn">info@lifedeco.vn</a></span>
+                        <span><strong>Web:</strong><a href="http://lifedeco.vn">lifedeco.vn</a></span>
                     </address>
                 </div>
             </div>

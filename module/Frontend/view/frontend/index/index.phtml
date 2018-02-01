@@ -1,192 +1,189 @@
-<section class="no-top no-bottom mt70 mt-sm-0">
-    <div class="grid" data-col="2" data-gridspace="10" data-ratio="466/700" >
-        <div class="grid-sizer"></div>
+<div id="content" class="no-bottom">
 
+    <div id="gallery" class="gallery full-gallery de-gallery pf_full_width pf_3_cols wow fadeInUp" data-wow-delay=".3s">
         <?php foreach($productCategories as $v) {?>
-        <div class="grid-item residential">
-            <!-- gallery item -->
-            <div class="item">
-                <div class="picframe">
-                    <a href="<?php echo $this->url('home-product-category', array('name' => $this->function()->formatTitle($v['product_category_name']), 'id' => $v['product_category_id']));?>">
-                        <span class="overlay" style="opacity: 0;">
-                            <span class="pf_title">
-                                <span class="project-name"><?php echo $this->escapeHtml($v['product_category_name']);?></span>
-                            </span>
-                        </span>
-                    </a>
-                    <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/product_categories/' . $v['product_category_picture']) . '&w=700&h=466';?>" alt="">
-                </div>
+        <!-- gallery item -->
+        <div class="item residential">
+            <div class="picframe">
+                <a  href="<?php echo $this->url('home-product-category', array('name' => $this->function()->formatTitle($v['product_category_name']), 'id' => $v['product_category_id']));?>">
+                                    <span class="overlay">
+                                        <span class="pf_text">
+                                            <span class="project-name"><?php echo $this->escapeHtml($v['product_category_name']);?></span>
+                                        </span>
+                                    </span>
+                </a>
+                <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/product_categories/' . $v['product_category_picture']) . '&w=700&h=466';?>" alt="" />
             </div>
-            <!-- close gallery item -->
         </div>
-
+        <!-- close gallery item -->
         <?php }?>
-
-
     </div>
-</section>
 
-<section id="section-why-choose-us-2">
+    <section id="section-why-choose-us-2" style="padding-bottom: 0">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp" style="visibility: hidden; animation-name: none;">
-                <h1>HOTLINE: 0906 347 080</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                    <h1>HOTLINE: 0906 347 080</h1>
+                    <div class="separator"><span><i class="fa fa-circle"></i></span></div>
+                    <div class="spacer-single"></div>
+                </div>
+
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0s" style="visibility: hidden; animation-delay: 0s; animation-name: none;">
+                    <div class="box-icon border">
+                        <span class="icon wow fadeIn" data-wow-delay=".5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;"><i class="id-color icon-paintbrush"></i></span>
+                        <div class="text" style="cursor: pointer" onclick="location.href='<?php echo $this->url('home-page', array('name' => 'bang-gia-thiet-ke', 'id' => 4));?>'">
+                            <h3>Báo giá thiết kế</h3>
+                            <p>
+                                <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/frontend/images/table_price.png');?>&w=200&h=200" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb30 wow fadeInUp" data-wow-delay=".25s" style="visibility: hidden; animation-delay: 0.25s; animation-name: none;">
+                    <div class="box-icon border">
+                        <span class="icon wow fadeIn" data-wow-delay=".75s" style="visibility: hidden; animation-delay: 0.75s; animation-name: none;"><i class="id-color icon-trophy"></i></span>
+                        <div class="text" style="cursor: pointer" onclick="location.href='<?php echo $this->url('home-page', array('name' => 'bang-gia-xay-dung', 'id' => 5));?>'">
+                            <h3>Bảng giá xây dựng</h3>
+                            <p>
+                                <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/frontend/images/table_price2.png');?>&w=200&h=200" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+    <!--            <div class="col-md-6 mb30 wow fadeInUp" data-wow-delay=".75s" style="visibility: hidden; animation-delay: 0.75s; animation-name: none;">-->
+    <!--                <div class="box-icon border">-->
+    <!--                    <span class="icon wow fadeIn" data-wow-delay="1.25s" style="visibility: hidden; animation-delay: 1.25s; animation-name: none;"><i class="id-color icon-chat"></i></span>-->
+    <!--                    <div class="text">-->
+    <!--                        <h3>Liên hệ</h3>-->
+    <!--                        <p>-->
+    <!--                            <img src="--><?php //echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/frontend/images/site-img102-e1439871689742.png');?><!--&w=200&h=200" />-->
+    <!--                        </p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!---->
+    <!--            <div class="col-md-6 wow fadeInUp" data-wow-delay="1s" style="visibility: hidden; animation-delay: 1s; animation-name: none;">-->
+    <!--                <div class="box-icon border">-->
+    <!--                    <span class="icon wow fadeIn" data-wow-delay="1.75s" style="visibility: hidden; animation-delay: 1.75s; animation-name: none;"><i class="id-color icon-recycle"></i></span>-->
+    <!--                    <div class="text">-->
+    <!--                        <h3>Gửi tư vấn</h3>-->
+    <!--                        <p>-->
+    <!--                            <img src="--><?php //echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/frontend/images/site-img102-e1439871689742-1.png');?><!--&w=200&h=200" />-->
+    <!--                        </p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+
+            </div>
+        </div>
+    </section>
+
+    <section id="section-services" class="text-light" data-bgcolor="#1b1e20" style="background-color: rgb(27, 30, 32);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                    <h1>CÔNG TRÌNH TIÊU BIỂU</h1>
+                    <div class="separator"><span><i class="fa fa-circle"></i></span></div>
+                    <div class="spacer-single"></div>
+                </div>
+
+                <?php foreach($products as $v) {?>
+                    <?php
+                    $picture = ($v['product_picture'] == '')
+                        ? $this->basePath('admin/images/no-picture-person.png')
+                        : $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/products/' . $v['product_picture']) .'&w=700&h=466';
+                    ?>
+                <div class="col-md-4 text-middle text-light wow fadeInRight" data-wow-delay="0" style="visibility: hidden; animation-name: none;">
+                    <div class="shadow-soft" data-bgimage="url(<?php echo $picture;?>)" style="background-image: url(<?php echo $picture;?>);">
+                        <div class="padding40 overlay60">
+                            <h3><?php echo $this->escapeHtml($v['product_name']);?></h3>
+                            <p><?php echo strip_tags($v['product_body']);?></p>
+                            <a href="<?php echo $this->url('home-product-detail', array('name' => $this->function()->formatTitle($v['product_name']), 'id' => $v['product_id']));?>" class="btn-line btn-fullwidth">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <?php }?>
+
+            </div>
+        </div>
+    </section>
+    <!-- section close -->
+
+    <!-- section begin -->
+    <section id="view-all-projects" class="call-to-action bg-color text-center text-dark padding20" data-speed="5" data-type="background" aria-label="cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Bạn đã sẵn sàng cho một không gian hạnh phúc? </h2>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="javascript:void(0)" onclick="location.href='<?php echo $this->url('home-lien-he');?>#contact_form'" class="btn btn-line-black btn-big mt20 wow fadeInUp" style="visibility: hidden; animation-name: none;">Gửi yêu cầu tư vấn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- logo carousel section close -->
+
+    <!-- section begin -->
+    <section id="section-testimonial" class="text-light">
+        <div class="container">
+            <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp">
+                <h1>Khách hàng</h1>
                 <div class="separator"><span><i class="fa fa-circle"></i></span></div>
                 <div class="spacer-single"></div>
             </div>
+            <div id="testimonial-carousel" class="de_carousel  wow fadeInUp" data-wow-delay=".3s">
 
-            <div class="col-md-6 wow fadeInUp" data-wow-delay="0s" style="visibility: hidden; animation-delay: 0s; animation-name: none;">
-                <div class="box-icon border">
-                    <span class="icon wow fadeIn" data-wow-delay=".5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;"><i class="id-color icon-paintbrush"></i></span>
-                    <div class="text">
-                        <h3>Báo giá thiết kế</h3>
-                        <p>
-                            <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/frontend/images/table_price.png');?>&w=200&h=200" />
-                        </p>
+                <div class="col-md-6 item">
+                    <div class="de_testi">
+                        <blockquote>
+                            <p>Không gian đẹp, kiến trúc đẹp, tôi và gia đình rất hài lòng. Chuyên môn giỏi và các anh em công nhân ở công trình làm việc hằng say lành nghề. Tôi thấy đó là sự thành công trước mắt của công ty.</p>
+                            <div class="de_testi_by">
+                                Anh Trần Văn Bảo
+                            </div>
+                        </blockquote>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 item">
+                    <div class="de_testi">
+                        <blockquote>
+                            <p>Tôi thích cách làm việc rõ ràng ngay từ lúc đầu của Công ty, tránh sự phát sinh về cuối công trình. Các đội thi công phối hợp rất nhịp nhàng nên tiến độ công trình được đảm bảo đúng thời hạn.</p>
+                            <div class="de_testi_by">
+                               Chị Phạm Thị Ngà
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="col-md-6 item">
+                    <div class="de_testi">
+                        <blockquote>
+                            <p>Thi công và bàn giao nhà đúng tiến độ, quá trình làm việc với Công ty không xảy ra mâu thuẫn. Quản lý và đội thi công làm việc tốt. Cuối cùng xin chúc công ty ngày càng phát triển.</p>
+                            <div class="de_testi_by">
+                                Anh Đặng Thế Ngọc
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="col-md-6 item">
+                    <div class="de_testi">
+                        <blockquote>
+                            <p>Cám ơn Công ty đã hoàn thành tốt công trình. Anh nghĩ cái gì cũng có chữ duyên, anh đến công ty cũng là một cái duyên làm nhà. Từ khâu thiết kế đến khâu thi công Công ty làm việc rất tốt.</p>
+                            <div class="de_testi_by">
+                                Anh Trần Đức Mạnh
+                            </div>
+                        </blockquote>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6 mb30 wow fadeInUp" data-wow-delay=".25s" style="visibility: hidden; animation-delay: 0.25s; animation-name: none;">
-                <div class="box-icon border">
-                    <span class="icon wow fadeIn" data-wow-delay=".75s" style="visibility: hidden; animation-delay: 0.75s; animation-name: none;"><i class="id-color icon-trophy"></i></span>
-                    <div class="text">
-                        <h3>Bảng giá xây dựng</h3>
-                        <p>
-                            <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/frontend/images/table_price2.png');?>&w=200&h=200" />
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 mb30 wow fadeInUp" data-wow-delay=".75s" style="visibility: hidden; animation-delay: 0.75s; animation-name: none;">
-                <div class="box-icon border">
-                    <span class="icon wow fadeIn" data-wow-delay="1.25s" style="visibility: hidden; animation-delay: 1.25s; animation-name: none;"><i class="id-color icon-chat"></i></span>
-                    <div class="text">
-                        <h3>Free Consultation</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-                        <a class="strong id-color" href="http://www.themenesia.com/themeforest/archi-light/index-masonry-med-3-cols.html#">Learn More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 wow fadeInUp" data-wow-delay="1s" style="visibility: hidden; animation-delay: 1s; animation-name: none;">
-                <div class="box-icon border">
-                    <span class="icon wow fadeIn" data-wow-delay="1.75s" style="visibility: hidden; animation-delay: 1.75s; animation-name: none;"><i class="id-color icon-recycle"></i></span>
-                    <div class="text">
-                        <h3>Guaranteed Works</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-                        <a class="strong id-color" href="http://www.themenesia.com/themeforest/archi-light/index-masonry-med-3-cols.html#">Learn More</a>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="section-services" class="text-light" data-bgcolor="#1b1e20" style="background-color: rgb(27, 30, 32);">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp" style="visibility: hidden; animation-name: none;">
-                <h1>CÔNG TRÌNH TIÊU BIỂU</h1>
-                <div class="separator"><span><i class="fa fa-circle"></i></span></div>
-                <div class="spacer-single"></div>
-            </div>
-
-            <?php foreach($products as $v) {?>
-                <?php
-                $picture = ($v['product_picture'] == '')
-                    ? $this->basePath('admin/images/no-picture-person.png')
-                    : $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/products/' . $v['product_picture']) .'&w=700&h=466';
-                ?>
-            <div class="col-md-4 text-middle text-light wow fadeInRight" data-wow-delay="0" style="visibility: hidden; animation-name: none;">
-                <div class="shadow-soft" data-bgimage="url(<?php echo $picture;?>)" style="background-image: url(<?php echo $picture;?>);">
-                    <div class="padding40 overlay60">
-                        <h3><?php echo $this->escapeHtml($v['product_name']);?></h3>
-                        <p><?php echo strip_tags($v['product_body']);?></p>
-                        <a href="http://www.themenesia.com/themeforest/archi-light/service-1.html" class="btn-line btn-fullwidth">Xem thêm</a>
-                    </div>
-                </div>
-            </div>
-            <?php }?>
-
-        </div>
-    </div>
-</section>
-<!-- section close -->
-
-<!-- section begin -->
-<section id="view-all-projects" class="call-to-action bg-color text-center text-dark padding20" data-speed="5" data-type="background" aria-label="cta">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <h2>Bạn đã sẵn sàng cho một không gian hạnh phúc? </h2>
-            </div>
-
-            <div class="col-md-4">
-                <a href="http://www.themenesia.com/themeforest/archi-light/contact.html" class="btn btn-line-black btn-big mt20 wow fadeInUp" style="visibility: hidden; animation-name: none;">Nhận báo giá</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- logo carousel section close -->
-
-<!-- section begin -->
-<section id="section-testimonial" class="text-light">
-    <div class="container">
-        <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp">
-            <h1>Khách hàng</h1>
-            <div class="separator"><span><i class="fa fa-circle"></i></span></div>
-            <div class="spacer-single"></div>
-        </div>
-        <div id="testimonial-carousel" class="de_carousel  wow fadeInUp" data-wow-delay=".3s">
-
-            <div class="col-md-6 item">
-                <div class="de_testi">
-                    <blockquote>
-                        <p>I'm always impressed with the services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                        <div class="de_testi_by">
-                            John, Customer
-                        </div>
-                    </blockquote>
-
-                </div>
-            </div>
-
-            <div class="col-md-6 item">
-                <div class="de_testi">
-                    <blockquote>
-                        <p>I have very much enjoyed with your services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                        <div class="de_testi_by">
-                            Michael, Customer
-                        </div>
-                    </blockquote>
-                </div>
-            </div>
-
-            <div class="col-md-6 item">
-                <div class="de_testi">
-                    <blockquote>
-                        <p>I totally recommend your services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                        <div class="de_testi_by">
-                            Patrick, Customer
-                        </div>
-                    </blockquote>
-                </div>
-            </div>
-
-            <div class="col-md-6 item">
-                <div class="de_testi">
-                    <blockquote>
-                        <p>I have very much enjoyed with your services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                        <div class="de_testi_by">
-                            James, Customer
-                        </div>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+</div>
