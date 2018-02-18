@@ -62,7 +62,7 @@ return array(
             'product-all' => [
                 'type' => 'Segment',
                 'options' => array(
-                    'route' => '/san-pham',
+                    'route' => '/du-an',
                     'constraints' => [
                         'controller' => 'Frontend\Controller\Product',
                         'action' => 'all',

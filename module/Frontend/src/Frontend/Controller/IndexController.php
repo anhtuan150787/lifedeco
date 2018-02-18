@@ -21,10 +21,15 @@ class IndexController extends MasterController
         $productCategoryModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('ProductCategoryModel');
         $productCategories = $productCategoryModel->fetchWhere('product_category_status = 1 AND product_category_picture !=""', 6);
 
+        $dataProductcategories = [];
+        foreach($productCategories as $v) {
+            $dataProductcategories[$v['product_category_id']] = $v;
+        }
+
         $productModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('ProductModel');
         $products = $productModel->fetchWhere('product_status = 1', 3);
 
-        $view->productCategories = $productCategories;
+        $view->productCategories = $dataProductcategories;
         $view->products = $products;
 
         return $view;

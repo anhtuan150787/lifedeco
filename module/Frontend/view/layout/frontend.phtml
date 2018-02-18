@@ -89,7 +89,7 @@
                                     }
                                     ?>
                                     <?php if ($sub == true) {
-                                        echo '<li><a>' . $v['navigation_name'] . '</a><span></span><ul>' . $s . '</ul></li>';
+                                        echo '<li><a href="' . $v['navigation_url_name'] . '">' . $v['navigation_name'] . '</a><span></span><ul>' . $s . '</ul></li>';
                                     } else {
                                         echo '<li><a href="' . $v['navigation_url_name'] . '">' . $this->escapeHtml($v['navigation_name']) . '</a></li>';
                                     } ?>

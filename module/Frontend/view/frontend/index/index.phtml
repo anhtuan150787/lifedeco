@@ -1,23 +1,112 @@
-<div id="content" class="no-bottom">
+<div id="content" class="no-bottom no-top">
 
-    <div id="gallery" class="gallery full-gallery de-gallery pf_full_width pf_3_cols wow fadeInUp" data-wow-delay=".3s">
-        <?php foreach($productCategories as $v) {?>
-        <!-- gallery item -->
-        <div class="item residential">
-            <div class="picframe">
-                <a  href="<?php echo $this->url('home-product-category', array('name' => $this->function()->formatTitle($v['product_category_name']), 'id' => $v['product_category_id']));?>">
+<!--    <div id="gallery" class="gallery full-gallery de-gallery pf_full_width pf_3_cols wow fadeInUp" data-wow-delay=".3s">-->
+<!--        --><?php //foreach($productCategories as $v) {?>
+<!--        -->
+<!--        <div class="item residential">-->
+<!--            <div class="picframe">-->
+<!--                <a  href="--><?php //echo $this->url('home-product-category', array('name' => $this->function()->formatTitle($v['product_category_name']), 'id' => $v['product_category_id']));?><!--">-->
+<!--                                    <span class="overlay">-->
+<!--                                        <span class="pf_text">-->
+<!--                                            <span class="project-name">--><?php //echo $this->escapeHtml($v['product_category_name']);?><!--</span>-->
+<!--                                        </span>-->
+<!--                                    </span>-->
+<!--                </a>-->
+                <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/product_categories/' . $v['product_category_picture']) . '&w=700&h=466';?>" alt="" />
+<!--            </div>-->
+<!--        </div>-->
+<!--    -->
+<!--        --><?php //}?>
+<!--    </div>-->
+
+    <section class="no-top no-bottom mt70 mt-sm-0">
+        <div class="grid" data-col="3" data-gridspace="10" data-ratio="466/700">
+            <div class="grid-sizer"></div>
+            <div class="grid-item residential">
+                <!-- gallery item -->
+                <div class="item">
+                    <div class="picframe">
+                            <a  href="<?php echo $this->url('home-product-category', array('name' => $this->function()->formatTitle($productCategories['7']['product_category_name']), 'id' => $productCategories['7']['product_category_id']));?>">
                                     <span class="overlay">
-                                        <span class="pf_text">
-                                            <span class="project-name"><?php echo $this->escapeHtml($v['product_category_name']);?></span>
+                                        <span class="pf_title">
+                                            <span class="project-name"><?php echo $this->escapeHtml($productCategories['7']['product_category_name']);?></span>
                                         </span>
                                     </span>
-                </a>
-                <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/product_categories/' . $v['product_category_picture']) . '&w=700&h=466';?>" alt="" />
+                        </a>
+                        <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/product_categories/' . $productCategories['7']['product_category_picture']) . '&w=700&h=466';?>" alt="" />
+                    </div>
+                </div>
+                <!-- close gallery item -->
             </div>
+            <div class="grid-item large-width hospitaly">
+                <!-- gallery item -->
+                <div class="item">
+                    <div class="picframe">
+                        <a  href="<?php echo $this->url('home-product-category', array('name' => $this->function()->formatTitle($productCategories['8']['product_category_name']), 'id' => $productCategories['8']['product_category_id']));?>">
+                                    <span class="overlay">
+                                        <span class="pf_title">
+                                            <span class="project-name"><?php echo $this->escapeHtml($productCategories['8']['product_category_name']);?></span>
+                                        </span>
+                                    </span>
+                        </a>
+
+                        <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/product_categories/' . $productCategories['8']['product_category_picture']) . '&w=800&h=343';?>" alt="" />
+                    </div>
+                </div>
+                <!-- close gallery item -->
+            </div>
+            <div class="grid-item hospitaly">
+                <!-- gallery item -->
+                <div class="item">
+                    <div class="picframe">
+                        <a  href="<?php echo $this->url('home-product-category', array('name' => $this->function()->formatTitle($productCategories['9']['product_category_name']), 'id' => $productCategories['9']['product_category_id']));?>">
+                                    <span class="overlay">
+                                        <span class="pf_title">
+                                            <span class="project-name"><?php echo $this->escapeHtml($productCategories['9']['product_category_name']);?></span>
+                                        </span>
+                                    </span>
+                        </a>
+
+                        <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/product_categories/' . $productCategories['9']['product_category_picture']) . '&w=700&h=466';?>" alt="" />
+                    </div>
+                </div>
+                <!-- close gallery item -->
+            </div>
+            <div class="grid-item residential">
+                <!-- gallery item -->
+                <div class="item">
+                    <div class="picframe">
+                        <a  href="<?php echo $this->url('home-product-category', array('name' => $this->function()->formatTitle($productCategories['10']['product_category_name']), 'id' => $productCategories['10']['product_category_id']));?>">
+                                    <span class="overlay">
+                                        <span class="pf_title">
+                                            <span class="project-name"><?php echo $this->escapeHtml($productCategories['10']['product_category_name']);?></span>
+                                        </span>
+                                    </span>
+                        </a>
+                        <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/product_categories/' . $productCategories['10']['product_category_picture']) . '&w=700&h=466';?>" alt="" />
+                    </div>
+                </div>
+                <!-- close gallery item -->
+            </div>
+            <div class="grid-item office">
+                <!-- gallery item -->
+                <div class="item">
+                    <div class="picframe">
+                        <a  href="<?php echo $this->url('home-product-category', array('name' => $this->function()->formatTitle($productCategories['5']['product_category_name']), 'id' => $productCategories['5']['product_category_id']));?>">
+                                    <span class="overlay">
+                                        <span class="pf_title">
+                                            <span class="project-name"><?php echo $this->escapeHtml($productCategories['5']['product_category_name']);?></span>
+                                        </span>
+                                    </span>
+                        </a>
+                        <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/product_categories/' . $productCategories['5']['product_category_picture']) . '&w=700&h=466';?>" alt="" />
+                    </div>
+                </div>
+                <!-- close gallery item -->
+            </div>
+
         </div>
-        <!-- close gallery item -->
-        <?php }?>
-    </div>
+    </section>
 
     <section id="section-why-choose-us-2" style="padding-bottom: 0">
 
@@ -121,7 +210,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <a href="javascript:void(0)" onclick="location.href='<?php echo $this->url('home-lien-he');?>#contact_form'" class="btn btn-line-black btn-big mt20 wow fadeInUp" style="visibility: hidden; animation-name: none;">Gửi yêu cầu tư vấn</a>
+                    <a href="javascript:void(0)" onclick="location.href='<?php echo $this->url('home-lien-he');?>#contact_form'" class="btn btn-line-black btn-big mt20 wow fadeInUp" style="visibility: hidden; animation-name: none;">Liên hệ</a>
                 </div>
             </div>
         </div>

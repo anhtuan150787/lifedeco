@@ -86,6 +86,20 @@ class ProductController extends MasterController
     public function allAction() {
         $view = new ViewModel();
 
+        $productModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('ProductModel');
+        $productCategoryModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('ProductCategoryModel');
+
+        $products = $productModel->fetchWhere('product_status = 1');
+        $productCategory = $productCategoryModel->fetchWhere('product_category_status = 1 AND product_category_picture != ""');
+
+        $crum = '<ul class="crumb">
+                    <li><a href="/">Trang chủ</a></li>
+                    <li class="sep">/</li>
+                    <li>Dự án</li>
+                </ul>';
+
+        $view->setVariables(['products' => $products, 'productCategories' => $productCategory, 'crum' => $crum,]);
+
         return $view;
     }
 
