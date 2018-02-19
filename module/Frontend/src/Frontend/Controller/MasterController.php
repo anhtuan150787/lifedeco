@@ -35,6 +35,14 @@ class MasterController extends AbstractActionController
         $viewModel->navigations = $navigations;
         $viewModel->posts = $posts;
 
+        $c = $e->getTarget();
+        $match = $e->getRouteMatch();
+        $controllerArr = explode('\\', $match->getParam('controller'));
+        $controller = strtolower($controllerArr[2]);
+        $module = strtolower($controllerArr[0]);
+
+        $viewModel->controller = $controller;
+
         return parent::onDispatch($e);
     }
 

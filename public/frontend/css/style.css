@@ -5510,3 +5510,7 @@ ul.error-message li {
 h2 {
 	font-size: 29px;
 }
+
+#request_form textarea {
+	height: 70px;
+}

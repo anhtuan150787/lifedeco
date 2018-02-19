@@ -29,9 +29,32 @@
         ->prependStylesheet($this->basePath('frontend/css/bootstrap.css'))
     ?>
 
+
+    <?php echo $this->inlineScript()
+        ->prependFile($this->basePath('frontend/js/jquery.themepunch.revolution.min.js'))
+        ->prependFile($this->basePath('frontend/js/jquery.themepunch.plugins.min.js'))
+        ->prependFile($this->basePath('frontend/js/demo.js'))
+        ->prependFile($this->basePath('frontend/js/designesia.js'))
+        ->prependFile($this->basePath('frontend/js/enquire.min.js'))
+        ->prependFile($this->basePath('frontend/js/jquery.magnific-popup.min.js'))
+        ->prependFile($this->basePath('frontend/js/wow.min.js'))
+        ->prependFile($this->basePath('frontend/js/validation.js'))
+        ->prependFile($this->basePath('frontend/js/video.resize.js'))
+        ->prependFile($this->basePath('frontend/js/classie.js'))
+        ->prependFile($this->basePath('frontend/js/jquery.countTo.js'))
+        ->prependFile($this->basePath('frontend/js/owl.carousel.js'))
+        ->prependFile($this->basePath('frontend/js/jquery.scrollto.js'))
+        ->prependFile($this->basePath('frontend/js/jquery.flexslider-min.js'))
+        ->prependFile($this->basePath('frontend/js/easing.js'))
+        ->prependFile($this->basePath('frontend/js/jquery.isotope.min.js'))
+        ->prependFile($this->basePath('frontend/js/bootstrap.min.js'))
+        ->prependFile($this->basePath('frontend/js/jpreLoader.js'))
+        ->prependFile($this->basePath('frontend/js/jquery.min.js'))
+    ; ?>
+
 </head>
 
-<body id="homepage" class="de_light" style="display: block;">
+<body id="homepage" style="display: block;">
 
 <div id="wrapper">
 
@@ -107,7 +130,7 @@
     <!-- header close -->
 
     <!-- content begin -->
-    <div id="content" class="no-bottom no-top">
+
 
         <?php echo $this->content;?>
         <!-- footer begin -->
@@ -167,30 +190,17 @@
             <a href="<?php echo $this->url('home');?>#" id="back-to-top"></a>
         </footer>
         <!-- footer close -->
-    </div>
+
 </div>
 
+<?php if ($controller != 'index') {?>
+<script>
+    $(function(){
+        $('header').attr('class', 'header-bg');
+        $('body').attr('class', 'de_light');
+    });
+</script>
+<?php }?>
 
-<?php echo $this->inlineScript()
-    ->prependFile($this->basePath('frontend/js/jquery.themepunch.revolution.min.js'))
-    ->prependFile($this->basePath('frontend/js/jquery.themepunch.plugins.min.js'))
-    ->prependFile($this->basePath('frontend/js/demo.js'))
-    ->prependFile($this->basePath('frontend/js/designesia.js'))
-    ->prependFile($this->basePath('frontend/js/enquire.min.js'))
-    ->prependFile($this->basePath('frontend/js/jquery.magnific-popup.min.js'))
-    ->prependFile($this->basePath('frontend/js/wow.min.js'))
-    ->prependFile($this->basePath('frontend/js/validation.js'))
-    ->prependFile($this->basePath('frontend/js/video.resize.js'))
-    ->prependFile($this->basePath('frontend/js/classie.js'))
-    ->prependFile($this->basePath('frontend/js/jquery.countTo.js'))
-    ->prependFile($this->basePath('frontend/js/owl.carousel.js'))
-    ->prependFile($this->basePath('frontend/js/jquery.scrollto.js'))
-    ->prependFile($this->basePath('frontend/js/jquery.flexslider-min.js'))
-    ->prependFile($this->basePath('frontend/js/easing.js'))
-    ->prependFile($this->basePath('frontend/js/jquery.isotope.min.js'))
-    ->prependFile($this->basePath('frontend/js/bootstrap.min.js'))
-    ->prependFile($this->basePath('frontend/js/jpreLoader.js'))
-    ->prependFile($this->basePath('frontend/js/jquery.min.js'))
-; ?>
 
 </body></html>

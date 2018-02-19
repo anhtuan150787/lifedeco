@@ -1,24 +1,5 @@
 <div id="content" class="no-bottom no-top">
 
-<!--    <div id="gallery" class="gallery full-gallery de-gallery pf_full_width pf_3_cols wow fadeInUp" data-wow-delay=".3s">-->
-<!--        --><?php //foreach($productCategories as $v) {?>
-<!--        -->
-<!--        <div class="item residential">-->
-<!--            <div class="picframe">-->
-<!--                <a  href="--><?php //echo $this->url('home-product-category', array('name' => $this->function()->formatTitle($v['product_category_name']), 'id' => $v['product_category_id']));?><!--">-->
-<!--                                    <span class="overlay">-->
-<!--                                        <span class="pf_text">-->
-<!--                                            <span class="project-name">--><?php //echo $this->escapeHtml($v['product_category_name']);?><!--</span>-->
-<!--                                        </span>-->
-<!--                                    </span>-->
-<!--                </a>-->
-                <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/product_categories/' . $v['product_category_picture']) . '&w=700&h=466';?>" alt="" />
-<!--            </div>-->
-<!--        </div>-->
-<!--    -->
-<!--        --><?php //}?>
-<!--    </div>-->
-
     <section class="no-top no-bottom mt70 mt-sm-0">
         <div class="grid" data-col="3" data-gridspace="10" data-ratio="466/700">
             <div class="grid-sizer"></div>
@@ -108,7 +89,7 @@
         </div>
     </section>
 
-    <section id="section-why-choose-us-2" style="padding-bottom: 0">
+    <section id="section-why-choose-us-2">
 
         <div class="container">
             <div class="row">
@@ -121,11 +102,10 @@
                 <div class="col-md-6 wow fadeInUp" data-wow-delay="0s" style="visibility: hidden; animation-delay: 0s; animation-name: none;">
                     <div class="box-icon border">
                         <span class="icon wow fadeIn" data-wow-delay=".5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;"><i class="id-color icon-paintbrush"></i></span>
-                        <div class="text" style="cursor: pointer" onclick="location.href='<?php echo $this->url('home-page', array('name' => 'bang-gia-thiet-ke', 'id' => 4));?>'">
+                        <div class="text">
                             <h3>Báo giá thiết kế</h3>
-                            <p>
-                                <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/frontend/images/table_price.png');?>&w=200&h=200" />
-                            </p>
+                            <p>Nội dung giới thiệu tóm tắt báo giá thiết kế</p>
+                            <a class="strong id-color" href="<?php echo $this->url('home-page', array('name' => 'bang-gia-thiet-ke', 'id' => 4));?>">Xem chi tiết</a>
                         </div>
                     </div>
                 </div>
@@ -133,38 +113,66 @@
                 <div class="col-md-6 mb30 wow fadeInUp" data-wow-delay=".25s" style="visibility: hidden; animation-delay: 0.25s; animation-name: none;">
                     <div class="box-icon border">
                         <span class="icon wow fadeIn" data-wow-delay=".75s" style="visibility: hidden; animation-delay: 0.75s; animation-name: none;"><i class="id-color icon-trophy"></i></span>
-                        <div class="text" style="cursor: pointer" onclick="location.href='<?php echo $this->url('home-page', array('name' => 'bang-gia-xay-dung', 'id' => 5));?>'">
+                        <div class="text">
                             <h3>Bảng giá xây dựng</h3>
-                            <p>
-                                <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/frontend/images/table_price2.png');?>&w=200&h=200" />
-                            </p>
+                            <p>Nội dung giới thiệu tóm tắt báo giá xây dựng.</p>
+                            <a class="strong id-color" href="<?php echo $this->url('home-page', array('name' => 'bang-gia-xay-dung', 'id' => 5));?>">Xem chi tiết</a>
                         </div>
                     </div>
                 </div>
 
-    <!--            <div class="col-md-6 mb30 wow fadeInUp" data-wow-delay=".75s" style="visibility: hidden; animation-delay: 0.75s; animation-name: none;">-->
-    <!--                <div class="box-icon border">-->
-    <!--                    <span class="icon wow fadeIn" data-wow-delay="1.25s" style="visibility: hidden; animation-delay: 1.25s; animation-name: none;"><i class="id-color icon-chat"></i></span>-->
-    <!--                    <div class="text">-->
-    <!--                        <h3>Liên hệ</h3>-->
-    <!--                        <p>-->
-    <!--                            <img src="--><?php //echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/frontend/images/site-img102-e1439871689742.png');?><!--&w=200&h=200" />-->
-    <!--                        </p>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!---->
-    <!--            <div class="col-md-6 wow fadeInUp" data-wow-delay="1s" style="visibility: hidden; animation-delay: 1s; animation-name: none;">-->
-    <!--                <div class="box-icon border">-->
-    <!--                    <span class="icon wow fadeIn" data-wow-delay="1.75s" style="visibility: hidden; animation-delay: 1.75s; animation-name: none;"><i class="id-color icon-recycle"></i></span>-->
-    <!--                    <div class="text">-->
-    <!--                        <h3>Gửi tư vấn</h3>-->
-    <!--                        <p>-->
-    <!--                            <img src="--><?php //echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/frontend/images/site-img102-e1439871689742-1.png');?><!--&w=200&h=200" />-->
-    <!--                        </p>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
+                <div class="col-md-6 mb30 wow fadeInUp" data-wow-delay=".75s" style="visibility: hidden; animation-delay: 0.75s; animation-name: none;">
+                    <div class="box-icon border">
+                        <span class="icon wow fadeIn" data-wow-delay="1.25s" style="visibility: hidden; animation-delay: 1.25s; animation-name: none;"><i class="id-color icon-chat"></i></span>
+                        <div class="text">
+                            <h3>Mục 3</h3>
+                            <p>Nội dung giới thiệu tóm tắt mục 3</p>
+                            <a class="strong id-color" href="http://www.themenesia.com/themeforest/archi-light/index-masonry-med-3-cols.html#">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="request_form" class="col-md-6 wow fadeInUp" data-wow-delay="1s" style="visibility: hidden; animation-delay: 1s; animation-name: none;">
+                    <div class="box-icon border">
+                        <span class="icon wow fadeIn" data-wow-delay="1.75s" style="visibility: hidden; animation-delay: 1.75s; animation-name: none;"><i class="id-color icon-recycle"></i></span>
+                        <div class="text">
+                            <h3>Gửi yêu cầu tư vấn</h3>
+                            <div class="col-md-8" style="padding: 0">
+                                <?php if ($requestSuccess) {?>
+                                    <div class="alert alert-success" role="alert">
+                                        <p>Cám ơn Bạn đã gửi yêu cầu đến chúng tôi.<br>
+                                            Mọi thắc mắc của bạn sẽ được tư vấn trong thời gian sớm nhất.</p>
+                                    </div>
+                                <?php } else {?>
+                                <?php
+                                $form->setAttributes(['action' => $this->url('home') . '#request_form', 'class' => 'contact-form', 'id' => '']);
+                                $form->prepare();
+                                echo $this->form()->openTag($form);
+                                ?>
+                                    <div class="form-group">
+                                        <?php echo $this->formElement($form->get('contact_fullname')); ?>
+                                        <?php echo $this->formElementErrors($form->get('contact_fullname'), array('class' => 'error-message')); ?>
+                                    </div>
+                                    <div class="form-group">
+                                        <?php echo $this->formElement($form->get('contact_email')); ?>
+                                        <?php echo $this->formElementErrors($form->get('contact_email'), array('class' => 'error-message')); ?>
+                                    </div>
+                                    <div class="form-group">
+                                        <?php echo $this->formElement($form->get('contact_phone')); ?>
+                                        <?php echo $this->formElementErrors($form->get('contact_phone'), array('class' => 'error-message')); ?>
+                                    </div>
+                                    <div class="form-group">
+                                        <?php echo $this->formElement($form->get('contact_content')); ?>
+                                        <?php echo $this->formElementErrors($form->get('contact_content'), array('class' => 'error-message')); ?>
+                                    </div>
+                                    <?php echo $this->formSubmit($form->get('submit')); ?>
+                                    <?php echo $this->formHidden($form->get('csrf')); ?>
+                                    <?php echo $this->form()->closeTag(); ?>
+                                <?php }?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -276,3 +284,4 @@
     </section>
 
 </div>
+
