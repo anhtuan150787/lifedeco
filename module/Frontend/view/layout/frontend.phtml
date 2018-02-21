@@ -2,13 +2,13 @@
 <!-- saved from url=(0079)http://www.themenesia.com/themeforest/archi-light/index-masonry-med-3-cols.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>LifeDeco</title>
+    <title><?php echo $websiteGeneral['website_general_title'];?>"</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="description" content="<?php echo $websiteGeneral['website_general_description'];?>">
+    <meta name="keywords" content="<?php echo $websiteGeneral['website_general_keyword'];?>">
 
-    <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+
+    <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath('pictures/websites/' . $websiteGeneral['website_general_favicon'])))
         ->prependStylesheet($this->basePath('frontend/css/font-style-2.css'))
         ->prependStylesheet($this->basePath('frontend/css/rev-settings.css'))
         ->prependStylesheet($this->basePath('frontend/css/settings.css'))

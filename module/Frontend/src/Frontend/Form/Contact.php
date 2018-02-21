@@ -24,6 +24,7 @@ class Contact extends Form implements InputFilterProviderInterface
             'attributes' => [
                 'placeholder' => 'Họ tên',
                 'class' => 'form-control',
+                'required' => 'required',
             ],
             'options' => [
                 'label' => 'Họ tên',
@@ -37,6 +38,7 @@ class Contact extends Form implements InputFilterProviderInterface
             'attributes' => [
                 'placeholder' => 'Email',
                 'class' => 'form-control',
+                'required' => 'required',
             ],
             'options' => [
                 'label' => 'Email',
@@ -50,6 +52,7 @@ class Contact extends Form implements InputFilterProviderInterface
             'attributes' => [
                 'placeholder' => 'Điện thoại',
                 'class' => 'form-control',
+                'required' => 'required',
             ],
             'options' => [
                 'label' => 'Điện thoại',
@@ -63,6 +66,7 @@ class Contact extends Form implements InputFilterProviderInterface
             'attributes' => [
                 'placeholder' => 'Lời nhắn',
                 'class' => 'form-control',
+                'required' => 'required',
             ],
             'options' => [
                 'label' => 'Lời nhắn',

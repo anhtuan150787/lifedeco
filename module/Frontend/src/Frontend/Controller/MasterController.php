@@ -28,12 +28,16 @@ class MasterController extends AbstractActionController
         $postModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('PostModel');
         $posts = $postModel->fetchWhere(' post_type = 1 ', 5);
 
+        $websiteGeneralModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('WebsiteGeneralModel');
+        $websiteGeneral = $websiteGeneralModel->fetchPrimary(1);
+
         /*
         * View layout
         */
         $viewModel = $e->getApplication()->getMvcEvent()->getViewModel();
         $viewModel->navigations = $navigations;
         $viewModel->posts = $posts;
+        $viewModel->websiteGeneral = $websiteGeneral;
 
         $c = $e->getTarget();
         $match = $e->getRouteMatch();

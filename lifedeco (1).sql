@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 15, 2018 at 05:09 PM
+-- Generation Time: Feb 20, 2018 at 04:09 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -16,7 +16,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
 -- Database: `lifedeco`
@@ -175,7 +175,8 @@ INSERT INTO `contact` (`contact_id`, `contact_fullname`, `contact_email`, `conta
 (25, 'Anh Tuấn', 'test@yahoo.com', 944112211, 'sdsd', '2018-01-15 14:56:16', NULL),
 (26, 'Anh Tuấn', 'test@yahoo.com', 944112211, 'sdsd', '2018-01-15 14:57:11', NULL),
 (27, 'Anh Tuấn', 'test@yahoo.com', 944112211, 'sd', '2018-01-15 15:03:24', NULL),
-(28, 'test', 'test@yahoo.com', 944112211, 'test ', '2018-01-15 22:01:05', NULL);
+(28, 'test', 'test@yahoo.com', 944112211, 'test ', '2018-01-15 22:01:05', NULL),
+(29, 'Test', 'test@yahoo.com', 944112211, 'test', '2018-02-19 14:00:36', NULL);
 
 -- --------------------------------------------------------
 
@@ -418,7 +419,8 @@ CREATE TABLE `group_template` (
 INSERT INTO `group_template` (`group_template_id`, `group_template_name`, `group_template_type`, `group_template_status`) VALUES
 (1, 'Logo', 1, 1),
 (2, 'Liên hệ', 2, 1),
-(3, 'Slide banner', 3, 1);
+(3, 'Slide banner', 3, 1),
+(4, 'Test', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -538,7 +540,7 @@ CREATE TABLE `navigation` (
 
 INSERT INTO `navigation` (`navigation_id`, `navigation_name`, `navigation_parent`, `navigation_status`, `navigation_url_id`, `navigation_position`, `group_navigation_id`, `navigation_type`, `navigation_url_name`) VALUES
 (2, 'Trang chủ', 0, 1, NULL, 1, 5, 4, '/'),
-(3, 'Thiết kế - thi công', 0, 1, NULL, 2, 5, 4, '#'),
+(3, 'Thiết kế - thi công', 0, 1, NULL, 2, 5, 4, '/du-an'),
 (4, 'Gỗ nội thất', 0, 1, 5, 3, 5, 5, '/go-noi-that-pc-5'),
 (5, 'Cẩm nang xây dựng', 0, 1, 1, 4, 5, 3, '/cam-nang-xay-dung-nc-1'),
 (6, 'Lifedeco', 0, 1, 3, 5, 5, 1, '/lifedeco-p-3'),
@@ -576,7 +578,7 @@ CREATE TABLE `post` (
 --
 
 INSERT INTO `post` (`post_id`, `post_title`, `post_quote`, `post_body`, `post_picture`, `post_date_created`, `post_date_updated`, `post_users_created`, `post_type`, `post_status`, `post_users_updated`, `post_view`, `post_tag`, `post_category_id`) VALUES
-(3, 'Lifedeco', NULL, '<p>Nội dung giới thiệu về Lifedeco</p>', NULL, '2018-01-09 21:31:18', '2018-01-09 21:33:42', 3, 2, 1, 3, 0, '', 0),
+(3, 'Lifedeco', NULL, '<p><strong>C&ocirc;ng ty CP Đầu tư &amp; X&acirc;y dựng Ho&agrave;ng Khải</strong>&nbsp;xin gửi tới Qu&yacute; Kh&aacute;ch h&agrave;ng lời ch&agrave;o tr&acirc;n trọng nhất.</p>\r\n<p>C&ocirc;ng ty ch&uacute;ng t&ocirc;i được th&agrave;nh lập bởi nh&oacute;m kiến tr&uacute;c sư trẻ năng động v&agrave; đầy nhiệt huyết, mang trong m&igrave;nh kh&aacute;t vọng đam m&ecirc; s&aacute;ng tạo, những người c&oacute; nhiều năm kinh nghiệm, mong muốn l&agrave;m đẹp kh&ocirc;ng gian sống cho mọi người. Ch&uacute;ng t&ocirc;i lu&ocirc;n mong muốn mang đến sự h&agrave;i l&ograve;ng nhất đến với Kh&aacute;ch H&agrave;ng.</p>\r\n<p><strong>Sản phẩm v&agrave; dịch vụ của ch&uacute;ng t&ocirc;i bao gồm:</strong><br />1. Thiết kế kiến tr&uacute;c, kết cấu, hệ thống hạ tầng kỹ thuật, c&aacute;c c&ocirc;ng tr&igrave;nh d&acirc;n dụng v&agrave; c&ocirc;ng nghiệp, thực hiện triển khai đồ &aacute;n quy hoạch tổng thể v&agrave; chi tiết c&aacute;c khu Đ&ocirc; thị v&agrave; C&ocirc;ng nghiệp.<br />2. Thiết kế trang tr&iacute; nội ngoại thất, thiết kế s&acirc;n vườn c&aacute;c c&ocirc;ng tr&igrave;nh d&acirc;n dụng v&agrave; c&ocirc;ng nghiệp.<br />3. Sản xuất, chế tạo v&agrave; lắp đặt trang thiết bị nội thất c&aacute;c c&ocirc;ng tr&igrave;nh d&acirc;n dụng.<br />4. Cung cấp v&agrave; lắp đặt trang thiết bị nhập khẩu theo đơn đặt h&agrave;ng.<br />5. Thi c&ocirc;ng triển khai hệ thống hạ tầng kỹ thuật c&aacute;c c&ocirc;ng tr&igrave;nh x&acirc;y dựng v&agrave; Đ&ocirc; thị.</p>\r\n<p>Mục ti&ecirc;u ph&aacute;t triển của ch&uacute;ng t&ocirc;i l&agrave; đ&aacute;p ứng ở mức cao nhất c&aacute;c y&ecirc;u cầu của kh&aacute;ch h&agrave;ng về&nbsp;<strong>Độ Bền Vững</strong>,&nbsp;<strong>T&iacute;nh C&ocirc;ng Năng</strong>,&nbsp;<strong>Điều Kiện Kinh Tế</strong>&nbsp;v&agrave;&nbsp;<strong>Nghệ Thuật Kiến Tr&uacute;c</strong>.</p>\r\n<p>Ch&uacute;ng t&ocirc;i h&acirc;n hạnh được mời Qu&yacute; Kh&aacute;ch h&agrave;ng sử dụng sản phẩm v&agrave; dịch vụ của ch&uacute;ng t&ocirc;i. Ngo&agrave;i việc thiết kế, x&acirc;y dựng v&agrave; cung cấp c&aacute;c sản phẩm ph&ugrave; hợp với từng đối t&aacute;c, ch&uacute;ng t&ocirc;i sẵn s&agrave;ng tư vấn cho Qu&yacute; Kh&aacute;ch h&agrave;ng những th&ocirc;ng tin hữu &iacute;ch nhằm x&acirc;y dựng kh&ocirc;ng gian tiện nghi tối ưu ph&ugrave; hợp với nhu cầu Qu&yacute; Kh&aacute;ch h&agrave;ng c&ugrave;ng chi ph&iacute; đầu tư&nbsp;thấp nhất.</p>\r\n<p>Với kinh nghiệm l&acirc;u năm c&ugrave;ng đội ngũ kiến tr&uacute;c sư, kỹ sư l&agrave;nh nghề, ch&uacute;ng t&ocirc;i tin tưởng sẽ thỏa m&atilde;n mọi nhu cầu của Qu&yacute; Kh&aacute;ch h&agrave;ng.</p>\r\n<p>Rất mong được hợp t&aacute;c c&ugrave;ng Qu&yacute; Kh&aacute;ch h&agrave;ng.</p>\r\n<p><strong>Tr&acirc;n trọng k&iacute;nh ch&agrave;o</strong></p>\r\n<p><strong>C&Ocirc;NG TY CP ĐẦU TƯ &amp; X&Acirc;Y DỰNG HO&Agrave;NG KHẢI</strong></p>\r\n<p><em>GI&Aacute;M ĐỐC</em><br /><strong>HO&Agrave;NG MINH ĐỨC</strong></p>', NULL, '2018-01-09 21:31:18', '2018-01-16 14:45:38', 3, 2, 1, 3, 0, '', 0),
 (4, 'Bảng giá thiết kế', NULL, '<p>Our commitment to quality and services ensure our clients happy. With years of experiences and continuing research, our team is ready to serve your interior design needs. We\'re happy to make you feel more comfortable on your home.</p>', NULL, '2018-01-11 16:45:10', '2018-01-11 16:53:58', 3, 2, 1, 3, 0, '', 0),
 (5, 'Bảng giá xây dựng', NULL, '<p>Our commitment to quality and services ensure our clients happy. With years of experiences and continuing research, our team is ready to serve your interior design needs. We\'re happy to make you feel more comfortable on your home.</p>', NULL, '2018-01-11 16:53:51', '2018-01-11 16:53:51', 3, 2, 1, 3, 0, '', 0),
 (6, 'Thiết kế nội thất phòng khách nhà phố đẹp', '<p>Thiết kế nội thất ph&ograve;ng kh&aacute;ch nh&agrave; phố đẹp,tu vấn thiết kế,b&aacute;o gi&aacute; thi c&ocirc;ng x&acirc;y dựng nh&agrave; phố&hellip; Chi tiết Thiết kế nội thất đẹp v&agrave; sang trọng Nếu thiết kế kiến tr&uacute;c l&agrave; bộ mặt của ng&ocirc;i nh&agrave; th&igrave; thiết kế nội thất c&agrave;ng thể hiện r&otilde; hơn phong c&aacute;ch v&agrave; c&aacute; t&iacute;nh</p>', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>\r\n<p>&nbsp;</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>', 'post_1515768301.1502_bg-service-1.jpg', '2018-01-12 21:45:00', '2018-01-12 22:47:27', 3, 1, 1, 3, 0, NULL, 1),
@@ -677,7 +679,7 @@ INSERT INTO `product` (`product_id`, `product_name`, `product_picture`, `product
 (15, 'Nhà phố quận 8', 'product_1516031238.5303_pf (2).jpg', NULL, 1, '2018-01-15 22:47:18', '2018-01-15 22:48:24', 3, 3, '<p>Our commitment to quality and services ensure our clients happy. With years of experiences and continuing research, our team is ready to serve your interior design needs. We\'re happy to make you feel more comfortable on your home.</p>', NULL, 7),
 (16, 'Nhà phố quận 9', 'product_1516031250.4968_bg-service-3.jpg', NULL, 1, '2018-01-15 22:47:30', '2018-01-15 22:48:44', 3, 3, '<p>Our commitment to quality and services ensure our clients happy. With years of experiences and continuing research, our team is ready to serve your interior design needs. We\'re happy to make you feel more comfortable on your home.</p>', NULL, 7),
 (17, 'Nhà phố quận 10', 'product_1516031263.52_pf (3) (1).jpg', NULL, 1, '2018-01-15 22:47:43', '2018-01-15 22:48:33', 3, 3, '<p>Our commitment to quality and services ensure our clients happy. With years of experiences and continuing research, our team is ready to serve your interior design needs. We\'re happy to make you feel more comfortable on your home.</p>', NULL, 7),
-(18, 'Nhà phố quận 11', 'product_1516031279.1123_bg-service-1.jpg', NULL, 1, '2018-01-15 22:47:59', '2018-01-15 22:48:55', 3, 3, '<p>Our commitment to quality and services ensure our clients happy. With years of experiences and continuing research, our team is ready to serve your interior design needs. We\'re happy to make you feel more comfortable on your home.</p>', NULL, 7);
+(18, 'Nhà phố quận 11', 'product_1516031279.1123_bg-service-1.jpg', NULL, 1, '2018-01-15 22:47:59', '2018-02-11 18:49:19', 3, 3, '<p>Our commitment to quality and services ensure our clients happy. With years of experiences and continuing research, our team is ready to serve your interior design needs. We\'re happy to make you feel more comfortable on your home.</p>', NULL, 7);
 
 -- --------------------------------------------------------
 
@@ -704,12 +706,12 @@ CREATE TABLE `product_category` (
 
 INSERT INTO `product_category` (`product_category_id`, `product_category_name`, `product_category_parent`, `product_category_status`, `product_category_date_created`, `product_category_date_updated`, `product_category_users_created`, `product_category_users_updated`, `group_property_id`, `product_category_picture`) VALUES
 (4, 'Thiết kế - Thi công', 0, 1, '2018-01-09 21:32:30', '2018-01-11 14:33:09', 3, 3, NULL, NULL),
-(5, 'Gỗ nội thất', 0, 1, '2018-01-09 21:32:37', '2018-01-11 14:32:59', 3, 3, NULL, NULL),
+(5, 'Gỗ nội thất', 0, 1, '2018-01-09 21:32:37', '2018-02-14 16:11:12', 3, 3, NULL, 'product_category_1518599473.0828_pf5.jpg'),
 (6, 'Cẩm nang xây dựng', 0, 1, '2018-01-09 21:32:45', NULL, 3, NULL, NULL, ''),
-(7, 'Nhà phố - biệt thự', 4, 1, '2018-01-09 21:34:57', '2018-01-11 15:27:37', 3, 3, NULL, 'product_category_1515659257.669_pf (1).jpg'),
-(8, 'Căn hộ - Chung cư', 4, 1, '2018-01-09 21:35:07', '2018-01-11 15:27:43', 3, 3, NULL, 'product_category_1515659263.7033_pf (2) (1).jpg'),
-(9, 'Bar - Cafe - Nhà hàng', 4, 1, '2018-01-09 21:35:18', '2018-01-11 15:27:52', 3, 3, NULL, 'product_category_1515659272.4828_pf (3).jpg'),
-(10, 'Showroom - Văn phòng', 4, 1, '2018-01-09 21:35:28', '2018-01-11 15:28:02', 3, 3, NULL, 'product_category_1515659282.3584_pf (4).jpg');
+(7, 'Nhà phố - biệt thự', 4, 1, '2018-01-09 21:34:57', '2018-02-12 18:59:47', 3, 3, NULL, 'product_category_1518436787.142_pf1.jpg'),
+(8, 'Căn hộ - Chung cư', 4, 1, '2018-01-09 21:35:07', '2018-02-12 19:00:09', 3, 3, NULL, 'product_category_1518436809.6927_pf2.jpg'),
+(9, 'Bar - Cafe - Nhà hàng', 4, 1, '2018-01-09 21:35:18', '2018-02-12 19:00:41', 3, 3, NULL, 'product_category_1518436841.683_pf3.jpg'),
+(10, 'Showroom - Văn phòng', 4, 1, '2018-01-09 21:35:28', '2018-02-12 19:07:23', 3, 3, NULL, 'product_category_1518437243.2428_pf7.jpg');
 
 -- --------------------------------------------------------
 
@@ -807,13 +809,15 @@ INSERT INTO `product_picture` (`product_picture_id`, `product_id`, `product_pict
 (58, 17, 'product_1516031263.8387_pf (1).jpg'),
 (59, 17, 'product_1516031263.95_pf (2).jpg'),
 (60, 17, 'product_1516031264.0277_pf (3) (1).jpg'),
-(61, 18, 'product_1516031279.197_bg-service-1.jpg'),
-(62, 18, 'product_1516031279.2719_bg-service-2.jpg'),
-(63, 18, 'product_1516031279.3033_bg-service-3.jpg'),
-(64, 18, 'product_1516031279.3371_bg-service-4.jpg'),
-(65, 18, 'product_1516031279.3695_pf (1).jpg'),
-(66, 18, 'product_1516031279.4039_pf (2).jpg'),
-(67, 18, 'product_1516031279.4382_pf (3) (1).jpg');
+(71, 18, 'product_1518349759.861_product_1515508780.3244_pf (1).jpg'),
+(72, 18, 'product_1518349759.9254_product_1515663798.5057_p1_b.jpg'),
+(73, 18, 'product_1518349759.959_product_1515663850.4827_p3_b.jpg'),
+(74, 18, 'product_1518349760.0243_product_1515663859.4792_p4_a.jpg'),
+(75, 18, 'product_1518349760.0915_product_1515859033.7515_pf (1).jpg'),
+(76, 18, 'product_1518349760.1232_product_1515859033.8444_pf (2).jpg'),
+(77, 18, 'product_1518349760.1616_product_1515859033.9186_pf (3).jpg'),
+(78, 18, 'product_1518349760.2049_product_1515859034.0335_pf (4).jpg'),
+(79, 18, 'product_1518349760.2506_product_1515859034.1386_pf (5).jpg');
 
 -- --------------------------------------------------------
 
@@ -926,7 +930,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`users_id`, `users_fullname`, `users_phone`, `users_email`, `users_password`, `users_registered`, `users_status`, `users_picture`, `users_salt`, `users_login_time`, `users_user_agent`, `group_users_id`, `users_forget_request_key`) VALUES
-(3, 'Anh Tuấn', '', 'anhtuan150787@gmail.com', 'e49ed34b584d6a4ac562647850517b13', '2017-08-10 11:56:56', 1, 'users_1503035528_1910224703_hop-190x120x60mm.png', '65601daf9197d19f660233df5f7961c9', '2018-01-14 16:08:13', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36', 1, ''),
+(3, 'Anh Tuấn', '', 'anhtuan150787@gmail.com', 'e49ed34b584d6a4ac562647850517b13', '2017-08-10 11:56:56', 1, 'users_1503035528_1910224703_hop-190x120x60mm.png', '65601daf9197d19f660233df5f7961c9', '2018-02-11 18:44:41', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36', 1, ''),
 (5584, 'Fullname_1506411188.424', '0966554433', 'Email_1506411188.424@yahoo.com', '75d50d1c3a29a8a9cd9ec132d6fa1294', '2017-09-26 14:33:08', 1, 'users_1503035528_1910224703_hop-190x120x60mm.png', 'c68d3249a75bf92e8f5d57f692c786f7', NULL, NULL, 1, NULL),
 (5585, 'Fullname_1506411192.7632', '0966554433', 'Email_1506411192.7632@yahoo.com', 'fa624a382f33f9396bdeff9fc280a96f', '2017-09-26 14:33:12', 1, 'users_1503035528_1910224703_hop-190x120x60mm.png', '4cdf10c4ad8c2466be13901d3b3e5915', NULL, NULL, 1, NULL),
 (5586, 'Fullname_1506411196.0274', '0966554433', 'Email_1506411196.0274@yahoo.com', 'eb9913dc90e36fdf3ae13210f986f092', '2017-09-26 14:33:16', 1, 'users_1503035528_1910224703_hop-190x120x60mm.png', 'aabd586ec543f262a57f74cf12f9d37e', NULL, NULL, 1, NULL),
@@ -1302,7 +1306,7 @@ CREATE TABLE `website_email` (
 --
 
 INSERT INTO `website_email` (`website_email_id`, `website_email_system_name`, `website_email_system_host`, `website_email_system_port`, `website_email_system_username`, `website_email_system_password`, `website_email_system_ssl`, `website_email_primary_email`, `website_email_from`, `website_email_from_name`) VALUES
-(1, 'localhost.localdomain', 'smtp.googlemail.com', 465, 'anhtuan150787.4@gmail.com', 'smqboefvodhhdpxx', 'ssl', 'anhtuan150787@gmail.com', 'anhtuan150787@gmail.com', 'CMS Version 2.0');
+(1, 'localhost.localdomain', 'smtp.googlemail.com', 465, 'anhtuan150787.4@gmail.com', 'smqboefvodhhdpxx', 'ssl', 'anhtuan150787@gmail.com', 'anhtuan150787@gmail.com', 'LifeDeco');
 
 -- --------------------------------------------------------
 
@@ -1573,7 +1577,7 @@ ALTER TABLE `acl`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `group_acl`
@@ -1609,7 +1613,7 @@ ALTER TABLE `group_property_detail`
 -- AUTO_INCREMENT for table `group_template`
 --
 ALTER TABLE `group_template`
-  MODIFY `group_template_id` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `group_template_id` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `group_users`
@@ -1657,7 +1661,7 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `product_category`
 --
 ALTER TABLE `product_category`
-  MODIFY `product_category_id` smallint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `product_category_id` smallint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `product_category_detail`
@@ -1669,7 +1673,7 @@ ALTER TABLE `product_category_detail`
 -- AUTO_INCREMENT for table `product_picture`
 --
 ALTER TABLE `product_picture`
-  MODIFY `product_picture_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+  MODIFY `product_picture_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
 
 --
 -- AUTO_INCREMENT for table `product_property`
