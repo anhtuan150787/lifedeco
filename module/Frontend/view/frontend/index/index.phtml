@@ -8,14 +8,14 @@
                 <!-- gallery item -->
                 <div class="item">
                     <div class="picframe">
-                            <a  href="<?php echo $this->url('home-product-category', array('name' => $this->function()->formatTitle($productCategories['7']['product_category_name']), 'id' => $productCategories['7']['product_category_id']));?>">
+                            <a  href="<?php echo $this->url('home-product-category', array('name' => $this->function()->formatTitle($productCategories['8']['product_category_name']), 'id' => $productCategories['8']['product_category_id']));?>">
                                     <span class="overlay">
                                         <span class="pf_title">
-                                            <span class="project-name"><?php echo $this->escapeHtml($productCategories['7']['product_category_name']);?></span>
+                                            <span class="project-name"><?php echo $this->escapeHtml($productCategories['8']['product_category_name']);?></span>
                                         </span>
                                     </span>
                         </a>
-                        <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/product_categories/' . $productCategories['7']['product_category_picture']) . '&w=700&h=466';?>" alt="" />
+                        <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/product_categories/' . $productCategories['8']['product_category_picture']) . '&w=700&h=466';?>" alt="" />
                     </div>
                 </div>
                 <!-- close gallery item -->
@@ -24,15 +24,15 @@
                 <!-- gallery item -->
                 <div class="item">
                     <div class="picframe">
-                        <a  href="<?php echo $this->url('home-product-category', array('name' => $this->function()->formatTitle($productCategories['8']['product_category_name']), 'id' => $productCategories['8']['product_category_id']));?>">
+                        <a  href="<?php echo $this->url('home-product-category', array('name' => $this->function()->formatTitle($productCategories['7']['product_category_name']), 'id' => $productCategories['7']['product_category_id']));?>">
                                     <span class="overlay">
                                         <span class="pf_title">
-                                            <span class="project-name"><?php echo $this->escapeHtml($productCategories['8']['product_category_name']);?></span>
+                                            <span class="project-name"><?php echo $this->escapeHtml($productCategories['7']['product_category_name']);?></span>
                                         </span>
                                     </span>
                         </a>
 
-                        <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/product_categories/' . $productCategories['8']['product_category_picture']) . '&w=800&h=343';?>" alt="" />
+                        <img src="<?php echo  $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/product_categories/' . $productCategories['7']['product_category_picture']) . '&w=800&h=343';?>" alt="" />
                     </div>
                 </div>
                 <!-- close gallery item -->
@@ -95,16 +95,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp" style="visibility: hidden; animation-name: none;">
-                    <h1>HOTLINE: 0906 347 080</h1>
+                    <h1 class=hotline>HOTLINE: 0906 347 080</h1>
                     <div class="separator"><span><i class="fa fa-circle"></i></span></div>
                     <div class="spacer-single"></div>
                 </div>
 
                 <div class="col-md-6 wow fadeInUp" data-wow-delay="0s" style="visibility: hidden; animation-delay: 0s; animation-name: none;">
                     <div class="box-icon border">
-                        <span class="icon wow fadeIn" data-wow-delay=".5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;"><i class="id-color icon-paintbrush"></i></span>
+                        <span class="icon wow fadeIn" data-wow-delay=".5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+
+                            <img class="icon_hotline_section" src="<?php echo $this->basePath('public/frontend/images/icon_09.png');?>">
+                        </span>
                         <div class="text">
-                            <h3>Báo giá thiết kế</h3>
+                            <h3 class="title_hotline_section">Báo giá thiết kế</h3>
                             <p>Nội dung giới thiệu tóm tắt báo giá thiết kế</p>
                             <a class="strong id-color" href="<?php echo $this->url('home-page', array('name' => 'bang-gia-thiet-ke', 'id' => 4));?>">Xem chi tiết</a>
                         </div>
@@ -113,9 +116,11 @@
 
                 <div class="col-md-6 mb30 wow fadeInUp" data-wow-delay=".25s" style="visibility: hidden; animation-delay: 0.25s; animation-name: none;">
                     <div class="box-icon border">
-                        <span class="icon wow fadeIn" data-wow-delay=".75s" style="visibility: hidden; animation-delay: 0.75s; animation-name: none;"><i class="id-color icon-trophy"></i></span>
+                        <span class="icon wow fadeIn" data-wow-delay=".75s" style="visibility: hidden; animation-delay: 0.75s; animation-name: none;">
+                             <img class="icon_hotline_section" src="<?php echo $this->basePath('public/frontend/images/icon_10.png');?>">
+                        </span>
                         <div class="text">
-                            <h3>Bảng giá xây dựng</h3>
+                            <h3 class="title_hotline_section">Bảng giá xây dựng</h3>
                             <p>Nội dung giới thiệu tóm tắt báo giá xây dựng.</p>
                             <a class="strong id-color" href="<?php echo $this->url('home-page', array('name' => 'bang-gia-xay-dung', 'id' => 5));?>">Xem chi tiết</a>
                         </div>
@@ -124,20 +129,24 @@
 
                 <div class="col-md-6 mb30 wow fadeInUp" data-wow-delay=".75s" style="visibility: hidden; animation-delay: 0.75s; animation-name: none;">
                     <div class="box-icon border">
-                        <span class="icon wow fadeIn" data-wow-delay="1.25s" style="visibility: hidden; animation-delay: 1.25s; animation-name: none;"><i class="id-color icon-chat"></i></span>
+                        <span class="icon wow fadeIn" data-wow-delay="1.25s" style="visibility: hidden; animation-delay: 1.25s; animation-name: none;">
+                            <img class="icon_hotline_section" src="<?php echo $this->basePath('public/frontend/images/icon_03.png');?>">
+                        </span>
                         <div class="text">
-                            <h3>Mục 3</h3>
-                            <p>Nội dung giới thiệu tóm tắt mục 3</p>
-                            <a class="strong id-color" href="http://www.themenesia.com/themeforest/archi-light/index-masonry-med-3-cols.html#">Xem chi tiết</a>
+                            <h3 class="title_hotline_section">Về chúng tôi</h3>
+                            <p></p>
+                            <a class="strong id-color" href="<?php echo $this->url('home-page', array('name' => 've-chung-toi', 'id' => 3));?>">Xem chi tiết</a>
                         </div>
                     </div>
                 </div>
 
                 <div id="request_form" class="col-md-6 wow fadeInUp" data-wow-delay="1s" style="visibility: hidden; animation-delay: 1s; animation-name: none;">
                     <div class="box-icon border">
-                        <span class="icon wow fadeIn" data-wow-delay="1.75s" style="visibility: hidden; animation-delay: 1.75s; animation-name: none;"><i class="id-color icon-recycle"></i></span>
+                        <span class="icon wow fadeIn" data-wow-delay="1.75s" style="visibility: hidden; animation-delay: 1.75s; animation-name: none;">
+                            <img class="icon_hotline_section" src="<?php echo $this->basePath('public/frontend/images/icon_05.png');?>">
+                        </span>
                         <div class="text">
-                            <h3>Gửi yêu cầu tư vấn</h3>
+                            <h3 class="title_hotline_section">Gửi yêu cầu tư vấn</h3>
                             <div class="col-md-8" style="padding: 0">
                                 <?php if ($requestSuccess) {?>
                                     <div class="alert alert-success" role="alert">

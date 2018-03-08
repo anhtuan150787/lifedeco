@@ -76,6 +76,23 @@ return array(
                     ],
                 ),
             ],
+            'product-category-all' => [
+                'type' => 'Segment',
+                'options' => array(
+                    'route' => '/[:name]-pca-[:id]',
+                    'constraints' => [
+                        'controller' => 'Frontend\Controller\Product',
+                        'action' => 'category-all',
+                        'name' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                        'id' => '[0-9]*'
+                    ],
+                    'defaults' => [
+                        '__NAMESPACE__' => 'Frontend\Controller',
+                        'controller' => 'Frontend\Controller\Product',
+                        'action' => 'category-all',
+                    ],
+                ),
+            ],
             'product-sale' => [
                 'type' => 'Segment',
                 'options' => array(

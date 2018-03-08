@@ -103,4 +103,34 @@ class ProductController extends MasterController
         return $view;
     }
 
+    public function categoryAllAction() {
+        $view = new ViewModel();
+
+        $data   = $this->params()->fromRoute();
+        $productCategoryId = $data['id'];
+
+        $productModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('ProductModel');
+        $productCategoryModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('ProductCategoryModel');
+
+        $productCategories = $productCategoryModel->fetchWhere('product_category_status = 1 AND product_category_parent = ' . $productCategoryId);
+        $strProductCategoryId = '';
+        foreach($productCategories as $v) {
+            $strProductCategoryId .= ',' . $v['product_category_id'];
+        }
+
+        $products = $productModel->fetchWhere('product_status = 1 AND product_category_id IN (' . trim($strProductCategoryId, ',') . ')');
+        $productCategory = $productCategoryModel->fetchPrimary($productCategoryId);
+
+        $escaper = new \Zend\Escaper\Escaper('utf-8');
+        $crum = '<ul class="crumb">
+                    <li><a href="/">Trang chủ</a></li>
+                    <li class="sep">/</li>
+                    <li>' . $escaper->escapeHtml($productCategory['product_category_name']) . '</li>
+                </ul>';
+
+        $view->setVariables(['products' => $products, 'productCategories' => $productCategories, 'crum' => $crum, 'productCategory' => $productCategory]);
+
+        return $view;
+    }
+
 }

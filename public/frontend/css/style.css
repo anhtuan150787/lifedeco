@@ -388,6 +388,7 @@ overflow:visible;
 	display: inline;
 	list-style: none;
 	position: relative;
+		font-weight: bold;
 	}
 		
 	#mainmenu a {
@@ -5518,4 +5519,22 @@ h2 {
 
 #request_form textarea {
 	height: 70px;
+}
+
+h1.hotline {
+	color: #F76B1C;
+	font-weight: bold;
+}
+.icon_hotline_section {
+	height: 48px;
+}
+
+.title_hotline_section {
+	color: #fcce54 !important;
+	font-weight: bold;
+}
+
+#filters a {
+	font-weight: bold;
+	font-size: 12px;
 }
