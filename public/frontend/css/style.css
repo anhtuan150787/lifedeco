@@ -5453,7 +5453,17 @@ display:table;
 	header.de_header_2{
 		height:auto;	
 	}
-	
+
+	h1.hotline {
+		font-size: 20px;
+	}
+
+
+
+		#back-to-top {
+			bottom: 10px;
+			right: 10px;
+		}
 	}
 	
 	
@@ -5522,7 +5532,7 @@ h2 {
 }
 
 h1.hotline {
-	color: #F76B1C;
+	color: #FAB702 !important;
 	font-weight: bold;
 }
 .icon_hotline_section {
@@ -5530,11 +5540,15 @@ h1.hotline {
 }
 
 .title_hotline_section {
-	color: #fcce54 !important;
+	color: #FAB702 !important;
 	font-weight: bold;
 }
 
 #filters a {
 	font-weight: bold;
 	font-size: 12px;
+}
+
+footer .email a {
+	color: #ccc !important;
 }
