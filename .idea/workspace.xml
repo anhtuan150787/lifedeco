@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3666d958-4ab7-4a77-bed1-98fd96f238a6" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_121490f890894ad843e326f4e6ace6fc.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_158f6d6f0a6eaabf2aeb5d2fbf3d683b.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_2944b988a11f46a0768ba1c98d46b147.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_4d2ef8ab0cc4564d36e43d9cdb5401fa.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_536bee770b8336e06226549b90170a14.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_7cd1f352d0e80338c6e6a61c3260c5f4.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_7e1016b5e8ad630abf479ce3a2d1a505.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_e0af20759428e104badd4db2a1aadc29.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_f7efaf53f5dc689fea90e834260b8160.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_ff2b1cd9b6932043071b1e1ccf7582f8.timthumb.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/frontend/images/icon_03.png" afterPath="$PROJECT_DIR$/public/frontend/images/icon_03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/frontend/images/icon_05.png" afterPath="$PROJECT_DIR$/public/frontend/images/icon_05.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/frontend/images/icon_09.png" afterPath="$PROJECT_DIR$/public/frontend/images/icon_09.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/frontend/images/icon_10.png" afterPath="$PROJECT_DIR$/public/frontend/images/icon_10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Frontend/view/layout/frontend.phtml" afterPath="$PROJECT_DIR$/module/Frontend/view/layout/frontend.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Frontend/view/frontend/index/index.phtml" afterPath="$PROJECT_DIR$/module/Frontend/view/frontend/index/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/frontend/css/style.css" afterPath="$PROJECT_DIR$/public/frontend/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="3666d958-4ab7-4a77-bed1-98fd96f238a6" name="Default" comment="" />
     <ignored path="lifedeco.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -54,8 +35,8 @@
       <file leaf-file-name="index.phtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/index/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.22591361">
-              <caret line="118" column="150" selection-start-line="118" selection-start-column="150" selection-end-line="118" selection-end-column="150" />
+            <state vertical-scroll-proportion="0.585825">
+              <caret line="246" column="0" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1350,8 +1331,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/index/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.22591361">
-          <caret line="118" column="150" selection-start-line="118" selection-start-column="150" selection-end-line="118" selection-end-column="150" />
+        <state vertical-scroll-proportion="0.585825">
+          <caret line="246" column="0" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
           <folding />
         </state>
       </provider>
