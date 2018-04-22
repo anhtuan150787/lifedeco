@@ -107,9 +107,9 @@
                             <img class="icon_hotline_section" src="<?php echo $this->basePath('public/frontend/images/icon_09.png');?>">
                         </span>
                         <div class="text">
-                            <h3 class="title_hotline_section">Báo giá thiết kế</h3>
-                            <p>Nội dung giới thiệu tóm tắt báo giá thiết kế</p>
-                            <a class="strong id-color" href="<?php echo $this->url('home-page', array('name' => 'bang-gia-thiet-ke', 'id' => 4));?>">Xem chi tiết &raquo;</a>
+                            <h3 class="title_hotline_section"><?php echo $this->escapeHtml($pages['4']['post_title']);?></h3>
+                            <?php echo $pages['4']['post_quote'];?>
+                            <a class="strong id-color" href="<?php echo $this->url('home-page', array('name' => 'bang-gia-thiet-ke', 'id' => $pages['4']['post_id']));?>">Xem chi tiết &raquo;</a>
                         </div>
                     </div>
                 </div>
@@ -120,9 +120,9 @@
                              <img class="icon_hotline_section" src="<?php echo $this->basePath('public/frontend/images/icon_10.jpg');?>">
                         </span>
                         <div class="text">
-                            <h3 class="title_hotline_section">Bảng giá xây dựng</h3>
-                            <p>Nội dung giới thiệu tóm tắt báo giá xây dựng.</p>
-                            <a class="strong id-color" href="<?php echo $this->url('home-page', array('name' => 'bang-gia-xay-dung', 'id' => 5));?>">Xem chi tiết &raquo;</a>
+                            <h3 class="title_hotline_section"><?php echo $this->escapeHtml($pages['5']['post_title']);?></h3>
+                            <?php echo $pages['5']['post_quote'];?>
+                            <a class="strong id-color" href="<?php echo $this->url('home-page', array('name' => 'bang-gia-xay-dung', 'id' => $pages['4']['post_id']));?>">Xem chi tiết &raquo;</a>
                         </div>
                     </div>
                 </div>
@@ -133,9 +133,9 @@
                             <img class="icon_hotline_section" src="<?php echo $this->basePath('public/frontend/images/icon_03.jpg');?>">
                         </span>
                         <div class="text">
-                            <h3 class="title_hotline_section">Về chúng tôi</h3>
-                            <p></p>
-                            <a class="strong id-color" href="<?php echo $this->url('home-page', array('name' => 've-chung-toi', 'id' => 3));?>">Xem chi tiết &raquo;</a>
+                            <h3 class="title_hotline_section"><?php echo $this->escapeHtml($pages['3']['post_title']);?></h3>
+                            <?php echo $pages['3']['post_quote'];?>
+                            <a class="strong id-color" href="<?php echo $this->url('home-page', array('name' => 've-chung-toi', 'id' => $pages['3']['post_id']));?>">Xem chi tiết &raquo;</a>
                         </div>
                     </div>
                 </div>
@@ -192,7 +192,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp" style="visibility: hidden; animation-name: none;">
-                    <h1>CÔNG TRÌNH TIÊU BIỂU</h1>
+                    <h1 class="cttb">CÔNG TRÌNH TIÊU BIỂU</h1>
                     <div class="separator"><span><i class="fa fa-circle"></i></span></div>
                     <div class="spacer-single"></div>
                 </div>
@@ -204,10 +204,10 @@
                         : $this->serverUrl() . '/thumbs/timthumb.php?src=' . $this->basePath('public/pictures/products/' . $v['product_picture']) .'&w=700&h=466';
                     ?>
                 <div class="col-md-4 text-middle text-light wow fadeInRight" data-wow-delay="0" style="visibility: hidden; animation-name: none;">
-                    <div class="shadow-soft" data-bgimage="url(<?php echo $picture;?>)" style="background-image: url(<?php echo $picture;?>);">
+                    <div class="shadow-soft" data-bgimage="url('<?php echo $picture;?>')" style="background-image: url(<?php echo $picture;?>);">
                         <div class="padding40 overlay60">
                             <h3><?php echo $this->escapeHtml($v['product_name']);?></h3>
-                            <p><?php echo strip_tags($v['product_body']);?></p>
+                            <p><?php echo strip_tags($v['product_description']);?></p>
                             <a href="<?php echo $this->url('home-product-detail', array('name' => $this->function()->formatTitle($v['product_name']), 'id' => $v['product_id']));?>" class="btn-line btn-fullwidth">Xem thêm</a>
                         </div>
                     </div>

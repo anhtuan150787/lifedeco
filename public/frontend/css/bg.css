@@ -126,4 +126,5 @@ background:url(../images/bg-subheader.jpg)top fixed;
 	background-size: cover !important;
 	background-attachment:scroll !important;
 	}
+	#section-about-us-2 img {  width: 100%  }
 }

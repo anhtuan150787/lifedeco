@@ -22,7 +22,7 @@ class PostController extends MasterController
         $this->moduleName   = 'Bài viết';
         $this->modelName    = 'PostModel';
         $this->formName     = '\Admin\Form\PostForm';
-        $this->status       = ['1' => 'Kích hoạt', '0' => 'Tạm dừng'];
+        $this->status       = ['1' => 'Kích hoạt', '0' => 'Tạm dừng', '2' => 'Chờ đăng'];
         $this->uploadPath   = 'public/pictures/posts';
         $this->imgPrefix    = 'post_';
     }
@@ -117,6 +117,12 @@ class PostController extends MasterController
         $id = $this->params()->fromQuery('id');
         $record = $this->model->fetchPrimary($id);
 
+        if ($record['post_push_time'] != '0000-00-00 00:00:00') {
+            $record['post_push_time'] = date('d/m/y H:i:s', strtotime($record['post_push_time']));
+        } else {
+            $record['post_push_time'] = '';
+        }
+
         if ($this->getRequest()->isPost()) {
 
             $dataPost = $this->getRequest()->getPost();
@@ -175,12 +181,19 @@ class PostController extends MasterController
             $dataSave['post_date_updated']  = $this->timeNow;
             $dataSave['post_users_updated'] = $this->user->users_id;
         }
+
+        $postPushTimeArr = explode(' ', $paramPosts['post_push_time']);
+        $postPushTimeDayArr = explode('/', $postPushTimeArr[0]);
+
         $dataSave['post_title']     = $paramPosts['post_title'];
         $dataSave['post_quote']     = $paramPosts['post_quote'];
         $dataSave['post_body']      = $paramPosts['post_body'];
-        $dataSave['post_status']    = $paramPosts['post_status'];
+
+        $dataSave['post_status']    = ($paramPosts['post_push_time'] == '') ? $paramPosts['post_status'] : 2;
+
         $dataSave['post_category_id']    = $paramPosts['post_category_id'];
         $dataSave['post_type']      = 1;
+        $dataSave['post_push_time']     = $postPushTimeDayArr[2] . '-' . $postPushTimeDayArr[1] . '-' . $postPushTimeDayArr[0] . ' ' . $postPushTimeArr[1];
 
         $idLastInsert = $this->model->savePrimary($dataSave, $id);
     }

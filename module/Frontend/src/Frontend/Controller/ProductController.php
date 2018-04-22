@@ -73,6 +73,14 @@ class ProductController extends MasterController
                     <li>' . $escaper->escapeHtml($product['product_name']) . '</li>
                 </ul>';
 
+        $websiteGeneral['website_general_title'] = $escaper->escapeHtml($product['product_name']);
+        $websiteGeneral['website_general_description'] = strip_tags($product['product_description']);
+        $websiteGeneral['website_general_keyword'] = $escaper->escapeHtml($product['product_tag']);
+        $websiteGeneral['website_general_url'] = $url('home-product-detail', array('name' => $functions->formatTitle($product['product_name']), 'id' => $product['product_id']));
+        $websiteGeneral['website_general_image'] = 'http://lifedeco.vn/pictures/products/' . $product['product_picture'];
+
+        $this->layout()->setVariable('websiteGeneral', $websiteGeneral);
+
         $view->setVariables([
             'product' => $product,
             'productPictures' => $productPictures,

@@ -13,6 +13,8 @@
         ->prependStylesheet($this->basePath('admin/css/layout.css'))
         ->prependStylesheet($this->basePath('admin/build/css/custom.min.css'))
 
+        ->prependStylesheet($this->basePath('admin/vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css'))
+
         ->prependStylesheet($this->basePath('admin/vendors/pnotify/dist/pnotify.nonblock.css'))
         ->prependStylesheet($this->basePath('admin/vendors/pnotify/dist/pnotify.buttons.css'))
         ->prependStylesheet($this->basePath('admin/vendors/pnotify/dist/pnotify.css'))
@@ -201,6 +203,8 @@
                 ->prependFile($this->basePath('admin/js/scripts.js?v='.date('His')))
                 ->prependFile($this->basePath('admin/build/js/custom.min.js'))
 
+                ->prependFile($this->basePath('admin/vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js'))
+
                 ->prependFile($this->basePath('admin/vendors/tinymce/tinymce.min.js'))
 
                 ->prependFile($this->basePath('admin/vendors/jquery.tagsinput/src/jquery.tagsinput.js'))
@@ -264,8 +268,16 @@
                     if ($(".content").length)
                     {
                         tinymce.init({
-                            selector: "textarea.content", theme: "modern", height: 200,
+                            selector: "textarea.content", theme: "modern", height: 400,
                             font_size_style_values: ["6px,7px,8px,9px,10px,11px,12px,13px,14px,15px,16px,17px,18px,19px,20px,21px,22px,23px,24px,25px,26px,27px,28px,29px,30px,31px,32px,36px,38px,40px"],
+                            fontsize_formats: "8pt 9pt 10pt 11pt 12pt 13pt 14pt 15pt 16pt 17pt 18pt 19pt 20pt 21pt 22pt 23pt 24pt 25pt 26pt 27pt 28pt 29pt 30pt 31pt 32pt 33pt 34pt 34pt 36pt",
+                            setup : function(ed)
+                            {
+                                ed.on('init', function()
+                                {
+                                    this.execCommand("fontSize", false, "11pt");
+                                });
+                            },
                             relative_urls: false,
                             plugins: [
                                 "advlist autolink link image lists charmap print preview hr anchor pagebreak",

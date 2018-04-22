@@ -8,7 +8,7 @@ class Cache  {
     private $cache;
     private $configs;
     private $cacheType = 'file';
-    public $status = 'on';
+    public $status = 'off';
 
     public function __construct() {
         $this->setConfigs();
@@ -67,6 +67,8 @@ class Cache  {
     }
 
     public function set($key, $value) {
+
+        return;
 
         if ($this->status == 'off') {
             return;

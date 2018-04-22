@@ -42,6 +42,10 @@ $(document).ready(function() {
         $(".tags").tagsInput({width: "auto"});
     }
 
+    $('#myDatepicker').datetimepicker({
+        format: 'DD/MM/YYYY HH:mm:ss'
+    });
+
 });
 
 function confirmDelete() {

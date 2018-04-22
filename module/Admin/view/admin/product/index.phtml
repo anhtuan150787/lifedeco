@@ -4,6 +4,7 @@ $columnName = [
     'Hình',
     'Tên sản phẩm',
     'Danh mục',
+    'Tiêu biểu',
     'Ngày cập nhật',
     'Trạng thái',
 ];
@@ -26,6 +27,7 @@ foreach ($data['data'] as $record) {
         $picture,
         '<a href="' . $this->url('admin/default', array('controller' => $module, 'action' => 'edit'), array('query' => array('id' => $record['product_id']))) . '">' . ' <strong>' . $this->escapeHtml($record['product_name']) . '</strong>' . '</a>',
         $record['product_category_name'],
+        ($record['product_hot'] == 1) ? '<i class="fa fa-check-square-o"></i>' : '',
         $this->date()->dateTimeFormat($record['product_date_updated']),
         $data['status'][$record['product_status']],
     ];

@@ -71,6 +71,14 @@ class PostController extends MasterController
                     <li>' . $escaper->escapeHtml($post['post_title']) . '</li>
                 </ul>';
 
+        $websiteGeneral['website_general_title'] = $escaper->escapeHtml($post['post_title']);
+        $websiteGeneral['website_general_description'] = strip_tags($post['post_quote']);
+        $websiteGeneral['website_general_keyword'] = $escaper->escapeHtml($post['post_tag']);
+        $websiteGeneral['website_general_url'] = $url('home-news-detail', array('name' => $functions->formatTitle($post['post_title']), 'id' => $post['post_id']));
+        $websiteGeneral['website_general_image'] = 'http://lifedeco.vn/pictures/posts/' . $post['post_picture'];
+
+        $this->layout()->setVariable('websiteGeneral', $websiteGeneral);
+
         $view->setVariables([
             'post' => $post,
             'crum' => $crum,

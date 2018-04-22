@@ -26,10 +26,15 @@ class MasterController extends AbstractActionController
         $navigations = $navigationModel->getNavigations(5);
 
         $postModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('PostModel');
+        $productModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('ProductModel');
+
+        $postModel->saveWhere(['post_status' => 1], 'post_push_time <="' . date('Y-m-d H:i:s', time()) . '"');
+        $productModel->saveWhere(['product_status' => 1], 'product_push_time <="' . date('Y-m-d H:i:s', time()) . '"');
+
         $posts = $postModel->fetchWhere(' post_type = 1 ', 5);
 
-        $websiteGeneralModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('WebsiteGeneralModel');
-        $websiteGeneral = $websiteGeneralModel->fetchPrimary(1);
+//        $websiteGeneralModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('WebsiteGeneralModel');
+//        $websiteGeneral = $websiteGeneralModel->fetchPrimary(1);
 
         /*
         * View layout
@@ -37,7 +42,7 @@ class MasterController extends AbstractActionController
         $viewModel = $e->getApplication()->getMvcEvent()->getViewModel();
         $viewModel->navigations = $navigations;
         $viewModel->posts = $posts;
-        $viewModel->websiteGeneral = $websiteGeneral;
+//        $viewModel->websiteGeneral = $websiteGeneral;
 
         $c = $e->getTarget();
         $match = $e->getRouteMatch();

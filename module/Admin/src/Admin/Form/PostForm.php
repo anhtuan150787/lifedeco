@@ -24,10 +24,23 @@ class PostForm extends Form
         ]);
 
         $this->add([
+            'name' => 'post_push_time',
+            'type' => 'Text',
+            'attributes' => [
+                'class' => 'form-control',
+            ],
+            'options' => [
+                'label' => 'Giờ đăng bài',
+                'label_attributes' => ['class' => 'control-label col-md-2 col-sm-2 col-xs-12'],
+            ],
+        ]);
+
+
+        $this->add([
             'name' => 'post_quote',
             'type' => 'Zend\Form\Element\Textarea',
             'attributes' => [
-                'class' => 'form-control description',
+                'class' => 'form-control content',
             ],
             'options' => [
                 'label' => 'Tóm tắt',
@@ -56,7 +69,7 @@ class PostForm extends Form
             ],
             'options' => [
                 'label' => 'Danh mục',
-                'label_attributes' => ['class' => 'control-label col-md-3 col-sm-3 col-xs-12'],
+                'label_attributes' => ['class' => 'control-label col-md-2 col-sm-2 col-xs-12'],
                 'disable_inarray_validator' => true,
             ],
         ]);
@@ -70,7 +83,7 @@ class PostForm extends Form
             ],
             'options' => [
                 'label' => 'Hình (800x800 pixel)',
-                'label_attributes' => ['class' => 'control-label col-md-3 col-sm-3 col-xs-12'],
+                'label_attributes' => ['class' => 'control-label col-md-2 col-sm-2 col-xs-12'],
             ],
         ]);
 
@@ -83,7 +96,7 @@ class PostForm extends Form
             ],
             'options' => [
                 'label' => 'Trạng thái',
-                'label_attributes' => ['class' => 'control-label col-md-3 col-sm-3 col-xs-12'],
+                'label_attributes' => ['class' => 'control-label col-md-2 col-sm-2 col-xs-12'],
                 'disable_inarray_validator' => true,
             ],
         ]);

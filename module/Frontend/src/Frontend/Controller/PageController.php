@@ -21,6 +21,8 @@ class PageController extends MasterController
         $data = $this->params()->fromRoute();
         $id = $data['id'];
 
+        $url = $this->getServiceLocator()->get('viewhelpermanager')->get('url');
+        $functions = new \Application\View\Helper\Functions();
         $pageModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('PageModel');
         $page = $pageModel->fetchPrimary($id);
         $escaper = new \Zend\Escaper\Escaper('utf-8');
@@ -30,6 +32,13 @@ class PageController extends MasterController
                     <li class="sep">/</li>
                     <li>' . $escaper->escapeHtml($page['post_title']) . '</li>
                 </ul>';
+
+        $websiteGeneral['website_general_title'] = $escaper->escapeHtml($page['post_title']);
+        $websiteGeneral['website_general_description'] = strip_tags($page['post_quote']);
+        $websiteGeneral['website_general_keyword'] = $escaper->escapeHtml($page['post_tag']);
+        $websiteGeneral['website_general_url'] = $url('home-page', array('name' => $functions->formatTitle($page['post_title']), 'id' => $page['post_id']));
+
+        $this->layout()->setVariable('websiteGeneral', $websiteGeneral);
 
         $view->setVariables([
             'page' => $page,

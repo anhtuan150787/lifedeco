@@ -32,7 +32,7 @@ class ProductModel extends MasterModel implements InputFilterAwareInterface
         /*
          * Select
          */
-        $select = 'SELECT ' . $this->tableView . '.product_id, product_name, product_picture, product_view, product_date_updated, product_users_updated, product_status, users_fullname, product_category.product_category_name as product_category_name';
+        $select = 'SELECT ' . $this->tableView . '.product_id, product_name, product_picture, product_view, product_date_updated, product_users_updated, product_status, product_hot, users_fullname, product_category.product_category_name as product_category_name';
 
         /*
          * From
@@ -159,6 +159,12 @@ class ProductModel extends MasterModel implements InputFilterAwareInterface
 
             $inputFilter->add([
                 'name' => 'product_category_id',
+                'required' => false,
+                'allow_empty' => true,
+            ]);
+
+            $inputFilter->add([
+                'name' => 'product_hot',
                 'required' => false,
                 'allow_empty' => true,
             ]);

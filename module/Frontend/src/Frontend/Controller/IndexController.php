@@ -30,6 +30,21 @@ class IndexController extends MasterController
         $productModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('ProductModel');
         $products = $productModel->fetchWhere('product_status = 1', 3);
 
+        $productHots = $productModel->fetchWhere('product_hot = 1', 3);
+
+        $pageModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('PageModel');
+        $pages = $pageModel->fetchWhere('post_type = 2');
+
+        $dataPages = [];
+        foreach($pages as $v) {
+            $dataPages[$v['post_id']] = $v;
+        }
+
+        $websiteGeneralModel = $this->getServiceLocator()->get('FrontendModelGateway')->getModel('WebsiteGeneralModel');
+        $websiteGeneral = $websiteGeneralModel->fetchPrimary(1);
+        $this->layout()->setVariable('websiteGeneral', $websiteGeneral);
+
+
         $form = new Contact();
 
         if ($this->getRequest()->isPost()) {
@@ -76,8 +91,9 @@ class IndexController extends MasterController
         }
 
         $view->productCategories = $dataProductcategories;
-        $view->products = $products;
+        $view->products = $productHots;
         $view->form = $form;
+        $view->pages = $dataPages;
 
         return $view;
     }

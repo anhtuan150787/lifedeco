@@ -1,11 +1,16 @@
-<div class="col-sm-8" style="border-right: 1px solid #DDD">
-    <?php echo $this->formViewElement()->input2($form->get('post_title'));?>
-    <?php echo $this->formViewElement()->textarea($form->get('post_quote'));?>
-    <?php echo $this->formViewElement()->textarea($form->get('post_body')); ?>
-</div>
 
-<div class="col-sm-4">
+    <?php echo $this->formViewElement()->input2($form->get('post_title'));?>
     <?php echo $this->formViewElement()->picture($form->get('post_picture'), $module, $record, 'pictures/posts/', 'post_id');?>
     <?php echo $this->formViewElement()->checkbox($form->get('post_category_id'));?>
+    <div class="form-group">
+        <?php echo $this->formLabel($form->get('post_push_time'));?>
+        <div class='input-group date col-md-6 col-sm-6 col-xs-12 item' id='myDatepicker' style="padding-left: 10px; padding-right: 10px">
+            <?php echo $this->formElement($form->get('post_push_time'));?>
+            <span class="input-group-addon">
+                               <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+        </div>
+    </div>
     <?php echo $this->formViewElement()->input($form->get('post_status'));?>
-</div>
+    <?php echo $this->formViewElement()->textarea($form->get('post_quote'));?>
+    <?php echo $this->formViewElement()->textarea($form->get('post_body')); ?>

@@ -23,7 +23,7 @@ class ProductController extends MasterController
         $this->moduleName   = 'Dự án';
         $this->modelName    = 'ProductModel';
         $this->formName     = '\Admin\Form\ProductForm';
-        $this->status       = ['1' => 'Kích hoạt', '0' => 'Tạm dừng'];
+        $this->status       = ['1' => 'Kích hoạt', '0' => 'Tạm dừng', '2' => 'Chờ đăng'];
         $this->uploadPath   = 'public/pictures/products';
         $this->imgPrefix    = 'product_';
     }
@@ -117,6 +117,11 @@ class ProductController extends MasterController
         $record = $this->model->fetchPrimary($id);
         $record['product_price'] = $currency->__invoke($record['product_price']);
 
+        if ($record['product_push_time'] != '0000-00-00 00:00:00') {
+            $record['product_push_time'] = date('d/m/y H:i:s', strtotime($record['product_push_time']));
+        } else {
+            $record['product_push_time'] = '';
+        }
         if ($this->getRequest()->isPost()) {
 
             $dataPost = $this->getRequest()->getPost();
@@ -171,11 +176,19 @@ class ProductController extends MasterController
             $dataSave['product_date_updated']  = $this->timeNow;
             $dataSave['product_users_updated'] = $this->user->users_id;
         }
+
+        $postPushTimeArr = explode(' ', $paramPosts['product_push_time']);
+        $postPushTimeDayArr = explode('/', $postPushTimeArr[0]);
+
         $dataSave['product_name']     = $paramPosts['product_name'];
 //        $dataSave['product_price']     = str_replace('.', '', $paramPosts['product_price']);
         $dataSave['product_body']      = $paramPosts['product_body'];
-        $dataSave['product_status']    = $paramPosts['product_status'];
+        $dataSave['product_description'] = $paramPosts['product_description'];
+        $dataSave['product_tag']      = $paramPosts['product_tag'];
+        $dataSave['product_status']    = ($paramPosts['product_push_time'] == '') ? $paramPosts['product_status'] : 2;
         $dataSave['product_category_id']     = $paramPosts['product_category_id'];
+        $dataSave['product_push_time']     = $postPushTimeDayArr[2] . '-' . $postPushTimeDayArr[1] . '-' . $postPushTimeDayArr[0] . ' ' . $postPushTimeArr[1];
+        $dataSave['product_hot']      = $paramPosts['product_hot'];
 
         $idLastInsert = $this->model->savePrimary($dataSave, $id);
 

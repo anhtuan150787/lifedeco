@@ -18,7 +18,7 @@ class LoginForm extends Form
                 'placeholder' => 'Email',
                 'class' => 'form-control',
                 'required' => 'required',
-                'value' => 'anhtuan150787@gmail.com',
+               // 'value' => 'anhtuan150787@gmail.com',
             ],
         ));
 

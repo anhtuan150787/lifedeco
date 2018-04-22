@@ -1,12 +1,27 @@
 <div class="col-sm-8" style="border-right: 1px solid #DDD">
     <?php echo $this->formViewElement()->input2($form->get('product_name'));?>
-    <?php echo $this->formViewElement()->textarea($form->get('product_body')); ?>
     <?php echo $this->formViewElement()->picture_multi($form->get('product_picture_multi'), $module, $record, 'pictures/products/', 'product_id');?>
+    <?php echo $this->formViewElement()->textarea($form->get('product_tag')); ?>
 </div>
 
 <div class="col-sm-4">
     <?php echo $this->formViewElement()->picture($form->get('product_picture'), $module, $record, 'pictures/products/', 'product_id');?>
     <?php echo $this->formViewElement()->checkbox($form->get('product_category_id'));?>
+    <div class="form-group">
+        <?php echo $this->formLabel($form->get('product_push_time'));?>
+        <div class='input-group date col-md-6 col-sm-6 col-xs-12 item' id='myDatepicker' style="padding-left: 10px; padding-right: 10px">
+            <?php echo $this->formElement($form->get('product_push_time'));?>
+            <span class="input-group-addon">
+                               <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+        </div>
+    </div>
 <!--    --><?php //echo $this->formViewElement()->input($form->get('product_price'));?>
+    <?php echo $this->formViewElement()->checkbox($form->get('product_hot'));?>
     <?php echo $this->formViewElement()->input($form->get('product_status'));?>
+</div>
+
+<div class="col-sm-12">
+    <?php echo $this->formViewElement()->textarea($form->get('product_description')); ?>
+    <?php echo $this->formViewElement()->textarea($form->get('product_body')); ?>
 </div>

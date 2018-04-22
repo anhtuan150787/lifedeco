@@ -157,6 +157,7 @@ class PageController extends MasterController
         }
         $dataSave['post_title']     = $paramPosts['post_title'];
         $dataSave['post_body']      = $paramPosts['post_body'];
+        $dataSave['post_quote']      = $paramPosts['post_quote'];
         $dataSave['post_status']    = $paramPosts['post_status'];
         $dataSave['post_type']      = 2;
 

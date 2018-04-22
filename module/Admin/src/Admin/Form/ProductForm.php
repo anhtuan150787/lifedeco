@@ -37,14 +37,67 @@ class ProductForm extends Form
 //        ]);
 
         $this->add([
+            'name' => 'product_tag',
+            'type' => 'Zend\Form\Element\Textarea',
+            'attributes' => [
+                'class' => 'form-control',
+            ],
+            'options' => [
+                'label' => 'Từ khóa',
+                'label_attributes' => ['class' => 'control-label col-md-2 col-sm-2 col-xs-12'],
+            ],
+        ]);
+
+
+        $this->add([
+            'name' => 'product_hot',
+            'type' => 'Zend\Form\Element\Checkbox',
+            'attributes' => [
+                //'class' => 'form-control',
+                'style' => 'margin-left: 0'
+            ],
+            'options' => [
+                'label' => 'Tiêu biểu',
+                'label_attributes' => ['class' => 'control-label col-md-3 col-sm-3 col-xs-12'],
+                'use_hidden_element' => false,
+                'disable_inarray_validator' => true,
+            ],
+        ]);
+
+        $this->add([
+            'name' => 'product_push_time',
+            'type' => 'Text',
+            'attributes' => [
+                'class' => 'form-control',
+            ],
+            'options' => [
+                'label' => 'Giờ đăng bài',
+                'label_attributes' => ['class' => 'control-label col-md-3 col-sm-3 col-xs-12'],
+            ],
+        ]);
+
+
+        $this->add([
+            'name' => 'product_description',
+            'type' => 'Zend\Form\Element\Textarea',
+            'attributes' => [
+                'class' => 'form-control description',
+            ],
+            'options' => [
+                'label' => 'Mô tả ngắn',
+                'label_attributes' => ['class' => 'control-label col-md-1 col-sm-1 col-xs-12'],
+            ],
+        ]);
+
+        $this->add([
             'name' => 'product_body',
             'type' => 'Zend\Form\Element\Textarea',
             'attributes' => [
                 'class' => 'form-control content',
             ],
             'options' => [
-                'label' => 'Mô tả dự án',
-                'label_attributes' => ['class' => 'control-label col-md-2 col-sm-2 col-xs-12'],
+                'label' => 'Mô tả chi tiết',
+                'label_attributes' => ['class' => 'control-label col-md-1 col-sm-1 col-xs-12'],
             ],
         ]);
 

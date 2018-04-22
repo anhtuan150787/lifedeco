@@ -23,6 +23,18 @@ class PageForm extends Form
             ],
         ]);
 
+        $this->add([
+            'name' => 'post_quote',
+            'type' => 'Zend\Form\Element\Textarea',
+            'attributes' => [
+                'class' => 'form-control description',
+            ],
+            'options' => [
+                'label' => 'Mô tả',
+                'label_attributes' => ['class' => 'control-label col-md-2 col-sm-2 col-xs-12'],
+            ],
+        ]);
+
 
         $this->add([
             'name' => 'post_body',

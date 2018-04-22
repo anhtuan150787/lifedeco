@@ -56,6 +56,12 @@ class MasterController extends AbstractActionController
          */
         $this->layout('layout/admin');
 
+        $postModel = $this->getServiceLocator()->get('ModelGateway')->getModel('PostModel');
+        $productModel = $this->getServiceLocator()->get('ModelGateway')->getModel('ProductModel');
+
+        $postModel->saveWhere(['post_status' => 1], 'post_push_time <="' . date('Y-m-d H:i:s', time()) . '"');
+        $productModel->saveWhere(['product_status' => 1], 'product_push_time <="' . date('Y-m-d H:i:s', time()) . '"');
+
         $auth = new AuthenticationService();
 
         /*
@@ -294,7 +300,7 @@ class MasterController extends AbstractActionController
         $pictureInfo = $imgObject;
         if (!empty($pictureInfo) && $pictureInfo['name'] != '') {
             $uploadService->setPath($this->uploadPath);
-            $uploadService->setFile($pictureInfo['name']);
+            $uploadService->setFile(str_replace(' ', '', $pictureInfo['name']));
             $uploadService->setPrefix($this->imgPrefix);
             $uploadService->upload();
             $pictureNewName = $uploadService->getNewFile();
