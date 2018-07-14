@@ -1,0 +1,88 @@
+2018-03-10T08:47:57+07:00 ERR (3): error-router-no-match	185.189.112.71			POST	http://123.20.25.139/RPC2
+2018-03-10T09:18:16+07:00 ERR (3): error-router-no-match	115.72.229.79	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36	http://anhtuan150787.name.vn/	GET	http://anhtuan150787.name.vn/css/font-style-2.css
+2018-03-10T10:29:51+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Version/10.0 Mobile/14G60 Safari/602.1	http://anhtuan150787.name.vn/	GET	http://anhtuan150787.name.vn/css/font-style-2.css
+2018-03-10T13:48:53+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36	http://anhtuan150787.name.vn/	GET	http://anhtuan150787.name.vn/css/font-style-2.css
+2018-03-10T13:49:00+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36	http://anhtuan150787.name.vn/	GET	http://anhtuan150787.name.vn/css/font-style-2.css
+2018-03-10T13:49:03+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1	http://anhtuan150787.name.vn/	GET	http://anhtuan150787.name.vn/css/font-style-2.css
+2018-03-10T13:50:33+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1	http://anhtuan150787.name.vn/	GET	http://anhtuan150787.name.vn/css/font-style-2.css
+2018-03-10T13:50:58+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1	http://anhtuan150787.name.vn/	GET	http://anhtuan150787.name.vn/css/font-style-2.css
+2018-03-10T13:51:17+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1	http://anhtuan150787.name.vn/	GET	http://anhtuan150787.name.vn/css/font-style-2.css
+2018-03-10T15:39:56+07:00 ERR (3): error-router-no-match	71.6.202.198	Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)		GET	http://123.20.25.139/ccvv
+2018-03-10T20:08:26+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1	http://anhtuan150787.name.vn/	GET	http://anhtuan150787.name.vn/css/font-style-2.css
+2018-03-10T20:08:37+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36	http://anhtuan150787.name.vn/frontend/images/logo_lifedeco.png	GET	http://anhtuan150787.name.vn/favicon.ico
+2018-03-10T20:08:53+07:00 ERR (3): error-exception	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36		GET	http://anhtuan150787.name.vn/public/admin/	Statement could not be executed (42000 - 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND group_menu_status = 1
+                    AND menu_parent = 0 ORDER BY menu' at line 3)
+#0 /var/www/html/module/Admin/src/Admin/Model/GroupMenuModel.php(41): Zend\Db\Adapter\Driver\Pdo\Statement->execute()
+#1 /var/www/html/module/Admin/src/Admin/Model/GroupMenuModel.php(23): Admin\Model\GroupMenuModel->getGroupMenuList(NULL, 0, -1, Array)
+#2 /var/www/html/module/Admin/src/Admin/Controller/MasterController.php(79): Admin\Model\GroupMenuModel->getGroupMenu(NULL)
+#3 [internal function]: Admin\Controller\MasterController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#4 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#5 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#6 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractController.php(118): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#7 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/DispatchListener.php(93): Zend\Mvc\Controller\AbstractController->dispatch(Object(Zend\Http\PhpEnvironment\Request), Object(Zend\Http\PhpEnvironment\Response))
+#8 [internal function]: Zend\Mvc\DispatchListener->onDispatch(Object(Zend\Mvc\MvcEvent))
+#9 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#10 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#11 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Application.php(314): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#12 /var/www/html/public/index.php(17): Zend\Mvc\Application->run()
+#13 {main}
+2018-03-10T20:08:54+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36	http://anhtuan150787.name.vn/public/admin/login/index	GET	http://anhtuan150787.name.vn/public/img/favicon.ico
+2018-03-10T20:09:07+07:00 ERR (3): error-exception	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36	http://anhtuan150787.name.vn/admin/page/add	GET	http://anhtuan150787.name.vn/admin/page	Zend\I18n\View\Helper component requires the intl PHP extension
+#0 /var/www/html/vendor/zendframework/zendframework/library/Zend/ServiceManager/AbstractPluginManager.php(207): Zend\I18n\View\Helper\DateFormat->__construct()
+#1 /var/www/html/vendor/zendframework/zendframework/library/Zend/ServiceManager/ServiceManager.php(642): Zend\ServiceManager\AbstractPluginManager->createFromInvokable('date', 'date')
+#2 /var/www/html/vendor/zendframework/zendframework/library/Zend/ServiceManager/ServiceManager.php(598): Zend\ServiceManager\ServiceManager->doCreate('date', 'date')
+#3 /var/www/html/vendor/zendframework/zendframework/library/Zend/ServiceManager/ServiceManager.php(530): Zend\ServiceManager\ServiceManager->create(Array)
+#4 /var/www/html/vendor/zendframework/zendframework/library/Zend/ServiceManager/AbstractPluginManager.php(116): Zend\ServiceManager\ServiceManager->get('date', true)
+#5 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/Renderer/PhpRenderer.php(372): Zend\ServiceManager\AbstractPluginManager->get('date', NULL)
+#6 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/Renderer/PhpRenderer.php(390): Zend\View\Renderer\PhpRenderer->plugin('date')
+#7 /var/www/html/module/Admin/view/admin/page/index.phtml(12): Zend\View\Renderer\PhpRenderer->__call('date', Array)
+#8 /var/www/html/module/Admin/view/admin/page/index.phtml(12): Zend\View\Renderer\PhpRenderer->date()
+#9 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/Renderer/PhpRenderer.php(501): include('/var/www/html/m...')
+#10 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/Helper/Partial.php(61): Zend\View\Renderer\PhpRenderer->render('admin/page/inde...', Array)
+#11 [internal function]: Zend\View\Helper\Partial->__invoke('admin/page/inde...', Array)
+#12 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/Renderer/PhpRenderer.php(393): call_user_func_array(Object(Zend\View\Helper\Partial), Array)
+#13 /var/www/html/module/Admin/view/partial/table_paging_special.phtml(15): Zend\View\Renderer\PhpRenderer->__call('partial', Array)
+#14 /var/www/html/module/Admin/view/partial/table_paging_special.phtml(15): Zend\View\Renderer\PhpRenderer->partial('admin/page/inde...', Array)
+#15 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/Renderer/PhpRenderer.php(501): include('/var/www/html/m...')
+#16 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/View.php(205): Zend\View\Renderer\PhpRenderer->render(Object(Zend\View\Model\ViewModel))
+#17 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/View.php(233): Zend\View\View->render(Object(Zend\View\Model\ViewModel))
+#18 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/View.php(198): Zend\View\View->renderChildren(Object(Zend\View\Model\ViewModel))
+#19 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/View/Http/DefaultRenderingStrategy.php(103): Zend\View\View->render(Object(Zend\View\Model\ViewModel))
+#20 [internal function]: Zend\Mvc\View\Http\DefaultRenderingStrategy->render(Object(Zend\Mvc\MvcEvent))
+#21 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#22 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('render', Object(Zend\Mvc\MvcEvent), Array)
+#23 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Application.php(353): Zend\EventManager\EventManager->trigger('render', Object(Zend\Mvc\MvcEvent))
+#24 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Application.php(328): Zend\Mvc\Application->completeRequest(Object(Zend\Mvc\MvcEvent))
+#25 /var/www/html/public/index.php(17): Zend\Mvc\Application->run()
+#26 {main}
+2018-03-10T20:09:07+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36	http://anhtuan150787.name.vn/admin/page	GET	http://anhtuan150787.name.vn/img/favicon.ico
+2018-03-10T20:09:31+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1	http://anhtuan150787.name.vn/	GET	http://anhtuan150787.name.vn/css/font-style-2.css
+2018-03-10T20:09:45+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1	http://anhtuan150787.name.vn/	GET	http://anhtuan150787.name.vn/css/font-style-2.css
+2018-03-10T20:10:37+07:00 ERR (3): error-exception	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36	http://anhtuan150787.name.vn/admin/product-category/index	GET	http://anhtuan150787.name.vn/admin/product/index	Zend\I18n\View\Helper component requires the intl PHP extension
+#0 /var/www/html/vendor/zendframework/zendframework/library/Zend/ServiceManager/AbstractPluginManager.php(207): Zend\I18n\View\Helper\DateFormat->__construct()
+#1 /var/www/html/vendor/zendframework/zendframework/library/Zend/ServiceManager/ServiceManager.php(642): Zend\ServiceManager\AbstractPluginManager->createFromInvokable('date', 'date')
+#2 /var/www/html/vendor/zendframework/zendframework/library/Zend/ServiceManager/ServiceManager.php(598): Zend\ServiceManager\ServiceManager->doCreate('date', 'date')
+#3 /var/www/html/vendor/zendframework/zendframework/library/Zend/ServiceManager/ServiceManager.php(530): Zend\ServiceManager\ServiceManager->create(Array)
+#4 /var/www/html/vendor/zendframework/zendframework/library/Zend/ServiceManager/AbstractPluginManager.php(116): Zend\ServiceManager\ServiceManager->get('date', true)
+#5 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/Renderer/PhpRenderer.php(372): Zend\ServiceManager\AbstractPluginManager->get('date', NULL)
+#6 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/Renderer/PhpRenderer.php(390): Zend\View\Renderer\PhpRenderer->plugin('date')
+#7 /var/www/html/module/Admin/view/admin/product/index.phtml(29): Zend\View\Renderer\PhpRenderer->__call('date', Array)
+#8 /var/www/html/module/Admin/view/admin/product/index.phtml(29): Zend\View\Renderer\PhpRenderer->date()
+#9 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/Renderer/PhpRenderer.php(501): include('/var/www/html/m...')
+#10 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/Helper/Partial.php(61): Zend\View\Renderer\PhpRenderer->render('admin/product/i...', Array)
+#11 [internal function]: Zend\View\Helper\Partial->__invoke('admin/product/i...', Array)
+#12 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/Renderer/PhpRenderer.php(393): call_user_func_array(Object(Zend\View\Helper\Partial), Array)
+#13 /var/www/html/module/Admin/view/partial/table_paging_special.phtml(15): Zend\View\Renderer\PhpRenderer->__call('partial', Array)
+#14 /var/www/html/module/Admin/view/partial/table_paging_special.phtml(15): Zend\View\Renderer\PhpRenderer->partial('admin/product/i...', Array)
+#15 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/Renderer/PhpRenderer.php(501): include('/var/www/html/m...')
+#16 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/View.php(205): Zend\View\Renderer\PhpRenderer->render(Object(Zend\View\Model\ViewModel))
+#17 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/View.php(233): Zend\View\View->render(Object(Zend\View\Model\ViewModel))
+#18 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/View.php(198): Zend\View\View->renderChildren(Object(Zend\View\Model\ViewModel))
+#19 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/View/Http/DefaultRenderingStrategy.php(103): Zend\View\View->render(Object(Zend\View\Model\ViewModel))
+#20 [internal function]: Zend\Mvc\View\Http\DefaultRenderingStrategy->render(Object(Zend\Mvc\MvcEvent))
+#21 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#22 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('render', Object(Zend\Mvc\MvcEvent), Array)
+#23 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Application.php(353): Zend\EventManager\EventManager->trigger('render', Object(Zend\Mvc\MvcEvent))
+#24 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Application.php(328): Zend\Mvc\Application->completeRequest(Object(Zend\Mvc\MvcEvent))
+#25 /var/www/html/public/index.php(17): Zend\Mvc\Application->run()
+#26 {main}

@@ -1,0 +1,49 @@
+2018-04-29T00:53:26+07:00 ERR (3): error-router-no-match	66.249.71.17	Googlebot-Image/1.0		GET	http://lifedeco.vn/Uploads/images/nhapho/22/xay-nha-pho-nho%20%284%29.jpg
+2018-04-29T01:56:05+07:00 ERR (3): error-router-no-match	66.249.71.17	Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)		GET	http://lifedeco.vn/robots.txt
+2018-04-29T01:56:05+07:00 ERR (3): error-router-no-match	66.249.71.18	Googlebot-Image/1.0		GET	http://lifedeco.vn/Uploads/images/showroom/trangsuc/1/thiet-ke-showroom-trang-suc%20%281%29.jpg
+2018-04-29T02:01:04+07:00 ERR (3): error-router-no-match	216.244.66.197	Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)		GET	http://lifedeco.vn/robots.txt
+2018-04-29T02:31:12+07:00 ERR (3): error-router-no-match	40.77.167.68	Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)		GET	http://lifedeco.vn/robots.txt
+2018-04-29T03:48:38+07:00 ERR (3): error-router-no-match	123.30.175.139	Mozilla/5.0 (compatible; coccocbot-image/1.0; +http://help.coccoc.com/searchengine)		GET	http://lifedeco.vn/robots.txt
+2018-04-29T03:48:46+07:00 ERR (3): error-router-no-match	123.30.175.193	Mozilla/5.0 (compatible; coccocbot-image/1.0; +http://help.coccoc.com/searchengine)		GET	http://lifedeco.vn/wp-content/uploads/2017/04/3.jpg
+2018-04-29T04:14:57+07:00 ERR (3): error-router-no-match	216.244.66.197	Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)		GET	http://lifedeco.vn/robots.txt
+2018-04-29T05:17:16+07:00 ERR (3): error-router-no-match	216.244.66.197	Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)		GET	http://lifedeco.vn/san-pham/
+2018-04-29T05:52:02+07:00 ERR (3): error-router-no-match	66.249.79.4	Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)		GET	http://lifedeco.vn/Kien-truc-noi-bac-an-tuong-Taboo-Lounge-and-Bar-vi-8-31-cms.html
+2018-04-29T07:04:50+07:00 ERR (3): error-router-no-match	216.244.66.197	Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)		GET	http://lifedeco.vn/robots.txt
+2018-04-29T07:33:58+07:00 ERR (3): error-router-no-match	216.244.66.249	Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)		GET	http://lifedeco.vn/robots.txt
+2018-04-29T07:45:46+07:00 ERR (3): error-router-no-match	123.30.235.19	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36		GET	http://lifedeco.vn/wp-includes/wlwmanifest.xml
+2018-04-29T07:45:47+07:00 ERR (3): error-router-no-match	123.30.235.19	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36		GET	http://lifedeco.vn/xmlrpc.php?rsd
+2018-04-29T07:45:51+07:00 ERR (3): error-router-no-match	123.30.235.19	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36		GET	http://lifedeco.vn/blog/wp-includes/wlwmanifest.xml
+2018-04-29T07:45:52+07:00 ERR (3): error-router-no-match	123.30.235.19	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36		GET	http://lifedeco.vn/wordpress/wp-includes/wlwmanifest.xml
+2018-04-29T07:45:52+07:00 ERR (3): error-router-no-match	123.30.235.19	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36		GET	http://lifedeco.vn/wp/wp-includes/wlwmanifest.xml
+2018-04-29T07:45:52+07:00 ERR (3): error-router-no-match	123.30.235.19	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36		GET	http://lifedeco.vn/site/wp-includes/wlwmanifest.xml
+2018-04-29T10:37:01+07:00 ERR (3): error-router-no-match	95.211.188.3	Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0		GET	http://lifedeco.vn/wp-content/uploads/assignments/ch.php.
+2018-04-29T10:37:06+07:00 ERR (3): error-router-no-match	171.246.75.123	Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/68.4.154 Chrome/62.4.3202.154 Safari/537.36	http://hoangkhaigroup.com/Thiet-ke-xay-dung-nha-pho-dep-2-tang-hien-dai-vi-21-27-1.html	GET	http://lifedeco.vn/images/favico.gif
+2018-04-29T11:12:16+07:00 ERR (3): error-router-no-match	148.251.126.73	Mozilla/5.0 (compatible; MJ12bot/v1.4.8; http://mj12bot.com/)		GET	http://lifedeco.vn/robots.txt
+2018-04-29T11:12:18+07:00 ERR (3): error-router-no-match	148.251.126.73	Mozilla/5.0 (compatible; MJ12bot/v1.4.8; http://mj12bot.com/)		GET	http://lifedeco.vn/tag/can-ho-dep/
+2018-04-29T11:12:20+07:00 ERR (3): error-router-no-match	148.251.126.73	Mozilla/5.0 (compatible; MJ12bot/v1.4.8; http://mj12bot.com/)		GET	http://lifedeco.vn/tag/noi-that-cao-cap/
+2018-04-29T11:12:22+07:00 ERR (3): error-router-no-match	148.251.126.73	Mozilla/5.0 (compatible; MJ12bot/v1.4.8; http://mj12bot.com/)		GET	http://lifedeco.vn/tag/noi-that-dep/
+2018-04-29T11:12:24+07:00 ERR (3): error-router-no-match	148.251.126.73	Mozilla/5.0 (compatible; MJ12bot/v1.4.8; http://mj12bot.com/)		GET	http://lifedeco.vn/tag/thiet-ke-beer-club/
+2018-04-29T12:39:41+07:00 ERR (3): error-router-no-match	216.244.66.233	Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)		GET	http://lifedeco.vn/robots.txt
+2018-04-29T15:26:17+07:00 ERR (3): error-router-no-match	178.154.200.39	Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)		GET	http://lifedeco.vn/robots.txt
+2018-04-29T15:26:20+07:00 ERR (3): error-router-no-match	178.154.200.39	Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)		GET	http://lifedeco.vn/wp-content/uploads/2017/04/Banner-20170217093942.png
+2018-04-29T16:21:44+07:00 ERR (3): error-router-no-match	216.244.66.249	Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)		GET	http://lifedeco.vn/robots.txt
+2018-04-29T17:41:40+07:00 ERR (3): error-router-no-match	207.46.13.76	Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)		GET	http://lifedeco.vn/robots.txt
+2018-04-29T19:22:33+07:00 ERR (3): error-router-no-match	216.244.66.249	Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)		GET	http://lifedeco.vn/robots.txt
+2018-04-29T19:46:23+07:00 ERR (3): error-exception	216.244.66.249	Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)		GET	http://lifedeco.vn/can-ho-q-5-pd-20	Statement could not be executed (42000 - 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1)
+#0 /home/lifedeco/domains/lifedeco.vn/public_html/module/Frontend/src/Frontend/Model/MasterModel.php(80): Zend\Db\Adapter\Driver\Pdo\Statement->execute()
+#1 /home/lifedeco/domains/lifedeco.vn/public_html/module/Frontend/src/Frontend/Controller/ProductController.php(65): Frontend\Model\MasterModel->fetchWhere('product_id = ')
+#2 /home/lifedeco/domains/lifedeco.vn/public_html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractActionController.php(82): Frontend\Controller\ProductController->detailAction()
+#3 /home/lifedeco/domains/lifedeco.vn/public_html/module/Frontend/src/Frontend/Controller/MasterController.php(55): Zend\Mvc\Controller\AbstractActionController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#4 [internal function]: Frontend\Controller\MasterController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#5 /home/lifedeco/domains/lifedeco.vn/public_html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#6 /home/lifedeco/domains/lifedeco.vn/public_html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#7 /home/lifedeco/domains/lifedeco.vn/public_html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractController.php(118): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#8 /home/lifedeco/domains/lifedeco.vn/public_html/vendor/zendframework/zendframework/library/Zend/Mvc/DispatchListener.php(93): Zend\Mvc\Controller\AbstractController->dispatch(Object(Zend\Http\PhpEnvironment\Request), Object(Zend\Http\PhpEnvironment\Response))
+#9 [internal function]: Zend\Mvc\DispatchListener->onDispatch(Object(Zend\Mvc\MvcEvent))
+#10 /home/lifedeco/domains/lifedeco.vn/public_html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#11 /home/lifedeco/domains/lifedeco.vn/public_html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#12 /home/lifedeco/domains/lifedeco.vn/public_html/vendor/zendframework/zendframework/library/Zend/Mvc/Application.php(314): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#13 /home/lifedeco/domains/lifedeco.vn/public_html/public/index.php(17): Zend\Mvc\Application->run()
+#14 {main}
+2018-04-29T23:46:07+07:00 ERR (3): error-router-no-match	66.249.71.18	Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)		GET	http://lifedeco.vn/robots.txt
+2018-04-29T23:46:08+07:00 ERR (3): error-router-no-match	66.249.79.30	Googlebot-Image/1.0		GET	http://lifedeco.vn/Uploads/post/mau-hinh-anh-nha-pho-dep.jpg

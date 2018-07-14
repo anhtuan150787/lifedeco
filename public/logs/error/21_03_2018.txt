@@ -1,0 +1,121 @@
+2018-03-21T15:38:56+07:00 ERR (3): error-router-no-match	183.91.31.100	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36	http://anhtuan150787.name.vn/	GET	http://anhtuan150787.name.vn/css/font-style-2.css
+2018-03-21T15:38:58+07:00 ERR (3): error-exception	183.91.31.100	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36		GET	http://anhtuan150787.name.vn/public/admin/	Statement could not be executed (42000 - 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND group_menu_status = 1
+                    AND menu_parent = 0 ORDER BY menu' at line 3)
+#0 /var/www/html/module/Admin/src/Admin/Model/GroupMenuModel.php(41): Zend\Db\Adapter\Driver\Pdo\Statement->execute()
+#1 /var/www/html/module/Admin/src/Admin/Model/GroupMenuModel.php(23): Admin\Model\GroupMenuModel->getGroupMenuList(NULL, 0, -1, Array)
+#2 /var/www/html/module/Admin/src/Admin/Controller/MasterController.php(79): Admin\Model\GroupMenuModel->getGroupMenu(NULL)
+#3 [internal function]: Admin\Controller\MasterController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#4 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#5 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#6 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractController.php(118): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#7 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/DispatchListener.php(93): Zend\Mvc\Controller\AbstractController->dispatch(Object(Zend\Http\PhpEnvironment\Request), Object(Zend\Http\PhpEnvironment\Response))
+#8 [internal function]: Zend\Mvc\DispatchListener->onDispatch(Object(Zend\Mvc\MvcEvent))
+#9 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#10 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#11 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Application.php(314): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#12 /var/www/html/public/index.php(17): Zend\Mvc\Application->run()
+#13 {main}
+2018-03-21T15:38:59+07:00 ERR (3): error-router-no-match	183.91.31.100	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36	http://anhtuan150787.name.vn/public/admin/login/index	GET	http://anhtuan150787.name.vn/public/img/favicon.ico
+2018-03-21T15:40:14+07:00 ERR (3): error-router-no-match	183.91.31.100	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36	http://anhtuan150787.name.vn/admin/user/index	GET	http://anhtuan150787.name.vn/img/favicon.ico
+2018-03-21T17:16:02+07:00 ERR (3): error-router-no-match	66.220.85.116			GET	http://123.20.25.139/HNAP1/
+2018-03-21T19:22:23+07:00 ERR (3): error-router-no-match	193.108.124.147			GET	http://123.20.25.139/HNAP1/
+2018-03-21T19:42:40+07:00 ERR (3): error-exception	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36		GET	http://anhtuan150787.name.vn/public/admin/	Statement could not be executed (42000 - 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND group_menu_status = 1
+                    AND menu_parent = 0 ORDER BY menu' at line 3)
+#0 /var/www/html/module/Admin/src/Admin/Model/GroupMenuModel.php(41): Zend\Db\Adapter\Driver\Pdo\Statement->execute()
+#1 /var/www/html/module/Admin/src/Admin/Model/GroupMenuModel.php(23): Admin\Model\GroupMenuModel->getGroupMenuList(NULL, 0, -1, Array)
+#2 /var/www/html/module/Admin/src/Admin/Controller/MasterController.php(79): Admin\Model\GroupMenuModel->getGroupMenu(NULL)
+#3 [internal function]: Admin\Controller\MasterController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#4 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#5 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#6 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractController.php(118): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#7 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/DispatchListener.php(93): Zend\Mvc\Controller\AbstractController->dispatch(Object(Zend\Http\PhpEnvironment\Request), Object(Zend\Http\PhpEnvironment\Response))
+#8 [internal function]: Zend\Mvc\DispatchListener->onDispatch(Object(Zend\Mvc\MvcEvent))
+#9 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#10 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#11 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Application.php(314): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#12 /var/www/html/public/index.php(17): Zend\Mvc\Application->run()
+#13 {main}
+2018-03-21T19:42:41+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36	http://anhtuan150787.name.vn/public/admin/login/index	GET	http://anhtuan150787.name.vn/public/img/favicon.ico
+2018-03-21T19:43:29+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36	http://anhtuan150787.name.vn/admin/contact/index	GET	http://anhtuan150787.name.vn/img/favicon.ico
+2018-03-21T19:47:39+07:00 ERR (3): error-exception	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36	http://anhtuan150787.name.vn/admin/group-template	GET	http://anhtuan150787.name.vn/admin/template/index?group_template_id=1	Zend\View\Renderer\PhpRenderer::render: Unable to render template "admin/template/index"; resolver could not resolve to a file
+#0 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/View.php(205): Zend\View\Renderer\PhpRenderer->render(Object(Zend\View\Model\ViewModel))
+#1 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/View.php(233): Zend\View\View->render(Object(Zend\View\Model\ViewModel))
+#2 /var/www/html/vendor/zendframework/zendframework/library/Zend/View/View.php(198): Zend\View\View->renderChildren(Object(Zend\View\Model\ViewModel))
+#3 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/View/Http/DefaultRenderingStrategy.php(103): Zend\View\View->render(Object(Zend\View\Model\ViewModel))
+#4 [internal function]: Zend\Mvc\View\Http\DefaultRenderingStrategy->render(Object(Zend\Mvc\MvcEvent))
+#5 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#6 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('render', Object(Zend\Mvc\MvcEvent), Array)
+#7 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Application.php(353): Zend\EventManager\EventManager->trigger('render', Object(Zend\Mvc\MvcEvent))
+#8 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Application.php(328): Zend\Mvc\Application->completeRequest(Object(Zend\Mvc\MvcEvent))
+#9 /var/www/html/public/index.php(17): Zend\Mvc\Application->run()
+#10 {main}
+2018-03-21T20:19:50+07:00 ERR (3): error-exception	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36	http://anhtuan150787.name.vn/admin/post/index	POST	http://anhtuan150787.name.vn/admin/post/delete	Service "response" has been requested to plugin manager of type "Zend\Mvc\Controller\PluginManager", but couldn't be retrieved.
+A previous exception of type "Zend\ServiceManager\Exception\ServiceNotFoundException" has been raised in the process.
+By the way, a service with the name "response" has been found in the parent service locator "Zend\ServiceManager\ServiceManager": did you forget to use $parentLocator = $serviceLocator->getServiceLocator() in your factory code?
+#0 /var/www/html/vendor/zendframework/zendframework/library/Zend/ServiceManager/AbstractPluginManager.php(312): Zend\ServiceManager\Exception\ServiceLocatorUsageException::fromInvalidPluginManagerRequestedServiceName(Object(Zend\Mvc\Controller\PluginManager), Object(Zend\ServiceManager\ServiceManager), 'response', Object(Zend\ServiceManager\Exception\ServiceNotFoundException))
+#1 /var/www/html/vendor/zendframework/zendframework/library/Zend/ServiceManager/AbstractPluginManager.php(118): Zend\ServiceManager\AbstractPluginManager->tryThrowingServiceLocatorUsageException('response', false, Object(Zend\ServiceManager\Exception\ServiceNotFoundException))
+#2 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/PluginManager.php(84): Zend\ServiceManager\AbstractPluginManager->get('response', NULL, true)
+#3 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractController.php(292): Zend\Mvc\Controller\PluginManager->get('response', NULL)
+#4 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractController.php(307): Zend\Mvc\Controller\AbstractController->plugin('response')
+#5 /var/www/html/module/Admin/src/Admin/Controller/PostController.php(209): Zend\Mvc\Controller\AbstractController->__call('response', Array)
+#6 /var/www/html/module/Admin/src/Admin/Controller/PostController.php(209): Admin\Controller\PostController->response()
+#7 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractActionController.php(82): Admin\Controller\PostController->deleteAction()
+#8 /var/www/html/module/Admin/src/Admin/Controller/MasterController.php(88): Zend\Mvc\Controller\AbstractActionController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#9 [internal function]: Admin\Controller\MasterController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#10 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#11 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#12 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractController.php(118): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#13 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/DispatchListener.php(93): Zend\Mvc\Controller\AbstractController->dispatch(Object(Zend\Http\PhpEnvironment\Request), Object(Zend\Http\PhpEnvironment\Response))
+#14 [internal function]: Zend\Mvc\DispatchListener->onDispatch(Object(Zend\Mvc\MvcEvent))
+#15 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#16 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#17 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Application.php(314): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#18 /var/www/html/public/index.php(17): Zend\Mvc\Application->run()
+#19 {main}
+2018-03-21T20:20:16+07:00 ERR (3): error-exception	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36	http://anhtuan150787.name.vn/admin/product/index	POST	http://anhtuan150787.name.vn/admin/product/delete	Service "response" has been requested to plugin manager of type "Zend\Mvc\Controller\PluginManager", but couldn't be retrieved.
+A previous exception of type "Zend\ServiceManager\Exception\ServiceNotFoundException" has been raised in the process.
+By the way, a service with the name "response" has been found in the parent service locator "Zend\ServiceManager\ServiceManager": did you forget to use $parentLocator = $serviceLocator->getServiceLocator() in your factory code?
+#0 /var/www/html/vendor/zendframework/zendframework/library/Zend/ServiceManager/AbstractPluginManager.php(312): Zend\ServiceManager\Exception\ServiceLocatorUsageException::fromInvalidPluginManagerRequestedServiceName(Object(Zend\Mvc\Controller\PluginManager), Object(Zend\ServiceManager\ServiceManager), 'response', Object(Zend\ServiceManager\Exception\ServiceNotFoundException))
+#1 /var/www/html/vendor/zendframework/zendframework/library/Zend/ServiceManager/AbstractPluginManager.php(118): Zend\ServiceManager\AbstractPluginManager->tryThrowingServiceLocatorUsageException('response', false, Object(Zend\ServiceManager\Exception\ServiceNotFoundException))
+#2 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/PluginManager.php(84): Zend\ServiceManager\AbstractPluginManager->get('response', NULL, true)
+#3 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractController.php(292): Zend\Mvc\Controller\PluginManager->get('response', NULL)
+#4 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractController.php(307): Zend\Mvc\Controller\AbstractController->plugin('response')
+#5 /var/www/html/module/Admin/src/Admin/Controller/ProductController.php(229): Zend\Mvc\Controller\AbstractController->__call('response', Array)
+#6 /var/www/html/module/Admin/src/Admin/Controller/ProductController.php(229): Admin\Controller\ProductController->response()
+#7 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractActionController.php(82): Admin\Controller\ProductController->deleteAction()
+#8 /var/www/html/module/Admin/src/Admin/Controller/MasterController.php(88): Zend\Mvc\Controller\AbstractActionController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#9 [internal function]: Admin\Controller\MasterController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#10 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#11 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#12 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractController.php(118): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#13 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/DispatchListener.php(93): Zend\Mvc\Controller\AbstractController->dispatch(Object(Zend\Http\PhpEnvironment\Request), Object(Zend\Http\PhpEnvironment\Response))
+#14 [internal function]: Zend\Mvc\DispatchListener->onDispatch(Object(Zend\Mvc\MvcEvent))
+#15 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#16 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#17 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Application.php(314): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#18 /var/www/html/public/index.php(17): Zend\Mvc\Application->run()
+#19 {main}
+2018-03-21T20:20:25+07:00 ERR (3): error-exception	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36	http://anhtuan150787.name.vn/admin/contact/index	POST	http://anhtuan150787.name.vn/admin/contact/delete	Service "response" has been requested to plugin manager of type "Zend\Mvc\Controller\PluginManager", but couldn't be retrieved.
+A previous exception of type "Zend\ServiceManager\Exception\ServiceNotFoundException" has been raised in the process.
+By the way, a service with the name "response" has been found in the parent service locator "Zend\ServiceManager\ServiceManager": did you forget to use $parentLocator = $serviceLocator->getServiceLocator() in your factory code?
+#0 /var/www/html/vendor/zendframework/zendframework/library/Zend/ServiceManager/AbstractPluginManager.php(312): Zend\ServiceManager\Exception\ServiceLocatorUsageException::fromInvalidPluginManagerRequestedServiceName(Object(Zend\Mvc\Controller\PluginManager), Object(Zend\ServiceManager\ServiceManager), 'response', Object(Zend\ServiceManager\Exception\ServiceNotFoundException))
+#1 /var/www/html/vendor/zendframework/zendframework/library/Zend/ServiceManager/AbstractPluginManager.php(118): Zend\ServiceManager\AbstractPluginManager->tryThrowingServiceLocatorUsageException('response', false, Object(Zend\ServiceManager\Exception\ServiceNotFoundException))
+#2 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/PluginManager.php(84): Zend\ServiceManager\AbstractPluginManager->get('response', NULL, true)
+#3 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractController.php(292): Zend\Mvc\Controller\PluginManager->get('response', NULL)
+#4 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractController.php(307): Zend\Mvc\Controller\AbstractController->plugin('response')
+#5 /var/www/html/module/Admin/src/Admin/Controller/ContactController.php(84): Zend\Mvc\Controller\AbstractController->__call('response', Array)
+#6 /var/www/html/module/Admin/src/Admin/Controller/ContactController.php(84): Admin\Controller\ContactController->response()
+#7 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractActionController.php(82): Admin\Controller\ContactController->deleteAction()
+#8 /var/www/html/module/Admin/src/Admin/Controller/MasterController.php(88): Zend\Mvc\Controller\AbstractActionController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#9 [internal function]: Admin\Controller\MasterController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#10 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#11 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#12 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractController.php(118): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#13 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/DispatchListener.php(93): Zend\Mvc\Controller\AbstractController->dispatch(Object(Zend\Http\PhpEnvironment\Request), Object(Zend\Http\PhpEnvironment\Response))
+#14 [internal function]: Zend\Mvc\DispatchListener->onDispatch(Object(Zend\Mvc\MvcEvent))
+#15 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#16 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#17 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Application.php(314): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#18 /var/www/html/public/index.php(17): Zend\Mvc\Application->run()
+#19 {main}
+2018-03-21T20:20:32+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36	http://anhtuan150787.name.vn/	GET	http://anhtuan150787.name.vn/css/font-style-2.css

@@ -1,0 +1,34 @@
+2018-03-19T01:24:21+07:00 ERR (3): error-router-no-match	141.8.142.127	Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)		GET	http://anhtuan150787.name.vn/robots.txt
+2018-03-19T04:56:48+07:00 ERR (3): error-router-no-match	89.178.238.106	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299	http://anhtuan150787.name.vn/lifedeco-p-3	GET	http://anhtuan150787.name.vn/css/font-style-2.css
+2018-03-19T05:34:18+07:00 ERR (3): error-router-no-match	141.8.142.127	Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)		GET	http://anhtuan150787.name.vn/robots.txt
+2018-03-19T06:51:51+07:00 ERR (3): error-router-no-match	149.210.180.203	ZmEu		GET	http://123.20.25.139/w00tw00t.at.blackhats.romanian.anti-sec:%29
+2018-03-19T06:51:53+07:00 ERR (3): error-router-no-match	149.210.180.203	ZmEu		GET	http://123.20.25.139/pma/scripts/setup.php
+2018-03-19T06:51:54+07:00 ERR (3): error-router-no-match	149.210.180.203	ZmEu		GET	http://123.20.25.139/myadmin/scripts/setup.php
+2018-03-19T06:51:54+07:00 ERR (3): error-router-no-match	149.210.180.203	ZmEu		GET	http://123.20.25.139/MyAdmin/scripts/setup.php
+2018-03-19T07:36:56+07:00 ERR (3): error-router-no-match	5.178.147.17			GET	http://123.20.25.139/HNAP1/
+2018-03-19T08:00:13+07:00 ERR (3): error-router-no-match	95.211.168.139	curl/7.29.0		GET	http://123.20.25.139/elastix_warning_authentication.php
+2018-03-19T08:02:21+07:00 ERR (3): error-router-no-match	95.211.168.139	curl/7.29.0		GET	http://123.20.25.139/recordings//theme/main.css
+2018-03-19T13:20:19+07:00 ERR (3): error-router-no-match	141.8.142.127	Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)		GET	http://anhtuan150787.name.vn/robots.txt
+2018-03-19T17:26:31+07:00 ERR (3): error-router-no-match	199.182.203.127			GET	http://123.20.25.139/HNAP1/
+2018-03-19T22:49:12+07:00 ERR (3): error-router-no-match	46.243.189.60			GET	http://123.20.25.139/muieblackcat
+2018-03-19T22:49:13+07:00 ERR (3): error-router-no-match	46.243.189.60			GET	http://123.20.25.139//pma/scripts/setup.php
+2018-03-19T22:49:13+07:00 ERR (3): error-router-no-match	46.243.189.60			GET	http://123.20.25.139//myadmin/scripts/setup.php
+2018-03-19T22:49:14+07:00 ERR (3): error-router-no-match	46.243.189.60			GET	http://123.20.25.139//MyAdmin/scripts/setup.php
+2018-03-19T22:53:23+07:00 ERR (3): error-exception	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36		GET	http://anhtuan150787.name.vn/public/admin/	Statement could not be executed (42000 - 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND group_menu_status = 1
+                    AND menu_parent = 0 ORDER BY menu' at line 3)
+#0 /var/www/html/module/Admin/src/Admin/Model/GroupMenuModel.php(41): Zend\Db\Adapter\Driver\Pdo\Statement->execute()
+#1 /var/www/html/module/Admin/src/Admin/Model/GroupMenuModel.php(23): Admin\Model\GroupMenuModel->getGroupMenuList(NULL, 0, -1, Array)
+#2 /var/www/html/module/Admin/src/Admin/Controller/MasterController.php(79): Admin\Model\GroupMenuModel->getGroupMenu(NULL)
+#3 [internal function]: Admin\Controller\MasterController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#4 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#5 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#6 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractController.php(118): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#7 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/DispatchListener.php(93): Zend\Mvc\Controller\AbstractController->dispatch(Object(Zend\Http\PhpEnvironment\Request), Object(Zend\Http\PhpEnvironment\Response))
+#8 [internal function]: Zend\Mvc\DispatchListener->onDispatch(Object(Zend\Mvc\MvcEvent))
+#9 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#10 /var/www/html/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#11 /var/www/html/vendor/zendframework/zendframework/library/Zend/Mvc/Application.php(314): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#12 /var/www/html/public/index.php(17): Zend\Mvc\Application->run()
+#13 {main}
+2018-03-19T22:53:25+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36	http://anhtuan150787.name.vn/public/admin/login/index	GET	http://anhtuan150787.name.vn/public/img/favicon.ico
+2018-03-19T22:55:46+07:00 ERR (3): error-router-no-match	123.20.25.139	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36	http://anhtuan150787.name.vn/admin/product/index	GET	http://anhtuan150787.name.vn/img/favicon.ico

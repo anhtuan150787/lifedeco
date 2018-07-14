@@ -1,7 +1,6 @@
 <?php
 return array(
-    //'font' => './public/pictures/captcha/font/arial.ttf',
-	'font' => 'E:\Xampp\htdocs\lifedeco\public\pictures\captcha\font\arial.ttf',
+    'font' => './public/pictures/captcha/font/arial.ttf',
     'width' => 140,
     'height' => 40,
     'dotNoiseLevel' => 0,
