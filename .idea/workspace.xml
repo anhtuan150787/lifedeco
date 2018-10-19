@@ -2,53 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3666d958-4ab7-4a77-bed1-98fd96f238a6" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_088116a17eb663ddc1bc3db93589333b.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_1247731bafc6701abc352124e079f89b.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_1b60e6a6116c5d168217eafe2703ead0.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_1b667e0cc5e1daccda4f3c1f9215a99b.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_271f7087722be9c8dae2cb068aebd254.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_38551078b6a1de85d56109f41530abdb.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_3d10e918b168f5d2160694603641a457.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_3d2137a770b2fcd3084da49667bbfbfd.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_3f53445d2770ec076018f91ad72d0463.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_425f4b0dfef35efa9db5bf6f98d312b8.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_4d13d8a55324561de47335112bd6005a.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_5992bcc8655949bf88b3bd69d4e49b6b.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_5ecb64a97114285b810172e9c0dd91ef.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_643ec2c83e0cfa71c3690780858b2beb.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_649e2c9228fe919db86abff100ee6495.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_652f7b66cf5ee4325f6cd4003a4166f8.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_6b512adf7fd4167f5e8dff7f37aad7c0.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_6dc3e68e6e9a03b71fc7101fd600fe3c.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_73915419324d44c21faa7e403547ee6c.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_7c7647352b4f76038b996c9e0bd2e9ad.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_7ef1f133b0a943ec44c3dc0fe5a7427d.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_85ace039f745adb5aec069ad23e71b8f.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_91142311e8f1d3325d4ba3829af6cc5a.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_95694a09c84b3f7ad8d2502a889d6bd9.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_9a8447542825bce29ecf8e437eaf9dc2.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_a3d752ccef942a7b6053f39498ca6d2c.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_a519a5b2e2bf7a13ee19861df972b814.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_aca7d986c67078e3a91e620f626a79aa.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_ae1400477760078734ee47455bf34668.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_b32982db4580c9418a549a3c3dd423eb.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_bb522206e63fdb6f7a4494316d4de245.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_bd75d9456f94d26886543bed3845e394.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_bdb714e53e6e1c10ef058df1caa74306.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_bdb8506bf5b21ddff2657e3b04e8ecd3.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_bddc0f24a28af84ea9c1785068f1f597.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_c25a6824923797c88f818afe307ba084.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_c392071c268c27544d2cc91dd3784e47.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_c55a101ac53d2eeb227620192426e6bc.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_c812ef8089878c7c69e9dcdf298e7bba.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_ca925312826c300edf29ae3d8b6121a0.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_cc59aed34fe0ff92cc4e426bd2d9871d.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_e266b364da64ffd707528bc38894fcbc.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_e4ac36c90e02670685b7cc9a42cf1aa7.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_eeba4360e6b6049af5300a0c51cbd5fb.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_fb6867a96f873724be0e5f4a8e46ea90.timthumb.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Xampp\htdocs\lifedeco\public\thumbs\cache-image-thumbs\timthumb_int_fe1a172e48584b2f42eb557487c53b7c.timthumb.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Frontend/view/frontend/index/index.phtml" afterPath="$PROJECT_DIR$/module/Frontend/view/frontend/index/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/autoload/global.php" afterPath="$PROJECT_DIR$/config/autoload/global.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lifedeco.iws" />
@@ -86,9 +40,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1523369674891" expanded="true" signature="1022:1221" placeholder="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,19 +50,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
-              <folding>
-                <marker date="1517465658317" expanded="true" signature="2694:2851" placeholder="..." />
-                <marker date="1517465658317" expanded="true" signature="3092:3249" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="frontend.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Frontend/view/layout/frontend.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="131" column="40" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -119,7 +58,7 @@
       <file leaf-file-name="module.config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/Frontend/config/module.config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9615384">
+            <state vertical-scroll-proportion="0.0">
               <caret line="78" column="33" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="33" />
               <folding />
             </state>
@@ -129,7 +68,7 @@
       <file leaf-file-name="module.config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/Services/config/module.config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846">
+            <state vertical-scroll-proportion="0.0">
               <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
               <folding />
             </state>
@@ -139,18 +78,38 @@
       <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="25.5">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/index/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56478405">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="76" column="77" selection-start-line="76" selection-start-column="77" selection-end-line="76" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="local.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/autoload/local.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.9230769">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/autoload/global.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.11422172">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -174,8 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/module/Admin/view/admin/post/search_form.phtml" />
-        <option value="$PROJECT_DIR$/module/Frontend/src/Frontend/Model/ProductModel.php" />
         <option value="$PROJECT_DIR$/module/Frontend/src/Frontend/Model/PostModel.php" />
         <option value="$PROJECT_DIR$/module/Admin/view/admin/product/detail.phtml" />
         <option value="$PROJECT_DIR$/module/Frontend/src/Frontend/Model/ProductPictureModel.php" />
@@ -225,6 +182,8 @@
         <option value="$PROJECT_DIR$/module/Admin/src/Admin/Model/GroupAclModel.php" />
         <option value="$PROJECT_DIR$/module/Admin/view/layout/layout.phtml" />
         <option value="$PROJECT_DIR$/module/Frontend/view/frontend/index/index.phtml" />
+        <option value="$PROJECT_DIR$/config/autoload/local.php" />
+        <option value="$PROJECT_DIR$/config/autoload/global.php" />
       </list>
     </option>
   </component>
@@ -246,7 +205,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -515,6 +474,10 @@
               <option name="myItemId" value="Frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -539,10 +502,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -832,13 +791,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -847,6 +805,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -871,20 +830,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Form/PageForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="92" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Form/ProductForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="99" column="83" selection-start-line="99" selection-start-column="65" selection-end-line="99" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Admin/view/admin/product/form.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4330011">
@@ -1177,9 +1122,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1523369674891" expanded="true" signature="1022:1221" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1187,10 +1130,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
-          <folding>
-            <marker date="1517465658317" expanded="true" signature="2694:2851" placeholder="..." />
-            <marker date="1517465658317" expanded="true" signature="3092:3249" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1212,7 +1152,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Services/config/module.config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
+        <state vertical-scroll-proportion="0.0">
           <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding />
         </state>
@@ -1220,7 +1160,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Frontend/src/Frontend/Controller/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="25.5">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1228,7 +1168,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Frontend/config/module.config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9615384">
+        <state vertical-scroll-proportion="0.0">
           <caret line="78" column="33" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="33" />
           <folding />
         </state>
@@ -1236,8 +1176,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Frontend/view/frontend/index/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56478405">
+        <state vertical-scroll-proportion="0.0">
           <caret line="76" column="77" selection-start-line="76" selection-start-column="77" selection-end-line="76" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11422172">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
           <folding />
         </state>
       </provider>
