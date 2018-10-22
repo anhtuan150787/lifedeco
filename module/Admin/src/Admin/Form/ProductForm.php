@@ -119,7 +119,7 @@ class ProductForm extends Form
             'type' => 'file',
             'attributes' => [
                 'class' => 'form-control',
-                'onchange' => 'readURL(this);',
+                //'onchange' => 'readURL(this);',
             ],
             'options' => [
                 'label' => 'Hình đại diện (700x466 pixel)',

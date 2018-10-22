@@ -1,0 +1,33 @@
+2018-10-22T15:46:57+07:00 ERR (3): error-exception	127.0.0.1	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36		GET	http://lifedeco/	Statement could not be executed (HY000 - 1449 - The user specified as a definer ('lifedeco_db'@'localhost') does not exist)
+#0 C:\Data\Xampp\htdocs\lifedeco\module\Frontend\src\Frontend\Model\NavigationModel.php(35): Zend\Db\Adapter\Driver\Pdo\Statement->execute()
+#1 C:\Data\Xampp\htdocs\lifedeco\module\Frontend\src\Frontend\Model\NavigationModel.php(21): Frontend\Model\NavigationModel->getNavigationLoop(5, 0, -1, Array)
+#2 C:\Data\Xampp\htdocs\lifedeco\module\Frontend\src\Frontend\Controller\MasterController.php(26): Frontend\Model\NavigationModel->getNavigations(5)
+#3 [internal function]: Frontend\Controller\MasterController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#4 C:\Data\Xampp\htdocs\lifedeco\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#5 C:\Data\Xampp\htdocs\lifedeco\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#6 C:\Data\Xampp\htdocs\lifedeco\vendor\zendframework\zendframework\library\Zend\Mvc\Controller\AbstractController.php(118): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#7 C:\Data\Xampp\htdocs\lifedeco\vendor\zendframework\zendframework\library\Zend\Mvc\DispatchListener.php(93): Zend\Mvc\Controller\AbstractController->dispatch(Object(Zend\Http\PhpEnvironment\Request), Object(Zend\Http\PhpEnvironment\Response))
+#8 [internal function]: Zend\Mvc\DispatchListener->onDispatch(Object(Zend\Mvc\MvcEvent))
+#9 C:\Data\Xampp\htdocs\lifedeco\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#10 C:\Data\Xampp\htdocs\lifedeco\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#11 C:\Data\Xampp\htdocs\lifedeco\vendor\zendframework\zendframework\library\Zend\Mvc\Application.php(314): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#12 C:\Data\Xampp\htdocs\lifedeco\public\index.php(17): Zend\Mvc\Application->run()
+#13 {main}
+2018-10-22T15:46:58+07:00 ERR (3): error-router-no-match	127.0.0.1	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36	http://lifedeco/	GET	http://lifedeco/css/font-style-2.css
+2018-10-22T15:46:59+07:00 ERR (3): error-router-no-match	127.0.0.1	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36	http://lifedeco/	GET	http://lifedeco/pictures/websites/
+2018-10-22T15:49:36+07:00 ERR (3): error-exception	127.0.0.1	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36		GET	http://lifedeco/	Statement could not be executed (HY000 - 1449 - The user specified as a definer ('lifedeco_db'@'localhost') does not exist)
+#0 C:\Data\Xampp\htdocs\lifedeco\module\Frontend\src\Frontend\Model\NavigationModel.php(35): Zend\Db\Adapter\Driver\Pdo\Statement->execute()
+#1 C:\Data\Xampp\htdocs\lifedeco\module\Frontend\src\Frontend\Model\NavigationModel.php(21): Frontend\Model\NavigationModel->getNavigationLoop(5, 0, -1, Array)
+#2 C:\Data\Xampp\htdocs\lifedeco\module\Frontend\src\Frontend\Controller\MasterController.php(26): Frontend\Model\NavigationModel->getNavigations(5)
+#3 [internal function]: Frontend\Controller\MasterController->onDispatch(Object(Zend\Mvc\MvcEvent))
+#4 C:\Data\Xampp\htdocs\lifedeco\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#5 C:\Data\Xampp\htdocs\lifedeco\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#6 C:\Data\Xampp\htdocs\lifedeco\vendor\zendframework\zendframework\library\Zend\Mvc\Controller\AbstractController.php(118): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#7 C:\Data\Xampp\htdocs\lifedeco\vendor\zendframework\zendframework\library\Zend\Mvc\DispatchListener.php(93): Zend\Mvc\Controller\AbstractController->dispatch(Object(Zend\Http\PhpEnvironment\Request), Object(Zend\Http\PhpEnvironment\Response))
+#8 [internal function]: Zend\Mvc\DispatchListener->onDispatch(Object(Zend\Mvc\MvcEvent))
+#9 C:\Data\Xampp\htdocs\lifedeco\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(444): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#10 C:\Data\Xampp\htdocs\lifedeco\vendor\zendframework\zendframework\library\Zend\EventManager\EventManager.php(205): Zend\EventManager\EventManager->triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#11 C:\Data\Xampp\htdocs\lifedeco\vendor\zendframework\zendframework\library\Zend\Mvc\Application.php(314): Zend\EventManager\EventManager->trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#12 C:\Data\Xampp\htdocs\lifedeco\public\index.php(17): Zend\Mvc\Application->run()
+#13 {main}
+2018-10-22T15:49:37+07:00 ERR (3): error-router-no-match	127.0.0.1	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36	http://lifedeco/	GET	http://lifedeco/css/font-style-2.css

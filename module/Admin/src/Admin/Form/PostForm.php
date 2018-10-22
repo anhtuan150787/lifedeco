@@ -79,7 +79,7 @@ class PostForm extends Form
             'type' => 'file',
             'attributes' => [
                 'class' => 'form-control',
-                'onchange' => 'readURL(this);',
+                //'onchange' => 'readURL(this);',
             ],
             'options' => [
                 'label' => 'Hình (800x800 pixel)',

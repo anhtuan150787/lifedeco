@@ -1,23 +1,12 @@
-<div class="item form-group">
+<div class="form-group">
     <?php echo $this->formLabel($formElement); ?>
-    <div class="col-md-6 col-sm-6 col-xs-12">
-        <div class="fileupload" data-provides="fileupload">
-            <div class="fileupload-new">
-                <?php if (isset($record) && $record[$formElement->getName()] != '') { ?>
-                    <img title="Click để xóa" class="picture_upload_view avatar-picture" id="picture" onclick="deletePicture(<?php echo $record[$primary]; ?>)"
-                         style="cursor: pointer"
-                         src="<?php echo $this->basePath($url . $record[$formElement->getName()]); ?>"/>
-                <?php } else { ?>
-                    <img style="cursor: pointer" title="Click để xóa" onclick="deleteURL()" class="picture_upload_view avatar-picture" src="<?php echo $this->basePath('admin/images/no-image.gif'); ?>"/>
-                <?php } ?>
-            </div>
-
-            <span class="btn btn-file">
-                <span class="btn-fileupload">Chọn hình</span>
-                <?php echo $this->formElement($formElement); ?>
-            </span>
-
-        </div>
+    <div class="col-md-6 col-sm-6 col-xs-12 item">
+        <?php if (isset($record) && $record[$formElement->getName()] != '') { ?>
+            <img title="Click để xóa" class="picture_upload_view avatar-picture" id="picture" onclick="deletePicture(<?php echo $record[$primary]; ?>)"
+                 style="cursor: pointer"
+                 src="<?php echo $this->basePath($url . $record[$formElement->getName()]); ?>"/>
+        <?php }?>
+        <?php echo $this->formElement($formElement); ?>
     </div>
 </div>
 
